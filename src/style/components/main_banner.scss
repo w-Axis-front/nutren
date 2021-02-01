@@ -1,0 +1,28 @@
+@mixin arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  height: 30px;
+}
+
+main {
+  overflow: hidden;
+}
+
+/***********BANNER*************/
+.banner-slider {
+  &__prev {
+    @include arrow;
+    left: 316px;
+  }
+  &__next {
+    @include arrow;
+    right: 316px;
+   }
+  &__arrow-img {
+    height: 100%;
+    width: auto;
+  }
+}
+/***********BANNER END*************/

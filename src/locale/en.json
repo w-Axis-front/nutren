@@ -1,0 +1,103 @@
+{
+  "locale": "en",
+  "nav": {
+    "nav_logo": "/svg/nav_logo.svg",
+    "nav_links": [
+      {
+        "nav_link": "Главная",
+        "nav_path": "index.html"
+      },
+      {
+        "nav_link": "О нас",
+        "nav_path": "about.html"
+      },
+      {
+        "nav_link": "Продукты",
+        "nav_path": "products.html"
+      },
+      {
+        "nav_link": "Разработка",
+        "nav_path": "development.html"
+      }
+    ],
+    "nav_link_anchor": "Контакты",
+    "nav_link_anchor_path": "#contacts"
+  },
+  "banner_slider": [
+    {
+      "slide_title": "Ostelife",
+      "slide1_bg-text": "Ostelife",
+      "slide1_bg-subtext": "Ostelife",
+      "slide1_text": "Натуральный крем для лечения суставов и связок.",
+      "slide1_img1": "/img/banner/ostelife_1.png",
+      "slide1_img1_alt": "Ostelife product example",
+      "slide1_img1_srcset": "/img/banner/ostelife_1.png 2x",
+      "slide1_img2": "/img/banner/ostelife_2.png",
+      "slide1_img2_alt": "Ostelife",
+      "slide1_img2_srcset": "/img/banner/ostelife_2.png 2x",
+      "slide1_img3": "/img/banner/ostelife_3.png",
+      "slide1_img3_alt": "Ostelife product",
+      "slide1_img3_srcset": "/img/banner/ostelife_3.png 2x"
+    },
+    {
+      "slide_title": "Keto light +",
+      "slide2_bg-text": "Keto light +",
+      "slide2_bg-subtext": "Keto light +",
+      "slide2_text": "Коктейль-активатор кетоновых тел для похудения.",
+      "slide2_img1": "/img/banner/keto_1.png",
+      "slide2_img1_alt": "Keto product example",
+      "slide2_img1_srcset": "/img/banner/keto_1.png 2x",
+      "slide2_img2": "/img/banner/keto_2.png",
+      "slide2_img2_alt": "Keto",
+      "slide2_img2_srcset": "/img/banner/keto_2.png 2x",
+      "slide2_img3": "/img/banner/keto_3.png",
+      "slide2_img3_alt": "Keto product",
+      "slide2_img3_srcset": "/img/banner/keto_3.png 2x"
+    },
+    {
+      "slide_title": "Cardio NRJ",
+      "slide3_bg-text": "Cardio NRJ",
+      "slide3_bg-subtext": "Cardio NRJ",
+      "slide3_text": "Таблетки для профилактики заболеваний сердца.",
+      "slide3_img1": "/img/banner/ostelife_1.png",
+      "slide3_img1_alt": "Ostelife product example",
+      "slide3_img1_srcset": "/img/banner/ostelife_1.png 2x",
+      "slide3_img2": "/img/banner/ostelife_2.png",
+      "slide3_img2_alt": "Ostelife",
+      "slide3_img2_srcset": "/img/banner/ostelife_2.png 2x",
+      "slide3_img3": "/img/banner/ostelife_3.png",
+      "slide3_img3_alt": "Ostelife product",
+      "slide3_img3_srcset": "/img/banner/ostelife_3.png 2x"
+    },
+    {
+      "slide_title": "Varyforte",
+      "slide4_bg-text": "Varyforte",
+      "slide4_bg-subtext": "Varyforte",
+      "slide4_text": "Крем для лечения варикоза без побочных эффектов.",
+      "slide4_img1": "/img/banner/keto_1.png",
+      "slide4_img1_alt": "Keto product example",
+      "slide4_img1_srcset": "/img/banner/keto_1.png 2x",
+      "slide4_img2": "/img/banner/keto_2.png",
+      "slide4_img2_alt": "Keto",
+      "slide4_img2_srcset": "/img/banner/keto_2.png 2x",
+      "slide4_img3": "/img/banner/keto_3.png",
+      "slide4_img3_alt": "Keto product",
+      "slide4_img3_srcset": "/img/banner/keto_3.png 2x"
+    },
+    {
+      "slide_title": "Choco Lite",
+      "slide5_bg-text": "Choco Lite",
+      "slide5_bg-subtext": "Choco Lite",
+      "slide5_text": "Энергетический коктейль для похудения со вкусом шоколада.",
+      "slide5_img1": "/img/banner/ostelife_1.png",
+      "slide5_img1_alt": "Ostelife product example",
+      "slide5_img1_srcset": "/img/banner/ostelife_1.png 2x",
+      "slide5_img2": "/img/banner/ostelife_2.png",
+      "slide5_img2_alt": "Ostelife",
+      "slide5_img2_srcset": "/img/banner/ostelife_2.png 2x",
+      "slide5_img3": "/img/banner/ostelife_3.png",
+      "slide5_img3_alt": "Ostelife product",
+      "slide5_img3_srcset": "/img/banner/ostelife_3.png 2x"
+    }
+  ]
+}
