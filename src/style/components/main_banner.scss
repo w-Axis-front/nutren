@@ -1,28 +1,326 @@
-@mixin arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  height: 30px;
-}
-
 main {
   overflow: hidden;
 }
 
 /***********BANNER*************/
+#js_banner-slider {
+  transition: 0.8s background-color;
+}
+
+.slick-slider {
+}
+
+// ограничивающая оболочка:
+.slick-list {
+}
+
+// лента слайдов:
+.slick-track {
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  height: 30px;
+}
+
+.slick-slide.slick-current {
+  .banner-slider__slide-ostelife {
+    background-color: $ostelife-bg;
+  }
+
+  //  .banner-slider__slide-keto-light {
+  //  }
+  //  .banner-slider__slide-cardio-nrj {
+  //  }
+  //  .banner-slider__slide-varyforte {
+  //  }
+  //  .banner-slider__slide-choco-lite {
+  //  }
+}
+
 .banner-slider {
   &__prev {
-    @include arrow;
-    left: 316px;
+    left: 16.5%;
+    transform: translate(-16.5%, -50%);
+    z-index: 100;
   }
+
   &__next {
-    @include arrow;
-    right: 316px;
-   }
+    right: 16.5%;
+    transform: translate(-16.5%, -50%);
+  }
+
   &__arrow-img {
     height: 100%;
     width: auto;
   }
+
+  &__slide {
+    min-height: 596px;
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  &__slide-bg-text {
+    position: absolute;
+    left: 50%;
+    top: 126px;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    color: $lightColor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 273.6px;
+    line-height: 228px;
+    text-align: center;
+    letter-spacing: 11.4px;
+    text-transform: uppercase;
+  }
+
+  &__slide-bg-sub {
+    position: absolute;
+    top: 183px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $lightColor;
+    opacity: 0.35;
+  }
+
+  &__slide-bg-subtext {
+    left: -50%;
+    transform: translateX(50%);
+  }
+
+  &__slide-bg-subtext-next {
+    right: -50%;
+    transform: translateX(-50%);
+  }
+
+  &__slide-ostelife {
+    .banner-slider__slide-img1 {
+      position: absolute;
+      //left: 288px;
+      left: 15%;
+      top: 111px;
+      transform: translateX(-15%);
+    }
+
+    .banner-slider__slide-img2 {
+      position: absolute;
+      //left: 342px;
+      left: 18%;
+      top: -23px;
+      transform: translateX(-18%);
+    }
+
+    .banner-slider__slide-img3 {
+      position: absolute;
+      //right: 255px;
+      right: 13%;
+      top: 79px;
+      transform: translateX(-13%);
+    }
+
+
+    .banner-slider__slide-bg-subtext {
+
+    }
+
+    .banner-slider__slide-content {
+      left: 51%;
+      transform: translateX(-51%);
+    }
+
+    .banner-slider__slide-title {
+      color: $ostelife;
+    }
+  }
+
+  &__slide-keto-light {
+    .banner-slider__slide-img1 {
+      position: absolute;
+      //left: 364px;
+      left: 19%;
+      top: 155px;
+      transform: translateX(-19%);
+    }
+
+    .banner-slider__slide-img2 {
+      position: absolute;
+      //left: 515px;
+      left: 27%;
+      top: 78px;
+      transform: translateX(-27%);
+    }
+
+    .banner-slider__slide-img3 {
+      position: absolute;
+      //right: 35px;
+      right: 2%;
+      top: -66px;
+      transform: translateX(-2%);
+    }
+
+    .banner-slider__slide-content {
+      //left: 1038px
+      left: 54%;
+      transform: translateX(-54%);
+    }
+
+    .banner-slider__slide-title {
+      color: $keto-light;
+    }
+  }
+
+  &__slide-cardio-nrj {
+    .banner-slider__slide-img1 {
+      position: absolute;
+      //left: 288px;
+      left: 15%;
+      top: 111px;
+      transform: translateX(-15%);
+    }
+
+    .banner-slider__slide-img2 {
+      position: absolute;
+      //left: 342px;
+      left: 18%;
+      top: -23px;
+      transform: translateX(-18%);
+    }
+
+    .banner-slider__slide-img3 {
+      position: absolute;
+      //right: 255px;
+      right: 13%;
+      top: 79px;
+      transform: translateX(-13%);
+    }
+
+    .banner-slider__slide-content {
+      left: 51%;
+      transform: translateX(-51%);
+    }
+
+    .banner-slider__slide-title {
+      color: $cardio-nrj;
+    }
+  }
+
+  &__slide-varyforte {
+    .banner-slider__slide-img1 {
+      position: absolute;
+      //left: 364px;
+      left: 19%;
+      top: 155px;
+      transform: translateX(-19%);
+    }
+
+    .banner-slider__slide-img2 {
+      position: absolute;
+      //left: 515px;
+      left: 27%;
+      top: 78px;
+      transform: translateX(-27%);
+    }
+
+    .banner-slider__slide-img3 {
+      position: absolute;
+      //right: 35px;
+      right: 2%;
+      top: -66px;
+      transform: translateX(-2%);
+    }
+
+    .banner-slider__slide-content {
+      //left: 1038px
+      left: 54%;
+      transform: translateX(-54%);
+    }
+
+    .banner-slider__slide-title {
+      color: $varyforte;
+    }
+  }
+
+  &__slide-choco-lite {
+    .banner-slider__slide-img1 {
+      position: absolute;
+      //left: 288px;
+      left: 15%;
+      top: 111px;
+      transform: translateX(-15%);
+    }
+
+    .banner-slider__slide-img2 {
+      position: absolute;
+      //left: 342px;
+      left: 18%;
+      top: -23px;
+      transform: translateX(-18%);
+    }
+
+    .banner-slider__slide-img3 {
+      position: absolute;
+      //right: 255px;
+      right: 13%;
+      top: 79px;
+      transform: translateX(-13%);
+    }
+
+    .banner-slider__slide-content {
+      left: 51%;
+      transform: translateX(-51%);
+    }
+
+    .banner-slider__slide-title {
+      color: $choco-lite;
+    }
+  }
+
+  &__slide-img1 {
+    z-index: 97;
+  }
+  &__slide-img2 {
+    z-index: 98;
+  }
+  &__slide-img3 {
+    z-index: 96;
+  }
+
+  &__slide-content {
+    max-width: 240px;
+    position: absolute;
+    top: 252px;
+    z-index: 99;
+  }
+
+  &__slide-title {
+    padding-bottom: 15px;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+
+  &__slide-text {
+    color: $textColor;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.5;
+  }
 }
+
 /***********BANNER END*************/
