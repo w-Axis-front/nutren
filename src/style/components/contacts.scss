@@ -1,0 +1,21 @@
+.contacts {
+  padding-top: 66px;
+}
+
+@media screen and (max-width: $xl) {
+  .contacts {}
+}
+
+@media screen and (max-width: $lg) {
+  .contacts {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .contacts {}
+}
+
+@media screen and (max-width: $xxs) {
+  .contacts {}
+}

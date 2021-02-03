@@ -1,4 +1,5 @@
 - const bannerSlider = LANG.banner_slider;
+- const main = LANG.main;
 
 main
     section.banner-slider
@@ -14,3 +15,29 @@ main
                     .banner-slider__slide-content
                         h3.banner-slider__slide-title= val.slide_title
                         p.banner-slider__slide-text= val.slide_text
+    section.container
+        .main
+            img(class="main__img")&attributes(main.main_img)
+            .main__content
+                h1.main__header.header= main.main_header
+                p.text= main.main_text1
+                p.text= main.main_text2
+    section.container
+        .produce
+            .produce__content
+                h2.produce__header.header= main.produce_header
+                p.text= main.produce_text1
+                p.text.produce__text2= main.produce_text2
+                a(class="produce__link link" href=main.produce_path)
+                    span(class="produce__link-text")= main.produce_link
+                    img(class="produce__link-img")&attributes(main.produce_link_img)
+            img(class="produce__img")&attributes(main.produce_img)
+    section.order
+        .container
+            h2.order__header.header= main.order_header
+            .order__text-block
+                p.order__text1.text= main.order_text1
+                p.order__text2.text= main.order_text2
+            a(class="order__link link" href=main.order_path)
+                span(class="order__link-text")= main.order_link
+                img(class="order__link-img")&attributes(main.order_link_img)

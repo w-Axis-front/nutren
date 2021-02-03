@@ -1,13 +1,68 @@
 body
-	font-family: $main-font-family
+  font-family: $main-font-family
+
 .container
-	max-width: 1140px
-	width: 100%
-	//padding: 0 15px
-	margin: 0 auto
+  max-width: $container-xl
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+
+.link
+  color: $mainColor
+
+.header
+  color: $textColor
+  font-size: 42px
+  line-height: 50px
+
+.text
+  color: $textColor
+  font-family: $font-family
+  font-weight: 300
+  font-size: 20px
+  line-height: 35px
+  opacity: 0.8
+  margin-bottom: 1em
+
+.button
+  background-color: $mainColor
+  color: $lightColor
+  font-family: $font-family
+  font-weight: 500
+  font-size: 16px
+  line-height: 16px
+  text-align: center
+  padding: 18px 57px 19px 57px
+  border-radius: 50px
+  &:hover
+    background-color: $bg-hover
+  &:focus
+    background-color: $bg-active
+  &:active
+    background-color: $bg-active
 
 // Font icons:
 .fico
-	display: inline-block
-	&::before
-		display: block
+  display: inline-block
+
+  &::before
+    display: block
+
+@media screen and (max-width: $lg)
+  .container
+    //max-width: $container-lg
+    max-width: none
+    padding: 0
+
+//@media screen and (max-width: $md)
+//  .container
+//    max-width: $container-md
+
+//@media screen and (max-width: $xs)
+//  .container
+//    max-width: $container-xs
+//
+//@media screen and (max-width: $xxs)
+//  .container
+//    max-width: none
+

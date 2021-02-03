@@ -1,17 +1,19 @@
 main {
-  overflow: hidden;
 }
 
 /***********BANNER*************/
 #js_banner-slider {
   transition: 0.8s background-color;
+  //overflow-y: hidden;
 }
 
 .slick-slider {
+  //overflow-y: hidden;
 }
 
 // ограничивающая оболочка:
 .slick-list {
+  //overflow-y: hidden;
 }
 
 // лента слайдов:
@@ -26,18 +28,29 @@ main {
 }
 
 .slick-slide.slick-current {
-  .banner-slider__slide-ostelife {
-    background-color: $ostelife-bg;
-  }
+  //overflow-y: hidden;
+  .banner-slider {
+    &__slide-ostelife {
+      overflow-y: hidden;
+      background-color: $ostelife-bg;
+    }
 
-  //  .banner-slider__slide-keto-light {
-  //  }
-  //  .banner-slider__slide-cardio-nrj {
-  //  }
-  //  .banner-slider__slide-varyforte {
-  //  }
-  //  .banner-slider__slide-choco-lite {
-  //  }
+    &__slide-keto-light {
+      overflow-y: hidden;
+    }
+
+    &__slide-cardio-nrj {
+      overflow-y: hidden;
+    }
+
+    &__slide-varyforte {
+      overflow-y: hidden;
+    }
+
+    &__slide-choco-lite {
+      overflow-y: hidden;
+    }
+  }
 }
 
 .banner-slider {
@@ -60,30 +73,23 @@ main {
   &__slide {
     min-height: 596px;
     position: relative;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   &__slide-bg-text {
     position: absolute;
     left: 50%;
-    top: 126px;
     transform: translateX(-50%);
     opacity: 0.5;
     color: $lightColor;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 273.6px;
-    line-height: 228px;
     text-align: center;
-    letter-spacing: 11.4px;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   &__slide-bg-sub {
     position: absolute;
     top: 183px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 120px;
     line-height: 100px;
     text-align: center;
@@ -94,203 +100,22 @@ main {
   }
 
   &__slide-bg-subtext {
-    left: -50%;
-    transform: translateX(50%);
-  }
-
-  &__slide-bg-subtext-next {
-    right: -50%;
     transform: translateX(-50%);
   }
 
-  &__slide-ostelife {
-    .banner-slider__slide-img1 {
-      position: absolute;
-      //left: 288px;
-      left: 15%;
-      top: 111px;
-      transform: translateX(-15%);
-    }
-
-    .banner-slider__slide-img2 {
-      position: absolute;
-      //left: 342px;
-      left: 18%;
-      top: -23px;
-      transform: translateX(-18%);
-    }
-
-    .banner-slider__slide-img3 {
-      position: absolute;
-      //right: 255px;
-      right: 13%;
-      top: 79px;
-      transform: translateX(-13%);
-    }
-
-
-    .banner-slider__slide-bg-subtext {
-
-    }
-
-    .banner-slider__slide-content {
-      left: 51%;
-      transform: translateX(-51%);
-    }
-
-    .banner-slider__slide-title {
-      color: $ostelife;
-    }
-  }
-
-  &__slide-keto-light {
-    .banner-slider__slide-img1 {
-      position: absolute;
-      //left: 364px;
-      left: 19%;
-      top: 155px;
-      transform: translateX(-19%);
-    }
-
-    .banner-slider__slide-img2 {
-      position: absolute;
-      //left: 515px;
-      left: 27%;
-      top: 78px;
-      transform: translateX(-27%);
-    }
-
-    .banner-slider__slide-img3 {
-      position: absolute;
-      //right: 35px;
-      right: 2%;
-      top: -66px;
-      transform: translateX(-2%);
-    }
-
-    .banner-slider__slide-content {
-      //left: 1038px
-      left: 54%;
-      transform: translateX(-54%);
-    }
-
-    .banner-slider__slide-title {
-      color: $keto-light;
-    }
-  }
-
-  &__slide-cardio-nrj {
-    .banner-slider__slide-img1 {
-      position: absolute;
-      //left: 288px;
-      left: 15%;
-      top: 111px;
-      transform: translateX(-15%);
-    }
-
-    .banner-slider__slide-img2 {
-      position: absolute;
-      //left: 342px;
-      left: 18%;
-      top: -23px;
-      transform: translateX(-18%);
-    }
-
-    .banner-slider__slide-img3 {
-      position: absolute;
-      //right: 255px;
-      right: 13%;
-      top: 79px;
-      transform: translateX(-13%);
-    }
-
-    .banner-slider__slide-content {
-      left: 51%;
-      transform: translateX(-51%);
-    }
-
-    .banner-slider__slide-title {
-      color: $cardio-nrj;
-    }
-  }
-
-  &__slide-varyforte {
-    .banner-slider__slide-img1 {
-      position: absolute;
-      //left: 364px;
-      left: 19%;
-      top: 155px;
-      transform: translateX(-19%);
-    }
-
-    .banner-slider__slide-img2 {
-      position: absolute;
-      //left: 515px;
-      left: 27%;
-      top: 78px;
-      transform: translateX(-27%);
-    }
-
-    .banner-slider__slide-img3 {
-      position: absolute;
-      //right: 35px;
-      right: 2%;
-      top: -66px;
-      transform: translateX(-2%);
-    }
-
-    .banner-slider__slide-content {
-      //left: 1038px
-      left: 54%;
-      transform: translateX(-54%);
-    }
-
-    .banner-slider__slide-title {
-      color: $varyforte;
-    }
-  }
-
-  &__slide-choco-lite {
-    .banner-slider__slide-img1 {
-      position: absolute;
-      //left: 288px;
-      left: 15%;
-      top: 111px;
-      transform: translateX(-15%);
-    }
-
-    .banner-slider__slide-img2 {
-      position: absolute;
-      //left: 342px;
-      left: 18%;
-      top: -23px;
-      transform: translateX(-18%);
-    }
-
-    .banner-slider__slide-img3 {
-      position: absolute;
-      //right: 255px;
-      right: 13%;
-      top: 79px;
-      transform: translateX(-13%);
-    }
-
-    .banner-slider__slide-content {
-      left: 51%;
-      transform: translateX(-51%);
-    }
-
-    .banner-slider__slide-title {
-      color: $choco-lite;
-    }
+  &__slide-bg-subtext-next {
+    transform: translateX(50%);
+    right: 0;
   }
 
   &__slide-img1 {
     z-index: 97;
   }
+
   &__slide-img2 {
     z-index: 98;
   }
+
   &__slide-img3 {
     z-index: 96;
   }
@@ -305,8 +130,6 @@ main {
   &__slide-title {
     padding-bottom: 15px;
     font-family: $main-font-family;
-    font-style: normal;
-    font-weight: normal;
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1px;
@@ -315,11 +138,241 @@ main {
   &__slide-text {
     color: $textColor;
     font-family: $font-family;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     opacity: 0.5;
+  }
+
+  &__slide-ostelife {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 288px;
+        left: 15%;
+        top: 111px;
+        transform: translateX(-15%);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 342px;
+        left: 18%;
+        top: -23px;
+        transform: translateX(-18%);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 255px;
+        right: 13%;
+        top: 79px;
+        transform: translateX(-13%);
+      }
+
+      &__slide-bg-text {
+        font-size: 273.6px;
+        line-height: 228px;
+        letter-spacing: 11.4px;
+        top: 126px;
+      }
+
+      &__slide-content {
+        left: 51%;
+        transform: translateX(-51%);
+      }
+
+      &__slide-title {
+        color: $ostelife;
+      }
+    }
+  }
+
+  &__slide-keto-light {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 364px;
+        left: 15%;
+        top: 155px;
+        transform: translateX(-15%);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 515px;
+        left: 30%;
+        top: 78px;
+        transform: translateX(-30%);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 35px;
+        right: 2%;
+        top: -66px;
+        transform: translateX(-2%);
+      }
+
+      &__slide-bg-text {
+        font-size: 180px;
+        line-height: 100px;
+        letter-spacing: 5px;
+        top: 142px;
+      }
+
+      &__slide-content {
+        //left: 1038px
+        left: 54%;
+        transform: translateX(-54%);
+      }
+
+      &__slide-title {
+        color: $keto-light;
+      }
+    }
+  }
+
+  &__slide-cardio-nrj {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 288px;
+        left: 15%;
+        top: 111px;
+        transform: translateX(-15%);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 342px;
+        left: 18%;
+        top: -23px;
+        transform: translateX(-18%);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 255px;
+        right: 13%;
+        top: 79px;
+        transform: translateX(-13%);
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 100px;
+        letter-spacing: 5px;
+        top: 122px;
+      }
+
+      &__slide-content {
+        left: 51%;
+        transform: translateX(-51%);
+      }
+
+      &__slide-title {
+        color: $cardio-nrj;
+      }
+    }
+  }
+
+  &__slide-varyforte {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 364px;
+        left: 15%;
+        top: 155px;
+        transform: translateX(-15%);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 515px;
+        left: 30%;
+        top: 78px;
+        transform: translateX(-30%);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 35px;
+        right: 2%;
+        top: -66px;
+        transform: translateX(-2%);
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 200px;
+        top: 168px;
+      }
+
+      &__slide-content {
+        //left: 1038px
+        left: 54%;
+        transform: translateX(-54%);
+      }
+
+      &__slide-title {
+        color: $varyforte;
+      }
+    }
+  }
+
+  &__slide-choco-lite {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 288px;
+        left: 15%;
+        top: 111px;
+        transform: translateX(-15%);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 342px;
+        left: 18%;
+        top: -23px;
+        transform: translateX(-18%);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 255px;
+        right: 13%;
+        top: 79px;
+        transform: translateX(-13%);
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 200px;
+        top: 128px;
+      }
+
+      &__slide-content {
+        left: 51%;
+        transform: translateX(-51%);
+      }
+
+      &__slide-title {
+        color: $choco-lite;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $xx) {
+  .banner-slider {
+    &__slide {
+      .banner-slider__slide-img1 {
+        display: none;
+      }
+    }
   }
 }
 

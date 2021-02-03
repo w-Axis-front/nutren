@@ -8,6 +8,8 @@ export default function slider() {
     $(slider1).slick({
         prevArrow: '<button type="button" class="banner-slider__prev"><img class="banner-slider__arrow-img" src="img/svg/arrow-left.svg" alt="Arrow left"/></button>',
         nextArrow: '<button type="button" class="banner-slider__next"><img class="banner-slider__arrow-img" src="img/svg/arrow-right.svg" alt="Arrow right"/></button>',
+        speed: 500,
+        easing: "ease-in",
         // appendArrows: '#js_banner-slider',
         // arrows: false,
         // asNavFor: slider2,

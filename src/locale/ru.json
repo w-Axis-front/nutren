@@ -1,7 +1,7 @@
 {
   "locale": "ru",
   "nav": {
-    "nav_logo": "/svg/nav_logo.svg",
+    "nav_logo": "/img/svg/nav_logo.svg",
     "nav_links": [
       {
         "nav_link": "Главная",
@@ -79,5 +79,49 @@
       "slide_img2": {"src": "/img/banner/ostelife_2.png", "alt": "Choco Lite", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
       "slide_img3": {"src": "/img/banner/ostelife_3.png", "alt": "Choco Lite product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
     }
-  ]
+  ],
+  "main": {
+    "main_header": "Nutren — производитель косметики и биодобавок",
+    "main_text1": "Разрабатываем формулу. Производим продукт. Упаковываем. Исследуем рынок. Создаем бренд. Оформляем документы.",
+    "main_text2": "Все продукты сертифицированы в Китае.",
+    "main_img": {"src": "/img/main/main.png", "alt": "Choco Lite product example", "srcset": "/img/main/main@2x.png 2x"},
+    "produce_header": "Производим свои продукты",
+    "produce_text1": "Разрабатываем и производим крема и БАДы под своими марками. Успешно продаем их в Китае и по всему миру, завоевывая доверие покупателей.",
+    "produce_text2": "Среди наших продуктов — такие популярные средства, как коктейль для похудения Keto Light+, крем для суставов Ostelife, средство от паразитов Germixil и другие.",
+    "produce_link": "Все продукты Nutren",
+    "produce_path": "products.html",
+    "produce_link_img": {"src": "/img/svg/link-arrow.svg", "alt": "Link arrow"},
+    "produce_img": {"src": "/img/main/produce.png", "alt": "Choco Lite product example", "srcset": "/img/main/produce@2x.png 2x"},
+    "order_header": "Создадим продукт для вас",
+    "order_text1": "Неважно, есть у вас продукт, формула или только идея. Мы поможем на любом этапе: от подбора компонентов — до проведения клинических испытаний, от производства — до разработки дизайна упаковки. ",
+    "order_text2": "Вы получите полностью готовый к продаже товар — интересный потребителям, с доказанной эффективностью, а также всеми необходимыми разрешениями и сертификатами.",
+    "order_link": "Разработка продуктов Nutren",
+    "order_link_img": {"src": "/img/svg/link-arrow.svg", "alt": "Link arrow"},
+    "order_path": "development.html"
+  },
+  "contacts": {
+    "header": "Наши контакты",
+    "company_name": "Nutren",
+    "address": "(адрес)",
+    "company_number": "(реквизиты)",
+    "email": "(эл.адрес)",
+    "email_path": "mailto:(@эл.адрес)",
+    "phone": "(телефон)",
+    "phone_path": "tel:(телефон)",
+    "WhatsApp": "",
+    "WeChat": "",
+    "Viber": "",
+    "img": {"src": "/img/contacts/contacts.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts@2x.png 2x"},
+    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts-bg@2x.png 2x"},
+    "text": "Хотите, чтобы мы сами с вами связались? Напишите нам.",
+    "phone_placeholder": "Телефон / e-mail",
+    "massage_placeholder": "Ваше сообщение",
+    "button": "Отправить"
+  },
+  "footer": {
+    "logo": "/img/svg/nav_logo.svg",
+    "rights": "© 2021 Great Simple. All rights reserved",
+    "back_btn": "Back to the top",
+    "back_btn_img": {"src": "/img/svg/arrow-up.svg", "alt": "Up"}
+  }
 }
