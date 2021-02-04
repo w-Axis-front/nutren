@@ -1,3 +1,4 @@
+/*********** MAIN *************/
 .main {
   display: flex;
   padding-top: 62px;
@@ -126,15 +127,17 @@
     margin-right: 0;
     flex-direction: column;
     padding-top: 0;
+    overflow-x: hidden;
 
     &__content {
       padding-top: 0;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
 
     &__img {
       margin-bottom: 61px;
+      transform: translateX(4%);
     }
   }
   .produce {
@@ -144,8 +147,8 @@
     &__content {
       max-width: none;
       margin-bottom: 70px;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 30px;
+      padding-left: 30px;
       padding-top: 900px;
     }
 
@@ -166,13 +169,13 @@
 
     &__header {
       margin-bottom: 35px;
-      padding: 0 15px;
+      padding: 0 30px;
     }
 
     &__text-block {
       justify-content: flex-start;
       flex-direction: column;
-      padding: 0 15px;
+      padding: 0 30px;
     }
 
     &__text1 {
@@ -185,20 +188,41 @@
     }
 
     &__link {
-      padding: 0 15px;
+      padding: 0 30px;
     }
   }
 }
 
 @media screen and (max-width: $xs) {
+  .main {
+    &__content {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   .produce {
     &__content {
       padding-top: 615px;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
     &__img {
       height: 615px;
       width: auto;
+    }
+  }
+  .order {
+    &__header {
+      padding: 0 15px;
+    }
+
+    &__text-block {
+      padding: 0 15px;
+    }
+
+    &__link {
+      padding: 0 15px;
     }
   }
 }
@@ -216,8 +240,7 @@
     &__content {
       padding-right: 0;
     }
-
-    &__img {
-    }
   }
 }
+
+/*********** MAIN END *************/

@@ -1,7 +1,8 @@
 {
   "locale": "ru",
   "nav": {
-    "nav_logo": "/img/svg/nav_logo.svg",
+    "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Logo"},
+    "nav_logo_path": "index.html",
     "nav_links": [
       {
         "nav_link": "Главная",
@@ -108,20 +109,27 @@
     "email_path": "mailto:(@эл.адрес)",
     "phone": "(телефон)",
     "phone_path": "tel:(телефон)",
-    "WhatsApp": "",
-    "WeChat": "",
-    "Viber": "",
-    "img": {"src": "/img/contacts/contacts.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts@2x.png 2x"},
-    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts-bg@2x.png 2x"},
+    "WhatsApp_path": "",
+    "WhatsApp_img": {"src": "/img/svg/whatsapp.svg", "alt": "WhatsApp"},
+    "WeChat_path": "",
+    "WeChat_img": {"src": "/img/svg/wechat.svg", "alt": "WeChat"},
+    "Viber_path": "",
+    "Viber_img": {"src": "/img/svg/viber.svg", "alt": "Viber"},
+    "img": {"src": "/img/contacts/mobile-screen.gif", "alt": "Products"},
+    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Background for products"},
     "text": "Хотите, чтобы мы сами с вами связались? Напишите нам.",
     "phone_placeholder": "Телефон / e-mail",
+    "phone_label": "Телефон / e-mail",
     "massage_placeholder": "Ваше сообщение",
+    "massage_label": "Ваше сообщение",
     "button": "Отправить"
   },
   "footer": {
-    "logo": "/img/svg/nav_logo.svg",
-    "rights": "© 2021 Great Simple. All rights reserved",
+    "logo": {"src": "/img/svg/nav_logo.svg", "alt": "Logo"},
+    "logo_path": "index.html",
+    "text": "© 2021 Great Simple. All rights reserved",
     "back_btn": "Back to the top",
+    "back_path": "#top",
     "back_btn_img": {"src": "/img/svg/arrow-up.svg", "alt": "Up"}
   }
 }

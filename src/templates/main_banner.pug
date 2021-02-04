@@ -1,0 +1,15 @@
+- const bannerSlider = LANG.banner_slider;
+
+section.banner-slider
+    #js_banner-slider
+        each val in bannerSlider
+            div(class="banner-slider__slide-" + val.slide_class + " " + "banner-slider__slide")
+                img(class="banner-slider__slide-img1")&attributes(val.slide_img1)
+                img(class="banner-slider__slide-img2")&attributes(val.slide_img2)
+                img(class="banner-slider__slide-img3")&attributes(val.slide_img3)
+                p.banner-slider__slide-bg-text= val.slide_bg_text
+                p.banner-slider__slide-bg-sub.banner-slider__slide-bg-subtext= val.slide_bg_subtext
+                p.banner-slider__slide-bg-sub.banner-slider__slide-bg-subtext-next= val.slide_bg_subtext_next
+                .banner-slider__slide-content
+                    h3.banner-slider__slide-title= val.slide_title
+                    p.banner-slider__slide-text= val.slide_text

@@ -1,20 +1,8 @@
-- const bannerSlider = LANG.banner_slider;
 - const main = LANG.main;
 
-main
-    section.banner-slider
-        #js_banner-slider
-            each val in bannerSlider
-                div(class="banner-slider__slide-" + val.slide_class + " " + "banner-slider__slide")
-                    img(class="banner-slider__slide-img1")&attributes(val.slide_img1)
-                    img(class="banner-slider__slide-img2")&attributes(val.slide_img2)
-                    img(class="banner-slider__slide-img3")&attributes(val.slide_img3)
-                    p.banner-slider__slide-bg-text= val.slide_bg_text
-                    p.banner-slider__slide-bg-sub.banner-slider__slide-bg-subtext= val.slide_bg_subtext
-                    p.banner-slider__slide-bg-sub.banner-slider__slide-bg-subtext-next= val.slide_bg_subtext_next
-                    .banner-slider__slide-content
-                        h3.banner-slider__slide-title= val.slide_title
-                        p.banner-slider__slide-text= val.slide_text
+main#top
+    block main_banner
+        include main_banner.pug
     section.container
         .main
             img(class="main__img")&attributes(main.main_img)
@@ -41,3 +29,5 @@ main
             a(class="order__link link" href=main.order_path)
                 span(class="order__link-text")= main.order_link
                 img(class="order__link-img")&attributes(main.order_link_img)
+    block contacts
+        include contacts.pug

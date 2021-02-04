@@ -1,1 +1,26 @@
-- const nav = LANG.nav;
+- const navContent = LANG.nav;
+
+header.nav
+    div.box
+        div.nav__wrap
+            div.nav__logo-block
+                a(href=navContent.nav_logo_path).nav__logo-link
+                    img&attributes(navContent.nav_logo).nav__logo-img
+            div.nav__wrap-menu
+                div.nav__menu
+                    each nav_link in navContent.nav_links
+                        a(href=nav_link.nav_path).nav__link= nav_link.nav_link
+                div.nav__aside
+                    div.nav__button
+                        a(href=navContent.nav_button_path)= navContent.nav_button
+                    a(href=navContent.nav_link_anchor_path).button.nav__link_anchor= navContent.nav_link_anchor
+            div.nav__burger
+                a.nav__burger-button
+                    span.nav__burger-line
+    div.burger-menu
+        div.burger-menu__wrap
+            each nav_link in navContent.nav_links
+                a.burger-menu__link(href=nav_link.nav_path)= nav_link.nav_link
+            a.burger-menu__link(href=navContent.nav_link_anchor_path)= navContent.nav_link_anchor
+            div.burger-menu__button
+                a.burger-menu__link(href=navContent.nav_button_path)= navContent.nav_button

@@ -2,10 +2,28 @@
 
 section.container#contacts
     .contacts
-        h2.header= contacts.header
+        h2.header.contacts__header= contacts.header
         .contacts__block
             h4.contacts__block-header= contacts.company_name
             p.contacts__block-text= contacts.address
             p.contacts__block-text= contacts.company_number
-            a(class="link" href=contacts.email_path)= contacts.email
-            a(class="link" href=contacts.phone_path)= contacts.phone
+            a(class="link contacts__block-text contacts__block-link" href=contacts.email_path)= contacts.email
+            a(class="link contacts__block-text contacts__block-link" href=contacts.phone_path)= contacts.phone
+            .contacts__social-block
+                a(class="link contacts__social-link" href=contacts.WhatsApp_path)
+                    img&attributes(contacts.WhatsApp_img)
+                a(class="link contacts__social-link" href=contacts.WeChat_path)
+                    img&attributes(contacts.WeChat_img)
+                a(class="link contacts__social-link" href=contacts.Viber_path)
+                    img&attributes(contacts.Viber_img)
+            img(class="contacts__img-bg")&attributes(contacts.img_bg)
+            img(class="contacts__img")&attributes(contacts.img)
+        form(class="contacts__form" action="/#" method="POST")
+            p.contacts__form-header= contacts.text
+            .input-block
+                input(class="input contacts__input-phone" id="phone" placeholder=contacts.phone_placeholder type="text" minlength=2 required=true name="phone")
+                label(class="label" for="phone")= contacts.phone_label
+            .input-block
+                input(class="input contacts__input-massage" id="message" placeholder=contacts.massage_placeholder minlength=2 type="text" required=true name="message")
+                label(class="label" for="message")= contacts.massage_label
+            button(class="button contacts__form-btn" type="submit")= contacts.button

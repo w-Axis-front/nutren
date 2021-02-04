@@ -1,7 +1,4 @@
-main {
-}
-
-/***********BANNER*************/
+/***********MAIN BANNER*************/
 #js_banner-slider {
   transition: 0.8s background-color;
   //overflow-y: hidden;
@@ -136,12 +133,11 @@ main {
   }
 
   &__slide-text {
-    color: $textColor;
+    color: $textColorTransparent;
     font-family: $font-family;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
-    opacity: 0.5;
   }
 
   &__slide-ostelife {
@@ -376,4 +372,4 @@ main {
   }
 }
 
-/***********BANNER END*************/
+/***********MAIN BANNER END*************/
