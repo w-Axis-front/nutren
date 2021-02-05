@@ -22,7 +22,16 @@
       }
     ],
     "nav_link_anchor": "Контакты",
-    "nav_link_anchor_path": "#contacts"
+    "nav_link_anchor_path": "#contacts",
+    "main_lang": "En",
+    "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
+    "close_img": {"src": "/img/svg/close.svg", "alt": "Close menu"},
+    "lang1": "Ru",
+    "lang1_path": "/ru/",
+    "lang1_pathlang": "ru",
+    "lang2": "Cn",
+    "lang2_path": "/cn/",
+    "lang2_pathlang": "zh"
   },
   "banner_slider": [
     {

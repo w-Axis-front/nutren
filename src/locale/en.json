@@ -1,7 +1,7 @@
 {
   "locale": "en",
   "nav": {
-    "nav_logo": "/img/svg/nav_logo.svg",
+    "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Logo"},
     "nav_logo_path": "index.html",
     "nav_links": [
       {
@@ -22,7 +22,16 @@
       }
     ],
     "nav_link_anchor": "Контакты",
-    "nav_link_anchor_path": "#contacts"
+    "nav_link_anchor_path": "#contacts",
+    "main_lang": "En",
+    "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
+    "close_img": {"src": "/img/svg/close.svg", "alt": "Close menu"},
+    "lang1": "Ru",
+    "lang1_path": "/ru/",
+    "lang1_pathlang": "ru",
+    "lang2": "Cn",
+    "lang2_path": "/cn/",
+    "lang2_pathlang": "zh"
   },
   "banner_slider": [
     {
@@ -115,8 +124,8 @@
     "WeChat_img": {"src": "/img/svg/wechat.svg", "alt": "WeChat"},
     "Viber_path": "",
     "Viber_img": {"src": "/img/svg/viber.svg", "alt": "Viber"},
-    "img": {"src": "/img/contacts/contacts.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts@2x.png 2x"},
-    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Choco Lite product example", "srcset": "/img/contacts/contacts-bg@2x.png 2x"},
+    "img": {"src": "/img/contacts/mobile-screen.gif", "alt": "Products"},
+    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Background for products"},
     "text": "Хотите, чтобы мы сами с вами связались? Напишите нам.",
     "phone_placeholder": "Телефон / e-mail",
     "phone_label": "Телефон / e-mail",

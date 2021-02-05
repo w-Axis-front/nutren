@@ -35,8 +35,10 @@ body
   padding: 18px 57px 19px 57px
   border-radius: 50px
   transition: .3s
+
   &:hover, &:focus
     background-color: $bg-hover
+
   &:active, &:focus-visible
     background-color: $bg-active
 
@@ -55,8 +57,10 @@ body
   background-color: $lightColor
   padding: 0 7px
   border-radius: 3px
+
   &:active
     display: inline-block
+
 
 .input
   border: 2px solid $mainColor
@@ -67,31 +71,45 @@ body
   line-height: 25px
   border-radius: 32px
   width: 100%
+
   &::placeholder
     color: $textColorTransparent
+
   &:not(:placeholder-shown), &:focus
     border: 2px solid $textColorTransparent
+
     & ~ .label
       opacity: 1
+
   &:invalid
     box-shadow: none
+
   &:-moz-submit-invalid
     box-shadow: none
+
   &:-moz-ui-invalid
     box-shadow: none
+
   &:invalid:focus:placeholder-shown
     border: 2px solid $errorColor
+
     & ~ .label
       color: $errorColor
       opacity: 1
-  // When input is NOT empty & NOT in focus & NOT valid
-  //&:invalid:not(:focus):not(:placeholder-shown)
-  // When that invalid input becomes in focus (and also still isn't empty)
-  //&:invalid:focus:not(:placeholder-shown)
+// When input is NOT empty & NOT in focus & NOT valid
+//&:invalid:not(:focus):not(:placeholder-shown)
+// When that invalid input becomes in focus (and also still isn't empty)
+//&:invalid:focus:not(:placeholder-shown)
+
+.divider
+  height: 1px
+  width: 100%
+  background-color: $borderColor2
 
 // Font icons:
 .fico
   display: inline-block
+
   &::before
     display: block
 
