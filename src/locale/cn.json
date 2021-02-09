@@ -1,12 +1,12 @@
 {
-  "locale": "en",
+  "locale": "cn",
   "nav": {
     "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Nutren logo"},
     "nav_logo_collapsed": {"src": "/img/svg/logo-small.svg", "alt": "Logo"},
     "nav_logo_path": "index.html",
     "nav_links": [
       {
-        "nav_link": "Main",
+        "nav_link": "Главная",
         "nav_path": "index.html"
       },
       {
@@ -24,11 +24,11 @@
     ],
     "nav_link_anchor": "Контакты",
     "nav_link_anchor_path": "#contacts",
-    "main_lang": "En",
+    "main_lang": "Cn",
     "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
-    "lang2": "Cn",
+    "lang2": "En",
     "lang2_path": "#",
-    "lang2_pathlang": "zh",
+    "lang2_pathlang": "en",
     "lang1": "Ru",
     "lang1_path": "#",
     "lang1_pathlang": "ru"

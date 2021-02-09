@@ -5,6 +5,7 @@ header.nav
         .nav__logo-wrap
             a(href=navContent.nav_logo_path).nav__logo
                 img&attributes(navContent.nav_logo).nav__logo-img
+                img&attributes(navContent.nav_logo_collapsed).nav__logo-img-collapsed
         div.nav__wrap-menu
             each nav_link in navContent.nav_links
                 a(href=nav_link.nav_path).nav__link= nav_link.nav_link

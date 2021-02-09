@@ -10,6 +10,7 @@ export default function slider() {
         nextArrow: '<button type="button" class="banner-slider__next"><img class="banner-slider__arrow-img" src="img/svg/arrow-right.svg" alt="Arrow right"/></button>',
         speed: 500,
         easing: "ease-in",
+        centerMode: true
         // appendArrows: '#js_banner-slider',
         // arrows: false,
         // asNavFor: slider2,

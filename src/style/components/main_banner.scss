@@ -26,6 +26,7 @@
 
 .slick-slide.slick-current {
   //overflow-y: hidden;
+
   .banner-slider {
     &__slide-ostelife {
       overflow-y: hidden;
@@ -230,6 +231,7 @@
   }
 
   &__slide-cardio-nrj {
+    //top: 3px;
     .banner-slider {
       &__slide-img1 {
         position: absolute;
@@ -274,6 +276,7 @@
   }
 
   &__slide-varyforte {
+    //top: 3px;
     .banner-slider {
       &__slide-img1 {
         position: absolute;
@@ -318,6 +321,7 @@
   }
 
   &__slide-choco-lite {
+    //top: 3px;
     .banner-slider {
       &__slide-img1 {
         position: absolute;

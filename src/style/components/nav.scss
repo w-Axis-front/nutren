@@ -29,11 +29,15 @@
     padding-left: 46px;
     min-height: 84px;
     max-width: 1200px;
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 100%;
     opacity: 0.8;
     background-color: $lightColor;
     border-radius: 57px;
+    transition: .3s;
+    position: relative;
+    left: calc(50% - 600px);
+    margin: 0;
   }
 
   &__logo-wrap {
@@ -44,6 +48,13 @@
     display: block;
     //margin-right: 178px;
     max-height: 40px;
+    transition: .3s;
+  }
+
+  &__logo-img-collapsed {
+    width: 100%;
+    display: none;
+    height: auto;
   }
 
   &__wrap-menu {
@@ -52,9 +63,9 @@
     align-items: center;
     flex-grow: 1;
     padding-left: 178px;
-    //padding-left: 21%;
     margin-right: 53px;
   }
+
 
   //&__menu {
   //  display: flex;
@@ -120,6 +131,7 @@
     display: flex;
     align-items: center;
     margin-right: 58px;
+    user-select: none;
   }
 
   &__lang-current {
@@ -164,6 +176,7 @@
       width: 100%;
       background: $lightColor;
       color: $mainColor;
+      transition: .3s;
 
       &:visited {
         background: $lightColor;
@@ -180,6 +193,9 @@
 
 @media screen and (max-width: $xl) {
   .nav {
+    &__wrap {
+      left: 0;
+    }
     &__wrap-menu {
       padding-left: 46px;
       margin-right: 0;
@@ -187,6 +203,26 @@
 
     &__lang {
       margin-right: 46px;
+    }
+  }
+}
+
+.nav__wrap.collapsed {
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  //left: calc(50% - 600px);
+  //margin: 0;
+  max-width: 84px;
+
+  .nav {
+    &__logo-wrap {
+      padding-top: 0;
+    }
+
+    &__logo {
+      width: 51px;
+      min-height: 37px;
     }
   }
 }
@@ -239,11 +275,13 @@
     &__burger-line::after {
       content: '';
       top: 11px;
+      transition: .1s;
     }
 
     &__burger-line::before {
       content: '';
       top: -11px;
+      transition: .1s;
     }
 
     &__burger-line,
@@ -282,9 +320,11 @@
       line-height: 16px;
       font-size: 16px;
       padding: 22px 0;
+
       &:first-of-type {
         padding-top: 52px;
       }
+
       &:nth-last-of-type(2) {
         padding-bottom: 42px;
       }
@@ -308,6 +348,7 @@
         }
       }
     }
+
     &__lang-list {
       display: none;
       text-align: left;
@@ -323,9 +364,11 @@
       display: inline-block;
       height: 100%;
       width: 100%;
+
       &:first-of-type {
         padding-top: 6px;
       }
+
       a {
         padding-left: 13px;
         display: inline-block;
@@ -336,6 +379,7 @@
         width: 100%;
         background: $lightColor;
         color: $mainColor;
+        transition: .3s;
 
         &:last-of-type {
           padding-bottom: 5px;
@@ -356,29 +400,37 @@
 }
 
 @media screen and (max-width: $xs) {
-.nav {
-  &__wrap {
-    padding-left: 15px;
-    min-height: 60px;
-  }
-  &__logo-wrap {
-    padding-top: 0;
-    display: flex;
-    align-items: center;
-  }
-  &__logo {
-    max-height: 29px;
-    display: block;
-  }
-  &__logo-img {
-    width: 135px;
-    height: auto;
-  }
-  &__burger {
-    right: 15px;
+  .nav {
+    &__wrap {
+      padding-left: 15px;
+      min-height: 60px;
+    }
+
+    &__logo-wrap {
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      max-height: 29px;
+    }
+
+    &__logo-img {
+      width: 135px;
+      height: auto;
+    }
+
+    &__logo-collapsed {
+      display: none;
+    }
+
+    &__burger {
+      right: 15px;
+    }
   }
 }
-}
+
 /*********** NAV END *************/
 //$xl: 1199px
 //$container-xl: 1140px
