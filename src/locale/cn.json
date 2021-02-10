@@ -72,7 +72,7 @@
       "slide_class": "varyforte",
       "slide_bg_text": "Varyforte",
       "slide_bg_subtext": "Cardio NRJ",
-      "slide_bg_subtext-next": "Choco Lite",
+      "slide_bg_subtext_next": "Choco Lite",
       "slide_text": "Крем для лечения варикоза без побочных эффектов.",
       "slide_img1": {"data-lazy": "/img/banner/keto_1.png", "alt": "Varyforte product example", "srcset": "/img/banner/keto_1@2x.png 2x"},
       "slide_img2": {"data-lazy": "/img/banner/keto_2.png", "alt": "Varyforte", "srcset": "/img/banner/keto_2@2x.png 2x"},

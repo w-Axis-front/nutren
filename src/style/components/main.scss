@@ -20,7 +20,6 @@
 .produce {
   padding-left: 95px;
   position: relative;
-  overflow: hidden;
 
   &__content {
     max-width: 425px;
@@ -107,6 +106,12 @@
 
   &__link-img {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: $xx-slider) {
+  .produce {
+    overflow: hidden;
   }
 }
 

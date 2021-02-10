@@ -90,16 +90,12 @@ body
   &:-moz-ui-invalid
     box-shadow: none
 
-  &:invalid:focus:placeholder-shown
+  &:invalid:focus:placeholder-shown, &:invalid:focus:not(:placeholder-shown), &:invalid:not(:focus):not(:placeholder-shown)
     border: 2px solid $errorColor
 
     & ~ .label
       color: $errorColor
       opacity: 1
-// When input is NOT empty & NOT in focus & NOT valid
-//&:invalid:not(:focus):not(:placeholder-shown)
-// When that invalid input becomes in focus (and also still isn't empty)
-//&:invalid:focus:not(:placeholder-shown)
 
 .divider
   height: 1px

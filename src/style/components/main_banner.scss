@@ -1,11 +1,18 @@
 /***********MAIN BANNER*************/
 #js_banner-slider {
-  transition: 0.8s background-color;
-  //overflow-y: hidden;
+  transition: background-color 0.6s linear;
+  background-color: $ostelife-bg;
+
 }
 
 .slick-slider {
   //overflow-y: hidden;
+
+}
+
+.slick-slider div {
+  // For fixing infinite slider jumping issue from last to firs:
+  transition: none;
 }
 
 // ограничивающая оболочка:
@@ -15,6 +22,7 @@
 
 // лента слайдов:
 .slick-track {
+
 }
 
 .slick-arrow {
@@ -24,31 +32,41 @@
   height: 30px;
 }
 
+.slick-slide {
+  // For fixing infinite slider jumping issue from last to firs:
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
 .slick-slide.slick-current {
-  //overflow-y: hidden;
+  // For fixing infinite slider jumping issue from last to firs:
+  opacity: 1;
 
   .banner-slider {
     &__slide-ostelife {
-      overflow-y: hidden;
-      background-color: $ostelife-bg;
     }
 
     &__slide-keto-light {
-      overflow-y: hidden;
+
     }
 
     &__slide-cardio-nrj {
-      overflow-y: hidden;
+
     }
 
     &__slide-varyforte {
-      overflow-y: hidden;
+
     }
 
     &__slide-choco-lite {
-      overflow-y: hidden;
+
     }
   }
+}
+
+.slick-slide.slick-current-clone-animate {
+  // For fixing infinite slider jumping issue from last to firs:
+  opacity: 1;
 }
 
 .banner-slider {
@@ -72,6 +90,7 @@
     min-height: 596px;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   &__slide-bg-text {
@@ -231,30 +250,29 @@
   }
 
   &__slide-cardio-nrj {
-    //top: 3px;
     .banner-slider {
       &__slide-img1 {
         position: absolute;
-        //left: 288px;
-        left: 15%;
-        top: 111px;
-        transform: translateX(-15%);
+        //left: 327px;
+        left: 17%;
+        top: 90px;
+        transform: translateX(0);
       }
 
       &__slide-img2 {
         position: absolute;
-        //left: 342px;
-        left: 18%;
-        top: -23px;
-        transform: translateX(-18%);
+        //left: 364px;
+        left: 19%;
+        top: -63px;
+        transform: translateX(0);
       }
 
       &__slide-img3 {
         position: absolute;
-        //right: 255px;
-        right: 13%;
-        top: 79px;
-        transform: translateX(-13%);
+        //right: 154px;
+        right: 8%;
+        top: 46px;
+        transform: translateX(0);
       }
 
       &__slide-bg-text {
@@ -265,8 +283,9 @@
       }
 
       &__slide-content {
-        left: 51%;
-        transform: translateX(-51%);
+        //left: 1038px;
+        left: 54%;
+        transform: translateX(0);
       }
 
       &__slide-title {
@@ -276,75 +295,29 @@
   }
 
   &__slide-varyforte {
-    //top: 3px;
     .banner-slider {
       &__slide-img1 {
         position: absolute;
-        //left: 364px;
-        left: 15%;
-        top: 155px;
-        transform: translateX(-15%);
+        //left: 365px;
+        left: 19%;
+        top: 104px;
+        transform: translateX(0);
       }
 
       &__slide-img2 {
         position: absolute;
-        //left: 515px;
-        left: 30%;
-        top: 78px;
-        transform: translateX(-30%);
+        //left: 332px;
+        left: 16.5%;
+        top: -35px;
+        transform: translateX(0);
       }
 
       &__slide-img3 {
         position: absolute;
-        //right: 35px;
-        right: 2%;
-        top: -66px;
-        transform: translateX(-2%);
-      }
-
-      &__slide-bg-text {
-        font-size: 200px;
-        line-height: 200px;
-        top: 168px;
-      }
-
-      &__slide-content {
-        //left: 1038px
-        left: 54%;
-        transform: translateX(-54%);
-      }
-
-      &__slide-title {
-        color: $varyforte;
-      }
-    }
-  }
-
-  &__slide-choco-lite {
-    //top: 3px;
-    .banner-slider {
-      &__slide-img1 {
-        position: absolute;
-        //left: 288px;
-        left: 15%;
-        top: 111px;
-        transform: translateX(-15%);
-      }
-
-      &__slide-img2 {
-        position: absolute;
-        //left: 342px;
-        left: 18%;
-        top: -23px;
-        transform: translateX(-18%);
-      }
-
-      &__slide-img3 {
-        position: absolute;
-        //right: 255px;
-        right: 13%;
-        top: 79px;
-        transform: translateX(-13%);
+        //right: 207px;
+        right: 11%;
+        top: 45px;
+        transform: translateX(0);
       }
 
       &__slide-bg-text {
@@ -354,8 +327,53 @@
       }
 
       &__slide-content {
-        left: 51%;
-        transform: translateX(-51%);
+        //left: 1038px
+        left: 54%;
+        transform: translateX(0);
+      }
+
+      &__slide-title {
+        color: $varyforte;
+      }
+    }
+  }
+
+  &__slide-choco-lite {
+    .banner-slider {
+      &__slide-img1 {
+        position: absolute;
+        //left: 322px;
+        left: 17%;
+        top: -44px;
+        transform: translateX(0);
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        //left: 319px;
+        left: 16.5%;
+        top: 19px;
+        transform: translateX(0);
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        //right: 191px;
+        right: 10%;
+        top: 39px;
+        transform: translateX(0);
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 200px;
+        top: 128px;
+      }
+
+      &__slide-content {
+        //left: 1016px
+        left: 53%;
+        transform: translateX(0);
       }
 
       &__slide-title {
@@ -366,14 +384,387 @@
 }
 
 
-@media screen and (max-width: $xx) {
+@media screen and (max-width: $xx) {}
+
+// max 1679px
+@media screen and (max-width: $xx-slider) {
+  .slick-arrow {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $lightColor;
+    text-align: center;
+  }
+  .banner-slider {
+    &__arrow-img {
+      height: 25px;
+      width: auto;
+    }
+
+    &__slide {
+      .banner-slider {
+        &__slide-img1 {
+          display: none;
+        }
+        &__slide-img2 {
+          left: 0;
+          transform: translateX(-50px);
+        }
+
+        &__slide-img3 {
+          right: 0;
+          transform: translateX(-90px);
+        }
+      }
+    }
+
+    &__slide-keto-light {
+      .banner-slider {
+        &__slide-img2 {
+          left: 6%;
+          transform: translateX(-6%);
+        }
+
+        &__slide-img3 {
+          right: 0;
+          transform: translateX(130px);
+        }
+      }
+    }
+
+    &__slide-cardio-nrj {
+      .banner-slider {
+        &__slide-img2 {
+          left: 0;
+          transform: translateX(-120px);
+        }
+
+        &__slide-img3 {
+          right: 0;
+          transform: translateX(-20px);
+        }
+        &__slide-content {
+          left: 42%;
+        }
+      }
+    }
+
+    //&__slide-varyforte {
+    //  .banner-slider {
+    //    &__slide-img2 {
+    //      left: 30%;
+    //      transform: translateX(-30%);
+    //    }
+    //
+    //    &__slide-img3 {
+    //      right: 2%;
+    //      transform: translateX(-2%);
+    //    }
+    //  }
+    //}
+    //
+    //&__slide-choco-lite {
+    //  .banner-slider {
+    //    &__slide-img2 {
+    //      left: 18%;
+    //      transform: translateX(-18%);
+    //    }
+    //
+    //    &__slide-img3 {
+    //      right: 13%;
+    //      transform: translateX(-13%);
+    //    }
+    //  }
+    //}
+  }
+}
+
+// max 1199px
+@media screen and (max-width: $xl) {
+  .banner-slider {
+    &__prev {
+      left: 1.5%;
+      transform: translate(-1.5%, -50%);
+    }
+
+    &__next {
+      right: 1.5%;
+      transform: translate(-1.5%, -50%);
+    }
+
+    &__slide {
+      .banner-slider {
+        &__slide-bg-text {
+          font-size: 150px;
+          top: 200px;
+        }
+
+        &__slide-bg-sub {
+          font-size: 60px;
+          top: 190px;
+        }
+
+        &__slide-img2 {
+          transform: translateX(-225px);
+        }
+
+        &__slide-img3 {
+          transform: translateX(60px);
+        }
+      }
+    }
+
+    &__slide-ostelife {
+      .banner-slider {
+        &__slide-bg-text {
+          top: 126px;
+        }
+
+        &__slide-bg-sub {
+          top: 183px;
+        }
+      }
+    }
+
+    &__slide-keto-light {
+      .banner-slider {
+        &__slide-img2 {
+          left: 0;
+          transform: translateX(-85px);
+        }
+
+        &__slide-img3 {
+          transform: translateX(300px);
+        }
+      }
+    }
+
+    &__slide-cardio-nrj {
+      .banner-slider {
+        //    &__slide-img2 {
+        //      left: 18%;
+        //      transform: translateX(-18%);
+        //    }
+        //
+        //    &__slide-img3 {
+        //      right: 13%;
+        //      transform: translateX(-13%);
+        //    }
+      }
+    }
+
+    &__slide-varyforte {
+      .banner-slider {
+        &__slide-bg-text {
+          top: 126px;
+        }
+
+        &__slide-bg-sub {
+          top: 183px;
+        }
+      }
+
+      //    &__slide-img2 {
+      //      left: 30%;
+      //      transform: translateX(-30%);
+      //    }
+      //
+      //    &__slide-img3 {
+      //      right: 2%;
+      //      transform: translateX(-2%);
+      //    }
+
+    }
+
+    &__slide-choco-lite {
+      .banner-slider {
+        &__slide-bg-text {
+          top: 126px;
+        }
+
+        &__slide-bg-sub {
+          top: 183px;
+        }
+
+        //    &__slide-img2 {
+        //      left: 18%;
+        //      transform: translateX(-18%);
+        //    }
+        //
+        //    &__slide-img3 {
+        //      right: 13%;
+        //      transform: translateX(-13%);
+        //    }
+
+      }
+    }
+  }
+}
+
+// max 991px
+@media screen and (max-width: $lg) {
+  .slick-arrow {
+    top: initial;
+    bottom: 20px;
+    height: initial;
+    width: initial;
+    border-radius: initial;
+    background-color: transparent;
+  }
+  .banner-slider {
+    &__arrow-img {
+      height: 20px;
+    }
+
+    &__prev {
+      left: 40%;
+      transform: translate(0%, 0%);
+    }
+
+    &__next {
+      right: 40%;
+      transform: translate(0%, 0%);
+    }
+
+    &__slide {
+      min-height: 522px;
+
+      .banner-slider {
+
+        &__slide-img1 {
+          display: block;
+          height: 295px;
+          width: auto;
+          top: 200px;
+          right: 0;
+          left: initial;
+          transform: translateX(86px);
+        }
+
+        &__slide-img2 {
+          width: 486px;
+          height: auto;
+          transform: translateX(-41%);
+          top: 165px;
+        }
+
+        &__slide-img3 {
+          display: none;
+        }
+      }
+    }
+
+    &__slide-ostelife {
+      .banner-slider {
+        //&__slide-bg-text {
+        //  top: 126px;
+        //}
+        //
+        //&__slide-bg-sub {
+        //  top: 183px;
+        //}
+      }
+    }
+
+    &__slide-keto-light {
+      .banner-slider {
+        &__slide-img2 {
+          width: 397px;
+          transform: translateX(-130px);
+        }
+
+        &__slide-img1 {
+          height: 248px;
+          transform: translateX(45px);
+        }
+      }
+    }
+
+    &__slide-cardio-nrj {
+      .banner-slider {
+        &__slide-img2 {
+          width: 490px;
+          transform: translateX(-174px);
+          top: 92px;
+        }
+
+        &__slide-img1 {
+          height: 248px;
+          transform: translateX(105px);
+        }
+      }
+    }
+
+    &__slide-varyforte {
+      .banner-slider {
+        &__slide-img2 {
+          //width: 397px;
+          //transform: translateX(-130px);
+        }
+
+        &__slide-img1 {
+          height: 248px;
+          transform: translateX(45px);
+        }
+      }
+    }
+
+    &__slide-choco-lite {
+      .banner-slider {
+        &__slide-img2 {
+          //width: 397px;
+          //transform: translateX(-130px);
+        }
+
+        &__slide-img1 {
+          height: 248px;
+          transform: translateX(45px);
+        }
+      }
+    }
+  }
+}
+
+// max 575px
+@media screen and (max-width: $xs) {
   .banner-slider {
     &__slide {
-      .banner-slider__slide-img1 {
-        display: none;
+      .banner-slider {
+        &__slide-bg-text {
+          top: initial;
+          bottom: 144px;
+          font-size: 120px;
+          line-height: 100px;
+          letter-spacing: 5px;
+        }
+
+        &__slide-bg-sub {
+          display: none;
+        }
+
+        &__slide-content {
+          max-width: 100%;
+          position: static;
+          transform: translateX(0%);
+          padding: 76px 15px 0 15px;
+        }
+
+        &__slide-title {
+          padding-bottom: 5px;
+        }
+
+        &__slide-text {
+          line-height: 24px;
+        }
       }
     }
   }
 }
 
 /***********MAIN BANNER END*************/
+//$xl: 1199px
+//$container-xl: 1140px
+//$lg: 991px
+//$md: 767px
+//$xs: 575px
+//$xxs: 360px

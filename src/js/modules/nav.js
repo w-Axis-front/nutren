@@ -65,7 +65,7 @@ export default function nav() {
         if (media_check_min.matches) {
             burgerNav.hide();
             dropdownContent.stop().slideUp(10);
-            // $(".nav__wrap-menu").css("display", "flex");
+            // wrapNav..stop().css("display", "flex");
             if (burger_button) {
                 burger_button.classList.remove('nav__burger--active');
             }
