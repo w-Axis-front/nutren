@@ -86,6 +86,7 @@
 
   &__input-massage {
     margin-bottom: 35px;
+    resize: none;
   }
 
   &__form-btn {
@@ -142,9 +143,7 @@
   .contacts {
     padding: 60px 15px 0 15px;
     &__form-btn {
-      //display: inline-block;
       width: 100%;
-      //margin: 0 auto 70px auto;
     }
   }
 }

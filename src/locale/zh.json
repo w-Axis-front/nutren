@@ -1,5 +1,5 @@
 {
-  "locale": "cn",
+  "locale": "zh",
   "nav": {
     "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Nutren logo"},
     "nav_logo_collapsed": {"src": "/img/svg/logo-small.svg", "alt": "Logo"},
@@ -27,10 +27,10 @@
     "main_lang": "Cn",
     "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
     "lang2": "En",
-    "lang2_path": "#",
+    "lang2_path": "/en/",
     "lang2_pathlang": "en",
     "lang1": "Ru",
-    "lang1_path": "#",
+    "lang1_path": "/",
     "lang1_pathlang": "ru"
   },
   "banner_slider": [
@@ -41,9 +41,9 @@
       "slide_bg_subtext": "Choco Lite",
       "slide_bg_subtext_next": "Keto light +",
       "slide_text": "Натуральный крем для лечения суставов и связок.",
-      "slide_img1": {"data-lazy": "/img/banner/ostelife_1.png", "alt": "Ostelife product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
-      "slide_img2": {"data-lazy": "/img/banner/ostelife_2.png", "alt": "Ostelife", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
-      "slide_img3": {"data-lazy": "/img/banner/ostelife_3.png", "alt": "Ostelife product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
+      "slide_img1": {"lazy-load": "/img/banner/ostelife_1.png", "alt": "Ostelife product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
+      "slide_img2": {"lazy-load": "/img/banner/ostelife_2.png", "alt": "Ostelife", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
+      "slide_img3": {"lazy-load": "/img/banner/ostelife_3.png", "alt": "Ostelife product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
     },
     {
       "slide_title": "Keto light +",
@@ -52,9 +52,9 @@
       "slide_bg_subtext": "Ostelife",
       "slide_bg_subtext_next": "Cardio NRJ",
       "slide_text": "Коктейль-активатор кетоновых тел для похудения.",
-      "slide_img1": {"data-lazy": "/img/banner/keto_1.png", "alt": "Keto light + product example", "srcset": "/img/banner/keto_1@2x.png 2x"},
-      "slide_img2": {"data-lazy": "/img/banner/keto_2.png", "alt": "Keto light +", "srcset": "/img/banner/keto_2@2x.png 2x"},
-      "slide_img3": {"data-lazy": "/img/banner/keto_3.png", "alt": "Keto light + product", "srcset": "/img/banner/keto_3@2x.png 2x"}
+      "slide_img1": {"lazy-load": "/img/banner/keto_1.png", "alt": "Keto light + product example", "srcset": "/img/banner/keto_1@2x.png 2x"},
+      "slide_img2": {"lazy-load": "/img/banner/keto_2.png", "alt": "Keto light +", "srcset": "/img/banner/keto_2@2x.png 2x"},
+      "slide_img3": {"lazy-load": "/img/banner/keto_3.png", "alt": "Keto light + product", "srcset": "/img/banner/keto_3@2x.png 2x"}
     },
     {
       "slide_title": "Cardio NRJ",
@@ -63,9 +63,9 @@
       "slide_bg_subtext": "Keto light +",
       "slide_bg_subtext_next": "Varyforte",
       "slide_text": "Таблетки для профилактики заболеваний сердца.",
-      "slide_img1": {"data-lazy": "/img/banner/ostelife_1.png", "alt": "Cardio NRJ product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
-      "slide_img2": {"data-lazy": "/img/banner/ostelife_2.png", "alt": "Cardio NRJ", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
-      "slide_img3": {"data-lazy": "/img/banner/ostelife_3.png", "alt": "Cardio NRJ product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
+      "slide_img1": {"lazy-load": "/img/banner/CardioNRJ_1.png", "alt": "Cardio NRJ product example", "srcset": "/img/banner/CardioNRJ_1@2x.png 2x"},
+      "slide_img2": {"lazy-load": "/img/banner/CardioNRJ_2.png", "alt": "Cardio NRJ", "srcset": "/img/banner/CardioNRJ_2@2x.png 2x"},
+      "slide_img3": {"lazy-load": "/img/banner/CardioNRJ_3.png", "alt": "Cardio NRJ product", "srcset": "/img/banner/CardioNRJ_3@2x.png 2x"}
     },
     {
       "slide_title": "Varyforte",
@@ -74,9 +74,9 @@
       "slide_bg_subtext": "Cardio NRJ",
       "slide_bg_subtext_next": "Choco Lite",
       "slide_text": "Крем для лечения варикоза без побочных эффектов.",
-      "slide_img1": {"data-lazy": "/img/banner/keto_1.png", "alt": "Varyforte product example", "srcset": "/img/banner/keto_1@2x.png 2x"},
-      "slide_img2": {"data-lazy": "/img/banner/keto_2.png", "alt": "Varyforte", "srcset": "/img/banner/keto_2@2x.png 2x"},
-      "slide_img3": {"data-lazy": "/img/banner/keto_3.png", "alt": "Varyforte product", "srcset": "/img/banner/keto_3@2x.png 2x"}
+      "slide_img1": {"lazy-load": "/img/banner/varyforte_1.png", "alt": "Varyforte product example", "srcset": "/img/banner/varyforte_1@2x.png 2x"},
+      "slide_img2": {"lazy-load": "/img/banner/varyforte_2.png", "alt": "Varyforte", "srcset": "/img/banner/varyforte_2@2x.png 2x"},
+      "slide_img3": {"lazy-load": "/img/banner/varyforte_3.png", "alt": "Varyforte product", "srcset": "/img/banner/varyforte_3@2x.png 2x"}
     },
     {
       "slide_title": "Choco Lite",
@@ -85,23 +85,23 @@
       "slide_bg_subtext": "Varyforte",
       "slide_bg_subtext_next": "Ostelife",
       "slide_text": "Энергетический коктейль для похудения со вкусом шоколада.",
-      "slide_img1": {"data-lazy": "/img/banner/ostelife_1.png", "alt": "Choco Lite product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
-      "slide_img2": {"data-lazy": "/img/banner/ostelife_2.png", "alt": "Choco Lite", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
-      "slide_img3": {"data-lazy": "/img/banner/ostelife_3.png", "alt": "Choco Lite product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
+      "slide_img1": {"lazy-load": "/img/banner/choco-lite_1.png", "alt": "Choco Lite product example", "srcset": "/img/banner/choco-lite_1@2x.png 2x"},
+      "slide_img2": {"lazy-load": "/img/banner/choco-lite_2.png", "alt": "Choco Lite", "srcset": "/img/banner/choco-lite_2@2x.png 2x"},
+      "slide_img3": {"lazy-load": "/img/banner/choco-lite_3.png", "alt": "Choco Lite product", "srcset": "/img/banner/choco-lite_3@2x.png 2x"}
     }
   ],
   "main": {
     "main_header": "Nutren — производитель косметики и биодобавок",
     "main_text1": "Разрабатываем формулу. Производим продукт. Упаковываем. Исследуем рынок. Создаем бренд. Оформляем документы.",
     "main_text2": "Все продукты сертифицированы в Китае.",
-    "main_img": {"src": "/img/main/main.png", "alt": "Choco Lite product example", "srcset": "/img/main/main@2x.png 2x"},
+    "main_img": {"src": "/img/main/main.png", "alt": "Nutren manufacturer", "srcset": "/img/main/main@2x.png 2x"},
     "produce_header": "Производим свои продукты",
     "produce_text1": "Разрабатываем и производим крема и БАДы под своими марками. Успешно продаем их в Китае и по всему миру, завоевывая доверие покупателей.",
     "produce_text2": "Среди наших продуктов — такие популярные средства, как коктейль для похудения Keto Light+, крем для суставов Ostelife, средство от паразитов Germixil и другие.",
     "produce_link": "Все продукты Nutren",
     "produce_path": "products.html",
     "produce_link_img": {"src": "/img/svg/link-arrow.svg", "alt": "Link arrow"},
-    "produce_img": {"src": "/img/main/produce.png", "alt": "Choco Lite product example", "srcset": "/img/main/produce@2x.png 2x"},
+    "produce_img": {"src": "/img/main/produce.png", "alt": "Nutren products", "srcset": "/img/main/produce@2x.png 2x"},
     "order_header": "Создадим продукт для вас",
     "order_text1": "Неважно, есть у вас продукт, формула или только идея. Мы поможем на любом этапе: от подбора компонентов — до проведения клинических испытаний, от производства — до разработки дизайна упаковки. ",
     "order_text2": "Вы получите полностью готовый к продаже товар — интересный потребителям, с доказанной эффективностью, а также всеми необходимыми разрешениями и сертификатами.",
