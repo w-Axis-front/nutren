@@ -1,7 +1,7 @@
 $mainColor: #8BC34A
 $mainHover: #8BC53F
 $textColor: #231F20
-$textColorTransparent: rgba(35, 31, 32, 0.5)
+$textColorTransparent: rgba(35, 31, 32, 0.7)
 $lightColor: #fff
 $lightColor1: #A29090
 $borderColor: #ECECEC
@@ -22,15 +22,33 @@ $varyforte: #D854A3
 $varyforte-bg: rgba(246, 208, 231, 0.4)
 $choco-lite: #A56317
 $choco-lite-bg: rgba(208, 149, 106, 0.2)
-$xx: 1919px
+$xx: 1919.9px
 //$xx-slider: 1679px
-$xx-slider: 1899px
-$xl: 1199px
+$xx-slider: 1899.99px
+$xl: 1199.9px
 $container-xl: 1140px
-$lg: 991px
+$lg: 991.9px
 //$container-lg: 960px
-$md: 767px
+$md: 767.9px
 //$container-md: 720px
-$xs: 575px
+$xs: 575.9px
 //$container-xs: 540px
-$xxs: 360px
+$xxs: 360.9px
+
+// Z-index:
+$base: 1000
+$above: 10 // use this for all values above the base
+$below: -10 // and this for all values below the base
+// Main banner
+$mainBannerBtn: $base
+$slideContent: $below + $base
+$slideImg2: $below + $slideContent
+$slideImg1: $below + $slideImg2
+$slideImg3: $below + $slideImg1
+// NavMenu
+$nav: $above + $base
+//Layout
+$produceContent: $below + $base
+$produceImg: $below + $produceContent
+$contactsImgBg: $below + $base
+$contactsImg: $below + $contactsImgBg

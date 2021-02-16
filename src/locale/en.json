@@ -1,34 +1,30 @@
 {
   "locale": "en",
   "nav": {
-    "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Nutren logo"},
-    "nav_logo_collapsed": {"src": "/img/svg/logo-small.svg", "alt": "Logo"},
+    "nav_logo": {
+      "src": "/img/svg/nav_logo.svg",
+      "alt": "Nutren logo"
+    },
+    "nav_logo_collapsed": {
+      "src": "/img/svg/logo-small.svg",
+      "alt": "Logo"
+    },
     "nav_logo_path": "index.html",
-    "nav_links": [
-      {
-        "nav_link": "Main",
-        "nav_path": "index.html"
-      },
-      {
-        "nav_link": "О нас",
-        "nav_path": "about.html"
-      },
-      {
-        "nav_link": "Продукты",
-        "nav_path": "products.html"
-      },
-      {
-        "nav_link": "Разработка",
-        "nav_path": "development.html"
-      }
-    ],
+    "nav_link1": "Главная",
+    "nav_path1": "index.html",
+    "nav_link2": "О нас",
+    "nav_path2": "about.html",
+    "nav_link3": "Продукты",
+    "nav_path3": "products.html",
+    "nav_link4": "Разработка",
+    "nav_path4": "development.html",
     "nav_link_anchor": "Контакты",
     "nav_link_anchor_path": "#contacts",
     "main_lang": "En",
-    "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
-    "lang2": "Cn",
-    "lang2_path": "/zh/",
-    "lang2_pathlang": "zh",
+    "lang_link_img": {
+      "src": "/img/svg/arrow-down.svg",
+      "alt": "Drop down"
+    },
     "lang1": "Ru",
     "lang1_path": "/",
     "lang1_pathlang": "ru"
@@ -41,9 +37,17 @@
       "slide_bg_subtext": "Choco Lite",
       "slide_bg_subtext_next": "Keto light +",
       "slide_text": "Натуральный крем для лечения суставов и связок.",
-      "slide_img1": {"lazy-load": "/img/banner/ostelife_1.png", "alt": "Ostelife product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
-      "slide_img2": {"lazy-load": "/img/banner/ostelife_2.png", "alt": "Ostelife", "srcset": "/img/banner/ostelife_2@2x.png 2x"},
-      "slide_img3": {"lazy-load": "/img/banner/ostelife_3.png", "alt": "Ostelife product", "srcset": "/img/banner/ostelife_3@2x.png 2x"}
+      "slide_img1": {"data-lazy": "/img/banner/ostelife_1.png", "alt": "Ostelife product example", "srcset": "/img/banner/ostelife_1@2x.png 2x"},
+      "slide_img2": {
+        "data-lazy": "/img/banner/ostelife_2.png",
+        "alt": "Ostelife",
+        "srcset": "/img/banner/ostelife_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "data-lazy": "/img/banner/ostelife_3.png",
+        "alt": "Ostelife product",
+        "srcset": "/img/banner/ostelife_3@2x.png 2x"
+      }
     },
     {
       "slide_title": "Keto light +",
@@ -52,9 +56,21 @@
       "slide_bg_subtext": "Ostelife",
       "slide_bg_subtext_next": "Cardio NRJ",
       "slide_text": "Коктейль-активатор кетоновых тел для похудения.",
-      "slide_img1": {"lazy-load": "/img/banner/keto_1.png", "alt": "Keto light + product example", "srcset": "/img/banner/keto_1@2x.png 2x"},
-      "slide_img2": {"lazy-load": "/img/banner/keto_2.png", "alt": "Keto light +", "srcset": "/img/banner/keto_2@2x.png 2x"},
-      "slide_img3": {"lazy-load": "/img/banner/keto_3.png", "alt": "Keto light + product", "srcset": "/img/banner/keto_3@2x.png 2x"}
+      "slide_img1": {
+        "data-lazy": "/img/banner/keto_1.png",
+        "alt": "Keto light + product example",
+        "srcset": "/img/banner/keto_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "data-lazy": "/img/banner/keto_2.png",
+        "alt": "Keto light +",
+        "srcset": "/img/banner/keto_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "data-lazy": "/img/banner/keto_3.png",
+        "alt": "Keto light + product",
+        "srcset": "/img/banner/keto_3@2x.png 2x"
+      }
     },
     {
       "slide_title": "Cardio NRJ",
@@ -63,9 +79,21 @@
       "slide_bg_subtext": "Keto light +",
       "slide_bg_subtext_next": "Varyforte",
       "slide_text": "Таблетки для профилактики заболеваний сердца.",
-      "slide_img1": {"lazy-load": "/img/banner/CardioNRJ_1.png", "alt": "Cardio NRJ product example", "srcset": "/img/banner/CardioNRJ_1@2x.png 2x"},
-      "slide_img2": {"lazy-load": "/img/banner/CardioNRJ_2.png", "alt": "Cardio NRJ", "srcset": "/img/banner/CardioNRJ_2@2x.png 2x"},
-      "slide_img3": {"lazy-load": "/img/banner/CardioNRJ_3.png", "alt": "Cardio NRJ product", "srcset": "/img/banner/CardioNRJ_3@2x.png 2x"}
+      "slide_img1": {
+        "data-lazy": "/img/banner/CardioNRJ_1.png",
+        "alt": "Cardio NRJ product example",
+        "srcset": "/img/banner/CardioNRJ_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "data-lazy": "/img/banner/CardioNRJ_2.png",
+        "alt": "Cardio NRJ",
+        "srcset": "/img/banner/CardioNRJ_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "data-lazy": "/img/banner/CardioNRJ_3.png",
+        "alt": "Cardio NRJ product",
+        "srcset": "/img/banner/CardioNRJ_3@2x.png 2x"
+      }
     },
     {
       "slide_title": "Varyforte",
@@ -74,9 +102,21 @@
       "slide_bg_subtext": "Cardio NRJ",
       "slide_bg_subtext_next": "Choco Lite",
       "slide_text": "Крем для лечения варикоза без побочных эффектов.",
-      "slide_img1": {"lazy-load": "/img/banner/varyforte_1.png", "alt": "Varyforte product example", "srcset": "/img/banner/varyforte_1@2x.png 2x"},
-      "slide_img2": {"lazy-load": "/img/banner/varyforte_2.png", "alt": "Varyforte", "srcset": "/img/banner/varyforte_2@2x.png 2x"},
-      "slide_img3": {"lazy-load": "/img/banner/varyforte_3.png", "alt": "Varyforte product", "srcset": "/img/banner/varyforte_3@2x.png 2x"}
+      "slide_img1": {
+        "data-lazy": "/img/banner/varyforte_1.png",
+        "alt": "Varyforte product example",
+        "srcset": "/img/banner/varyforte_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "data-lazy": "/img/banner/varyforte_2.png",
+        "alt": "Varyforte",
+        "srcset": "/img/banner/varyforte_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "data-lazy": "/img/banner/varyforte_3.png",
+        "alt": "Varyforte product",
+        "srcset": "/img/banner/varyforte_3@2x.png 2x"
+      }
     },
     {
       "slide_title": "Choco Lite",
@@ -85,9 +125,21 @@
       "slide_bg_subtext": "Varyforte",
       "slide_bg_subtext_next": "Ostelife",
       "slide_text": "Энергетический коктейль для похудения со вкусом шоколада.",
-      "slide_img1": {"lazy-load": "/img/banner/choco-lite_1.png", "alt": "Choco Lite product example", "srcset": "/img/banner/choco-lite_1@2x.png 2x"},
-      "slide_img2": {"lazy-load": "/img/banner/choco-lite_2.png", "alt": "Choco Lite", "srcset": "/img/banner/choco-lite_2@2x.png 2x"},
-      "slide_img3": {"lazy-load": "/img/banner/choco-lite_3.png", "alt": "Choco Lite product", "srcset": "/img/banner/choco-lite_3@2x.png 2x"}
+      "slide_img1": {
+        "data-lazy": "/img/banner/choco-lite_1.png",
+        "alt": "Choco Lite product example",
+        "srcset": "/img/banner/choco-lite_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "data-lazy": "/img/banner/choco-lite_2.png",
+        "alt": "Choco Lite",
+        "srcset": "/img/banner/choco-lite_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "data-lazy": "/img/banner/choco-lite_3.png",
+        "alt": "Choco Lite product",
+        "srcset": "/img/banner/choco-lite_3@2x.png 2x"
+      }
     }
   ],
   "main": {

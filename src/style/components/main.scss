@@ -18,48 +18,48 @@
 }
 
 .produce {
-  padding-left: 95px;
-  position: relative;
+    padding-left: 95px;
+    position: relative;
 
-  &__content {
-    max-width: 425px;
-    padding-top: 120px;
-    margin-bottom: 196px;
-    z-index: 2;
-  }
+    &__content {
+        max-width: 425px;
+        padding-top: 120px;
+        margin-bottom: 196px;
+        z-index: $produceContent;
+    }
 
-  &__header {
-    margin-bottom: 35px;
-  }
+    &__header {
+        margin-bottom: 35px;
+    }
 
-  &__text2 {
-    margin-bottom: 35px;
-  }
+    &__text2 {
+        margin-bottom: 35px;
+    }
 
-  &__link {
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-  }
+    &__link {
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+    }
 
-  &__link-text {
-    display: inline-block;
-    margin-right: 15px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-  }
+    &__link-text {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
 
-  &__link-img {
-    display: inline-block;
-  }
+    &__link-img {
+        display: inline-block;
+    }
 
-  &__img {
-    position: absolute;
-    right: -155px;
-    top: -97px;
-    z-index: 1;
-  }
+    &__img {
+        position: absolute;
+        right: -155px;
+        top: -97px;
+        z-index: $produceImg;
+    }
 }
 
 .order {

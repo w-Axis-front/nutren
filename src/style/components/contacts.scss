@@ -1,97 +1,97 @@
 /*********** contacts *************/
 .contacts {
-  padding-top: 158px;
-  min-height: 1103px;
+    padding-top: 158px;
+    min-height: 1103px;
 
-  &__header {
-    padding-left: 570px;
-    margin-bottom: 50px;
-  }
+    &__header {
+        padding-left: 570px;
+        margin-bottom: 50px;
+    }
 
-  &__block {
-    position: relative;
-    border: 3px solid $mainColor;
-    padding: 60px 192px 60px 570px;
-    margin-bottom: 60px;
-  }
+    &__block {
+        position: relative;
+        border: 3px solid $mainColor;
+        padding: 60px 192px 60px 570px;
+        margin-bottom: 60px;
+    }
 
-  &__block-header {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 35px;
-    margin-bottom: 1em;
-  }
+    &__block-header {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 1em;
+    }
 
-  &__block-text {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 35px;
-    font-family: $font-family;
-    margin-bottom: 1em;
-  }
+    &__block-text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 35px;
+        font-family: $font-family;
+        margin-bottom: 1em;
+    }
 
-  &__block-link {
-    display: block;
-  }
+    &__block-link {
+        display: block;
+    }
 
-  &__social-block {
-    display: flex;
-    align-items: center;
-  }
+    &__social-block {
+        display: flex;
+        align-items: center;
+    }
 
-  &__social-link {
-    display: inline-block;
-    min-width: 42px;
-    min-height: 42px;
-  }
+    &__social-link {
+        display: inline-block;
+        min-width: 42px;
+        min-height: 42px;
+    }
 
-  &__social-link:not(:last-of-type) {
-    margin-right: 35px;
-  }
+    &__social-link:not(:last-of-type) {
+        margin-right: 35px;
+    }
 
-  &__img-bg {
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: -190px;
-  }
+    &__img-bg {
+        position: absolute;
+        z-index: $contactsImgBg;
+        left: 0;
+        top: -190px;
+    }
 
-  &__img {
-    position: absolute;
-    z-index: 1;
-    width: 340px;
-    height: auto;
-    left: 114px;
-    top: -144px;
-  }
+    &__img {
+        position: absolute;
+        z-index: $contactsImg;
+        width: 340px;
+        height: auto;
+        left: 114px;
+        top: -144px;
+    }
 
-  &__form {
-    padding-left: 570px;
-    min-width: 31.5%;
-    width: 100%;
-    padding-right: 95px;
-  }
+    &__form {
+        padding-left: 570px;
+        min-width: 31.5%;
+        width: 100%;
+        padding-right: 95px;
+    }
 
-  &__form-header {
-    margin-bottom: 30px;
-    opacity: 0.8;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 35px;
-  }
+    &__form-header {
+        margin-bottom: 30px;
+        opacity: 0.8;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 35px;
+    }
 
-  &__input-phone {
-    margin-bottom: 20px;
-  }
+    &__input-phone {
+        margin-bottom: 20px;
+    }
 
-  &__input-massage {
-    margin-bottom: 35px;
-    resize: none;
-  }
+    &__input-massage {
+        margin-bottom: 35px;
+        resize: vertical;
+    }
 
-  &__form-btn {
-    margin-bottom: 214px;
-  }
+    &__form-btn {
+        margin-bottom: 214px;
+    }
 }
 
 @media screen and (max-width: $lg) {

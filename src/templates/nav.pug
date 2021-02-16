@@ -7,8 +7,10 @@ header.nav
                 img&attributes(navContent.nav_logo).nav__logo-img
                 img&attributes(navContent.nav_logo_collapsed).nav__logo-img-collapsed
         div.nav__wrap-menu
-            each nav_link in navContent.nav_links
-                a(href=nav_link.nav_path).nav__link= nav_link.nav_link
+            a(href=navContent.nav_path1).nav__link.active-page= navContent.nav_link1
+            a(href=navContent.nav_path2).nav__link= navContent.nav_link2
+            a(href=navContent.nav_path3).nav__link= navContent.nav_link3
+            a(href=navContent.nav_path4).nav__link= navContent.nav_link4
             a(href=navContent.nav_link_anchor_path).button.nav__link_anchor= navContent.nav_link_anchor
         .nav__lang.js_dropdown
             .nav__lang-current.dropdown-toggle
@@ -17,13 +19,13 @@ header.nav
             ul.nav__lang-list.dropdown-menu
                 li.nav__lang-item
                     a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).nav__lang-link= navContent.lang1
-                li.nav__lang-item
-                    a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).nav__lang-link= navContent.lang2
         div.nav__burger
             span.nav__burger-line
     div(height="100%").burger-menu
-        each nav_link in navContent.nav_links
-            a.burger-menu__link(href=nav_link.nav_path)= nav_link.nav_link
+        a(href=navContent.nav_path1).nav__link.active-page= navContent.nav_link1
+        a(href=navContent.nav_path2).nav__link= navContent.nav_link2
+        a(href=navContent.nav_path3).nav__link= navContent.nav_link3
+        a(href=navContent.nav_path4).nav__link= navContent.nav_link4
         a(href=navContent.nav_link_anchor_path).button.nav__link_anchor= navContent.nav_link_anchor
         div
             .burger-menu__lang.js_dropdown
@@ -33,7 +35,3 @@ header.nav
                 ul.burger-menu__lang-list.dropdown-menu
                     li.burger-menu__lang-item
                         a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path)= navContent.lang1
-                    .burger-menu__divider
-                        .divider
-                    li.burger-menu__lang-item
-                        a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path)= navContent.lang2

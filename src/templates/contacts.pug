@@ -21,9 +21,9 @@ section.container#contacts
         form(class="contacts__form" action="/#" method="POST")
             p.contacts__form-header= contacts.text
             .input-block
-                input(class="input contacts__input-phone" id="phone" placeholder=contacts.phone_placeholder type="text" minlength=3 required=true name="phone")
+                input(class="input contacts__input-phone" id="phone" placeholder=contacts.phone_placeholder type="text" tabindex="1" minlength=3 required=true name="phone")
                 label(class="label" for="phone")= contacts.phone_label
             .input-block
-                textarea(class="input contacts__input-massage" id="message" placeholder=contacts.massage_placeholder minlength=3 rows=2 required=true name="message")
+                textarea(class="input contacts__input-massage" id="message" placeholder=contacts.massage_placeholder tabindex="2" minlength=3 rows=2 required=true name="message")
                 label(class="label" for="message")= contacts.massage_label
             button(class="button contacts__form-btn" type="submit")= contacts.button
