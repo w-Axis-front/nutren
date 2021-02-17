@@ -17,49 +17,94 @@
   }
 }
 
+.link-arrow {
+  background-color: transparent;
+  height: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  transition: margin-left .3s ease 0s;
+
+  .svg {
+    fill: $mainColor;
+    transition: fill .3s ease 0s;
+  }
+}
+
 .produce {
-    padding-left: 95px;
-    position: relative;
+  padding-left: 95px;
+  position: relative;
 
-    &__content {
-        max-width: 425px;
-        padding-top: 120px;
-        margin-bottom: 196px;
-        z-index: $produceContent;
+  &__content {
+    max-width: 425px;
+    padding-top: 120px;
+    margin-bottom: 196px;
+    z-index: $produceContent;
+  }
+
+  &__header {
+    margin-bottom: 35px;
+  }
+
+  &__text2 {
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    transition: color .3s ease 0s;
+
+    &:visited {
+      color: $mainColor;
+      .svg {
+        fill: $mainColor;
+      }
     }
 
-    &__header {
-        margin-bottom: 35px;
+    &:hover {
+      color: $bg-hover;
+      .link-arrow {
+        margin-left: 13px;
+
+        .svg {
+          fill: $bg-hover;
+        }
+      }
     }
 
-    &__text2 {
-        margin-bottom: 35px;
-    }
+    &:active {
+      color: $bg-active;
+      .link-arrow {
+        margin-left: 13px;
 
-    &__link {
-        vertical-align: middle;
-        display: flex;
-        align-items: center;
+        .svg {
+          fill: $bg-active;
+        }
+      }
     }
+  }
 
-    &__link-text {
-        display: inline-block;
-        margin-right: 15px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-    }
+  &__link-text {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    &__link-img {
-        display: inline-block;
-    }
+  &__link-img {
+    display: inline-block;
+  }
 
-    &__img {
-        position: absolute;
-        right: -155px;
-        top: -97px;
-        z-index: $produceImg;
-    }
+  &__img {
+    position: absolute;
+    right: -155px;
+    top: -97px;
+    z-index: $produceImg;
+  }
 }
 
 .order {
@@ -92,8 +137,38 @@
   &__link {
     padding-left: 95px;
     vertical-align: middle;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    transition: color .3s ease 0s;
+
+    &:visited {
+      color: $mainColor;
+      .svg {
+        fill: $mainColor;
+      }
+    }
+
+    &:hover {
+      color: $bg-hover;
+      .link-arrow {
+        margin-left: 13px;
+
+        .svg {
+          fill: $bg-hover;
+        }
+      }
+    }
+
+    &:active {
+      color: $bg-active;
+      .link-arrow {
+        margin-left: 13px;
+
+        .svg {
+          fill: $bg-active;
+        }
+      }
+    }
   }
 
   &__link-text {

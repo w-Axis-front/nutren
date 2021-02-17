@@ -5,7 +5,9 @@ footer.footer
         .footer__block
             a(class="footer__logo" href=footerContent.logo_path)
                 img(class="footer__logo-img")&attributes(footerContent.logo)
-            p.footer__text= footerContent.text
+            .footer__text-block
+                p.footer__text= footerContent.text
+                a(href=footerContent.link_path target="blank").footer__link= footerContent.link
             a(class="footer__up-link" href=footerContent.back_path)
                 span.footer__up-link-text= footerContent.back_btn
                 img(class="contacts__up-link-img")&attributes(footerContent.back_btn_img)

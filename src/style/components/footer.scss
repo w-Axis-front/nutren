@@ -20,13 +20,41 @@
     width: auto;
   }
 
+  &__text-block {
+    text-align: center;
+  }
+
   &__text {
-    display: inline-block;
     color: $textColor;
     opacity: 0.8;
     font-family: $font-family;
     font-size: 16px;
     line-height: 25px;
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 auto;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: underline;
+    color: $mainHover;
+    opacity: 0.8;
+    transition: color .3s ease 0s;
+    text-transform: capitalize;
+
+    &:visited {
+      color: $mainHover;
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    &:hover, &:active {
+      color: $bg-hover;
+      text-decoration: none;
+    }
   }
 
   &__up-link {
@@ -37,6 +65,7 @@
     opacity: 0.8;
     font-size: 20px;
     line-height: 35px;
+    transition: color .3s ease 0s;
   }
 
   &__up-link-text {
@@ -57,7 +86,7 @@
 
 @media screen and (max-width: $lg) {
   .footer {
-    padding: 50px 15px 87px 15px;
+    padding: 50px 15px 47px 15px;
     &__block {
       flex-direction: column;
       justify-content: flex-start;
@@ -68,14 +97,24 @@
       margin-bottom: 58px;
     }
 
-    &__text {
+    &__text-block {
       order: 3;
+    }
+
+    &__text {
+      margin-bottom: 15px;
     }
 
     &__up-link {
       order: 1;
       margin-bottom: 40px;
     }
+  }
+}
+
+@media screen and (max-width: $xxs) {
+  .footer__text {
+    max-width: 168px;
   }
 }
 /*********** footer END *************/

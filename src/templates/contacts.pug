@@ -10,12 +10,9 @@ section.container#contacts
             a(class="link contacts__block-text contacts__block-link" href=contacts.email_path)= contacts.email
             a(class="link contacts__block-text contacts__block-link" href=contacts.phone_path)= contacts.phone
             .contacts__social-block
-                a(class="link contacts__social-link" href=contacts.WhatsApp_path)
-                    img&attributes(contacts.WhatsApp_img)
-                a(class="link contacts__social-link" href=contacts.WeChat_path)
-                    img&attributes(contacts.WeChat_img)
-                a(class="link contacts__social-link" href=contacts.Viber_path)
-                    img&attributes(contacts.Viber_img)
+                a(class="link contacts__social-link contacts__whatsapp" href=contacts.WhatsApp_path)
+                a(class="link contacts__social-link contacts__wechat" href=contacts.WeChat_path)
+                a(class="link contacts__social-link contacts__viber" href=contacts.Viber_path)
             img(class="contacts__img-bg")&attributes(contacts.img_bg)
             img(class="contacts__img")&attributes(contacts.img)
         form(class="contacts__form" action="/#" method="POST")

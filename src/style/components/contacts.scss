@@ -1,130 +1,189 @@
 /*********** contacts *************/
 .contacts {
-    padding-top: 158px;
-    min-height: 1103px;
+  padding-top: 158px;
+  min-height: 1103px;
 
-    &__header {
-        padding-left: 570px;
-        margin-bottom: 50px;
+  &__header {
+    padding-left: 570px;
+    margin-bottom: 50px;
+  }
+
+  &__block {
+    position: relative;
+    border: 3px solid $mainColor;
+    padding: 60px 192px 60px 570px;
+    margin-bottom: 60px;
+  }
+
+  &__block-header {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 1em;
+  }
+
+  &__block-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: $font-family;
+    margin-bottom: 1em;
+  }
+
+  &__block-link {
+    display: block;
+  }
+
+  &__social-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+  }
+
+  &__social-link:not(:last-of-type) {
+    margin-right: 35px;
+  }
+
+  &__whatsapp {
+    background: transparent url('../img/svg/whatsapp.svg') 50%/contain no-repeat;
+    transition: background .3s ease 0s;
+
+    &:visited {
+      background: transparent url('../img/svg/whatsapp.svg') 50%/contain no-repeat;
     }
 
-    &__block {
-        position: relative;
-        border: 3px solid $mainColor;
-        padding: 60px 192px 60px 570px;
-        margin-bottom: 60px;
+    &:hover {
+      background: transparent url('../img/svg/whatsapp-hover.svg') 50%/contain no-repeat;
     }
 
-    &__block-header {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 35px;
-        margin-bottom: 1em;
+    &:active {
+      background: transparent url('../img/svg/whatsapp-active.svg') 50%/contain no-repeat;
+    }
+  }
+
+  &__wechat {
+    background: transparent url('../img/svg/wechat.svg') 50%/contain no-repeat;
+    transition: background .3s ease 0s;
+
+    &:visited {
+      background: transparent url('../img/svg/wechat.svg') 50%/contain no-repeat;
     }
 
-    &__block-text {
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 35px;
-        font-family: $font-family;
-        margin-bottom: 1em;
+    &:hover {
+      background: transparent url('../img/svg/wechat-hover.svg') 50%/contain no-repeat;
     }
 
-    &__block-link {
-        display: block;
+    &:active {
+      background: transparent url('../img/svg/wechat-active.svg') 50%/contain no-repeat;
+    }
+  }
+
+  &__viber {
+    background: transparent url('../img/svg/viber.svg') 50%/contain no-repeat;
+    transition: background .3s ease 0s;
+
+    &:visited {
+      background: transparent url('../img/svg/viber.svg') 50%/contain no-repeat;
     }
 
-    &__social-block {
-        display: flex;
-        align-items: center;
+    &:hover {
+      background: transparent url('../img/svg/viber-hover.svg') 50%/contain no-repeat;
     }
 
-    &__social-link {
-        display: inline-block;
-        min-width: 42px;
-        min-height: 42px;
+    &:active {
+      background: transparent url('../img/svg/viber-active.svg') 50%/contain no-repeat;
     }
+  }
 
-    &__social-link:not(:last-of-type) {
-        margin-right: 35px;
-    }
+  &__img-bg {
+    position: absolute;
+    z-index: $contactsImgBg;
+    left: 0;
+    top: -190px;
+  }
 
-    &__img-bg {
-        position: absolute;
-        z-index: $contactsImgBg;
-        left: 0;
-        top: -190px;
-    }
+  &__img {
+    position: absolute;
+    z-index: $contactsImg;
+    width: 340px;
+    height: auto;
+    left: 114px;
+    top: -144px;
+  }
 
-    &__img {
-        position: absolute;
-        z-index: $contactsImg;
-        width: 340px;
-        height: auto;
-        left: 114px;
-        top: -144px;
-    }
+  &__form {
+    padding-left: 570px;
+    min-width: 31.5%;
+    width: 100%;
+    padding-right: 95px;
+  }
 
-    &__form {
-        padding-left: 570px;
-        min-width: 31.5%;
-        width: 100%;
-        padding-right: 95px;
-    }
+  &__form-header {
+    margin-bottom: 30px;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+  }
 
-    &__form-header {
-        margin-bottom: 30px;
-        opacity: 0.8;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 35px;
-    }
+  &__input-phone {
+    margin-bottom: 20px;
+  }
 
-    &__input-phone {
-        margin-bottom: 20px;
-    }
+  &__input-massage {
+    margin-bottom: 35px;
+    resize: vertical;
+  }
 
-    &__input-massage {
-        margin-bottom: 35px;
-        resize: vertical;
-    }
-
-    &__form-btn {
-        margin-bottom: 214px;
-    }
+  &__form-btn {
+    margin-bottom: 214px;
+  }
 }
 
 @media screen and (max-width: $lg) {
   .contacts {
     padding: 60px 30px 0 30px;
     min-height: 1px;
+
     &__header {
       padding-left: 0;
       margin-bottom: 40px;
     }
+
     &__block {
       position: static;
       padding: 40px 25px 52px 25px;
       margin: 0 auto 30px auto;
       width: 682px;
     }
+
     &__social-link {
-      min-width: 30px;
-      min-height: 30px;
+      width: 30px;
+      height: 30px;
     }
+
     &__social-link:not(:last-of-type) {
       margin-right: 25px;
     }
+
     &__img-bg {
       display: none;
     }
+
     &__img {
       display: none;
     }
+
     &__form {
       padding-left: 0;
       padding-right: 0;
     }
+
     &__form-btn {
       margin-bottom: 70px;
     }
@@ -142,9 +201,11 @@
 @media screen and (max-width: $xs) {
   .contacts {
     padding: 60px 15px 0 15px;
+
     &__form-btn {
       width: 100%;
     }
   }
 }
+
 /*********** contacts END *************/
