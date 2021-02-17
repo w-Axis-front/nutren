@@ -7,31 +7,59 @@ header.nav
                 img&attributes(navContent.nav_logo).nav__logo-img
                 img&attributes(navContent.nav_logo_collapsed).nav__logo-img-collapsed
         div.nav__wrap-menu
-            a(href=navContent.nav_path1).nav__link.active-page= navContent.nav_link1
-            a(href=navContent.nav_path2).nav__link= navContent.nav_link2
-            a(href=navContent.nav_path3).nav__link= navContent.nav_link3
-            a(href=navContent.nav_path4).nav__link= navContent.nav_link4
+            if page === "main"
+                a(href=navContent.nav_path1).nav__link.active-page= navContent.nav_link1
+            else
+                a(href=navContent.nav_path1).nav__link= navContent.nav_link1
+            if page === "about"
+                a(href=navContent.nav_path2).nav__link.active-page= navContent.nav_link2
+            else
+                a(href=navContent.nav_path2).nav__link= navContent.nav_link2
+            if page === "products"
+                a(href=navContent.nav_path3).nav__link.active-page= navContent.nav_link3
+            else
+                a(href=navContent.nav_path3).nav__link= navContent.nav_link3
+            if page === "development"
+                a(href=navContent.nav_path4).nav__link.active-page= navContent.nav_link4
+            else
+                a(href=navContent.nav_path4).nav__link= navContent.nav_link4
             a(href=navContent.nav_link_anchor_path).button.nav__link_anchor= navContent.nav_link_anchor
-        .nav__lang.js_dropdown
-            .nav__lang-current.dropdown-toggle
-                span.nav__lang-current-text= navContent.main_lang
-                img&attributes(navContent.lang_link_img).nav__lang-link-img
-            ul.nav__lang-list.dropdown-menu
-                li.nav__lang-item
-                    a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).nav__lang-link= navContent.lang1
+        .nav__lang
+            if LANG.locale === "en"
+                a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).nav__lang-link.active-lang= navContent.lang1
+            else
+                a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).nav__lang-link= navContent.lang1
+            if LANG.locale === "ru"
+                a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).nav__lang-link.active-lang= navContent.lang2
+            else
+                a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).nav__lang-link= navContent.lang2
         div.nav__burger
             span.nav__burger-line
     div(height="100%").burger-menu
-        a(href=navContent.nav_path1).nav__link.active-page= navContent.nav_link1
-        a(href=navContent.nav_path2).nav__link= navContent.nav_link2
-        a(href=navContent.nav_path3).nav__link= navContent.nav_link3
-        a(href=navContent.nav_path4).nav__link= navContent.nav_link4
-        a(href=navContent.nav_link_anchor_path).button.nav__link_anchor= navContent.nav_link_anchor
+        if page === "main"
+            a(href=navContent.nav_path1).burger-menu__link.active-page= navContent.nav_link1
+        else
+            a(href=navContent.nav_path1).burger-menu__link= navContent.nav_link1
+        if page === "about"
+            a(href=navContent.nav_path2).burger-menu__link.active-page= navContent.nav_link2
+        else
+            a(href=navContent.nav_path2).burger-menu__link= navContent.nav_link2
+        if page === "products"
+            a(href=navContent.nav_path3).burger-menu__link.active-page= navContent.nav_link3
+        else
+            a(href=navContent.nav_path3).burger-menu__link= navContent.nav_link3
+        if page === "development"
+            a(href=navContent.nav_path4).burger-menu__link.active-page= navContent.nav_link4
+        else
+            a(href=navContent.nav_path4).burger-menu__link= navContent.nav_link4
+        a(href=navContent.nav_link_anchor_path).button.nav__link_anchor.js_burger-menu-anchor= navContent.nav_link_anchor
         div
-            .burger-menu__lang.js_dropdown
-                .nav__lang-current.dropdown-toggle
-                    span.nav__lang-current-text= navContent.main_lang
-                    img&attributes(navContent.lang_link_img).nav__lang-link-img
-                ul.burger-menu__lang-list.dropdown-menu
-                    li.burger-menu__lang-item
-                        a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path)= navContent.lang1
+            .burger-menu__lang
+                if LANG.locale === "en"
+                    a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).burger-menu__lang-link.active-lang= navContent.lang1
+                else
+                    a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).burger-menu__lang-link= navContent.lang1
+                if LANG.locale === "ru"
+                    a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).burger-menu__lang-link.active-lang= navContent.lang2
+                else
+                    a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).burger-menu__lang-link= navContent.lang2

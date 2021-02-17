@@ -20,14 +20,12 @@
     "nav_path4": "development.html",
     "nav_link_anchor": "Контакты",
     "nav_link_anchor_path": "#contacts",
-    "main_lang": "En",
-    "lang_link_img": {
-      "src": "/img/svg/arrow-down.svg",
-      "alt": "Drop down"
-    },
-    "lang1": "Ru",
+    "lang2": "Ru",
+    "lang2_path": "/ru/",
+    "lang2_pathlang": "ru",
+    "lang1": "En",
     "lang1_path": "/",
-    "lang1_pathlang": "ru"
+    "lang1_pathlang": "en"
   },
   "banner_slider": [
     {

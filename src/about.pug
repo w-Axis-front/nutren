@@ -1,1 +1,7 @@
 extends templates/layout.pug
+
+block nav
+    - const page = "about"
+    include ./templates/nav.pug
+block footer
+    include ./templates/footer.pug

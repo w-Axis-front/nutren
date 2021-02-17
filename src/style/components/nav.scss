@@ -9,154 +9,136 @@
 }
 
 .nav {
-    position: fixed;
-    z-index: $nav;
-    top: 20px;
-    left: 0;
-    right: 0;
+  position: fixed;
+  z-index: $nav;
+  top: 20px;
+  left: 0;
+  right: 0;
 
-    &__burger {
-        display: none;
+  &__burger {
+    display: none;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 46px;
+    min-height: 84px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 57px;
+    transition: .3s;
+    position: relative;
+    left: calc(50% - 600px);
+    margin: 0;
+  }
+
+  &__logo-wrap {
+    padding-top: 16px;
+  }
+
+  &__logo {
+    display: block;
+    max-height: 40px;
+    transition: .3s;
+  }
+
+  &__logo-img-collapsed {
+    width: 100%;
+    display: none;
+    height: auto;
+  }
+
+  &__wrap-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 191px;
+    margin-right: 40px;
+  }
+
+  &__link {
+    margin-right: 40px;
+    display: inline-block;
+    color: $textColor;
+    transition: color .3s ease 0s;
+
+    &:visited {
+      color: $textColor;
     }
 
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: 46px;
-        min-height: 84px;
-        max-width: 1200px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, .8);
-        border-radius: 57px;
-        transition: .3s;
-        position: relative;
-        left: calc(50% - 600px);
-        margin: 0;
+    &:hover, &:active {
+      color: $mainHover;
     }
 
-    &__logo-wrap {
-        padding-top: 16px;
+    &.active-page {
+      color: $mainHover;
+      position: relative;
     }
 
-    &__logo {
-        display: block;
-        max-height: 40px;
-        transition: .3s;
+    &.active-page::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $mainHover;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+
+  &__link_anchor {
+    display: inline-block;
+    padding-right: 43px;
+    padding-left: 43px;
+    min-width: 169px;
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    margin-right: 58px;
+    user-select: none;
+  }
+
+  &__lang-link {
+    display: inline-block;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 16px;
+
+    vertical-align: middle;
+    color: $textColor;
+    opacity: .5;
+    transition: .3s;
+
+    &:first-of-type {
+      margin-right: 15px;
     }
 
-    &__logo-img-collapsed {
-        width: 100%;
-        display: none;
-        height: auto;
+    &:visited {
+      color: $textColor;
+      opacity: .5;
     }
 
-    &__wrap-menu {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-grow: 1;
-        padding-left: 178px;
-        margin-right: 53px;
+    &.active-lang {
+      color: $mainHover;
+      opacity: 1;
+
+      &:visited {
+        color: $mainHover;
+        opacity: 1;
+      }
     }
 
-    &__link {
-        margin-right: 40px;
-        display: inline-block;
-        color: $textColor;
-        transition: color .3s ease 0s;
-
-        &:visited {
-            color: $textColor;
-        }
-
-        &:hover, &:active {
-            color: $mainHover;
-        }
-
-        &.active-page {
-            color: $mainHover;
-            position: relative;
-        }
-
-        &.active-page::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: $mainHover;
-            bottom: -5px;
-            left: 0;
-        }
+    &:hover, &:active {
+      color: $textColor;
+      opacity: 1;
     }
-
-    &__link_anchor {
-        display: inline-block;
-    }
-
-    &__lang {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-right: 58px;
-        user-select: none;
-    }
-
-    &__lang-current {
-        cursor: pointer;
-        vertical-align: middle;
-        display: flex;
-        align-items: center;
-    }
-
-    &__lang-current-text, &__lang-link-img, &__lang-link {
-        display: inline-block;
-    }
-
-    &__lang-current-text {
-        margin-right: 7px;
-    }
-
-    &__lang-list {
-        display: none;
-        position: absolute;
-        width: 65px;
-        top: 89px;
-        left: 50%;
-        border-radius: 3px;
-        transform: translateX(-50%);
-        font-family: $font-family;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    &__lang-item {
-        height: 29px;
-        font-family: $font-family;
-        font-size: 16px;
-        line-height: 29px;
-
-        a {
-            padding-left: 13px;
-            vertical-align: middle;
-            padding-right: 13px;
-            height: 100%;
-            width: 100%;
-            background: $lightColor;
-            color: $mainColor;
-            transition: .3s;
-
-            &:visited {
-                background: $lightColor;
-                color: $mainColor;
-            }
-
-            &:hover, &:active {
-                color: $lightColor;
-                background: $mainColor;
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: $xl) {
@@ -164,9 +146,11 @@
     &__wrap {
       left: 0;
     }
+
     &__wrap-menu {
-      padding-left: 46px;
       margin-right: 0;
+      padding-left: 0;
+      justify-content: center;
     }
 
     &__lang {
@@ -267,117 +251,126 @@
     }
   }
 
-    .burger-menu {
-        background-color: $lightColor;
-        text-align: center;
+  .burger-menu {
+    background-color: $lightColor;
+    text-align: center;
 
-        &__link {
-            width: 100%;
-            display: block;
-            font-family: $font-family;
-            color: $textColor;
-            line-height: 16px;
-            font-size: 16px;
-            padding: 22px 0;
-            transition: color .3s ease 0s;
+    &__link {
+      width: 100%;
+      display: block;
+      font-family: $font-family;
+      color: $textColor;
+      line-height: 16px;
+      font-size: 16px;
+      padding: 22px 0;
+      transition: color .3s ease 0s;
 
-            &:first-of-type {
-                padding-top: 52px;
-            }
+      &:first-of-type {
+        padding-top: 52px;
+      }
 
-            &:nth-last-of-type(2) {
-                padding-bottom: 42px;
-            }
+      &:nth-last-of-type(2) {
+        padding-bottom: 42px;
+      }
 
-            &:visited {
-                color: $textColor;
-            }
+      &:visited {
+        color: $textColor;
+      }
 
-            &:hover, &:active {
-                color: $mainHover;
-            }
+      &:hover, &:active {
+        color: $mainHover;
+      }
 
-            &.active-page {
-                color: $mainHover;
-                position: relative;
-            }
+      &.active-page {
+        color: $mainHover;
+        position: relative;
+      }
 
-            &.active-page::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: $mainHover;
-                bottom: -5px;
-                left: 0;
-            }
-        }
+      &.active-page::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: $mainHover;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
-        &__lang {
-            display: inline-block;
-            margin: 0 auto;
-            border: 1px solid $borderColor;
-            border-radius: 3px;
-            padding-top: 5px;
-            font-family: $font-family;
-            font-size: 16px;
-            line-height: 19px;
+      &:first-of-type.active-page::after {
+        width: 60px;
+      }
 
-            .nav {
-                &__lang-current {
-                    padding-right: 13px;
-                    padding-left: 13px;
-                    margin-bottom: 5px;
-                }
-            }
-        }
+      &:nth-of-type(2).active-page::after {
+        width: 40px;
+      }
 
-        &__lang-list {
-            display: none;
-            text-align: left;
-        }
+      &:nth-of-type(3).active-page::after {
+        width: 74px;
+      }
 
-        &__divider {
-            padding-right: 6px;
-            padding-left: 6px;
-        }
-
-        &__lang-item {
-            line-height: 16px;
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            /*&:first-of-type {
-        padding-top: 6px;
-      }*/
-            a {
-                padding-left: 13px;
-                display: inline-block;
-                padding-bottom: 6px;
-                padding-top: 4px;
-                vertical-align: middle;
-                height: 100%;
-                width: 100%;
-                background: $lightColor;
-                color: $mainColor;
-                transition: .3s;
-
-                &:last-of-type {
-                    padding-bottom: 5px;
-                }
-
-                &:visited {
-                    background: $lightColor;
-                    color: $mainColor;
-                }
-
-                &:hover, &:active {
-                    color: $lightColor;
-                    background: $mainColor;
-                }
-            }
-        }
+      &:nth-of-type(4).active-page::after {
+        width: 86px;
+        bottom: 35px;
+      }
     }
+
+    .nav__link_anchor {
+      padding-right: 47px;
+      padding-left: 47px;
+      min-width: 182px;
+    }
+
+    &__lang {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      margin: 0 auto;
+      justify-content: center;
+
+      //.nav {
+      //  &__lang-current {
+      //    padding-right: 13px;
+      //    padding-left: 13px;
+      //    margin-bottom: 5px;
+      //  }
+      //}
+    }
+
+    &__lang-link {
+      display: inline-block;
+      font-family: $font-family;
+      font-size: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+      color: $textColor;
+      opacity: .5;
+      transition: .3s;
+
+      &:first-of-type {
+        margin-right: 26px;
+      }
+
+      &:visited {
+        color: $textColor;
+        opacity: .5;
+      }
+
+      &.active-lang {
+        color: $mainHover;
+        opacity: 1;
+
+        &:visited {
+          color: $mainHover;
+          opacity: 1;
+        }
+      }
+
+      &:hover, &:active {
+        color: $textColor;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $xs) {

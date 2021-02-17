@@ -2,24 +2,26 @@ export default function nav() {
     const burger_button = document.querySelector('.nav__burger');
     const nav = document.querySelector('.nav');
     const burgerNav = $('.burger-menu');
-    const dropdownTrigger = $('.dropdown-toggle');
-    const dropdownContent = $('.dropdown-menu');
     const fullNav = $('.nav__wrap');
     const logoImg = $(".nav__logo-img");
     const logoImgCollapsed = $(".nav__logo-img-collapsed");
     const wrapNav = $(".nav__wrap-menu");
     const langBlock = $(".nav__lang");
+    const burgerNavAnchor = document.querySelector(".js_burger-menu-anchor");
+
+    function closeNav() {
+        burgerNav.hide();
+        burger_button.classList.remove('nav__burger--active');
+        nav.classList.remove('nav_active');
+    }
 
     function dropMenu() {
         if (burger_button.classList.contains('nav__burger--active')) {
-            burgerNav.hide();
-            burger_button.classList.remove('nav__burger--active');
-            nav.classList.remove('nav_active');
+            closeNav();
         } else {
             burger_button.classList.add('nav__burger--active');
             burgerNav.show();
             // document.querySelector('.burger-menu').style.display = 'block';
-            dropdownContent.stop().slideUp(10);
             nav.classList.add('nav_active');
         }
     }
@@ -40,8 +42,7 @@ export default function nav() {
         let previousScroll = 0;
         if (media_check_min.matches) {
             burgerNav.hide();
-            dropdownContent.stop().slideUp(10);
-            // wrapNav..stop().css("display", "flex");
+            // wrapNav.stop().css("display", "flex");
             if (burger_button) {
                 burger_button.classList.remove('nav__burger--active');
             }
@@ -76,11 +77,11 @@ export default function nav() {
                     }
                 }
             });
-
         } else {
             if (burger_button) {
                 burger_button.addEventListener('click', dropMenu);
             }
+            burgerNavAnchor.addEventListener('click', closeNav);
             wrapNav.stop().css("display", "none");
             logoImg.stop().css("display", "inline-block");
             logoImgCollapsed.stop().css("display", "none");
@@ -94,13 +95,4 @@ export default function nav() {
     const media_check_min = window.matchMedia("(min-width: 992px)");
     scrollHandler(media_check_min);
     media_check_min.addListener(scrollHandler);
-
-    dropdownTrigger.on("click", function () {
-        dropdownContent.stop().slideToggle(100);
-    });
-    dropdownContent.children("li").each(function () {
-        $(this).on("click", function () {
-            dropdownContent.stop().slideUp(100);
-        });
-    })
 }
