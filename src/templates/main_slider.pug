@@ -1,0 +1,15 @@
+- const mainSlider = LANG.main_slider;
+
+section.main-slider
+    #js_main-slider
+        each val in mainSlider
+            div(class="main-slider__slide-" + val.slide_class + " " + "main-slider__slide")
+                img(class="main-slider__slide-img1")&attributes(val.slide_img1)
+                img(class="main-slider__slide-img2")&attributes(val.slide_img2)
+                img(class="main-slider__slide-img3")&attributes(val.slide_img3)
+                p.main-slider__slide-bg-text= val.slide_bg_text
+                p.main-slider__slide-bg-sub.main-slider__slide-bg-subtext= val.slide_bg_subtext
+                p.main-slider__slide-bg-sub.main-slider__slide-bg-subtext-next= val.slide_bg_subtext_next
+                .main-slider__slide-content
+                    h3.main-slider__slide-title= val.slide_title
+                    p.main-slider__slide-text= val.slide_text

@@ -1,0 +1,28 @@
+- const mainProducts = LANG.main_products;
+mixin gridItem(data)
+    .grid-item
+        img&attributes(data.bg).main-products__item-bg-img
+        .main-products__item-content
+            img&attributes(data.img).main-products__item-img
+            p.main-products__item-title= data.title
+            p.main-products__item-text= data.text
+
+main#top
+    block main_slider
+        include main_slider.pug
+    section.main-products
+        .container
+            .grid
+                .grid-sizer
+                .grid-item.main-products__description
+                    p.main-products__description-title= mainProducts.title
+                    p.main-products__description-text= mainProducts.text
+                +gridItem(mainProducts.ostelife)
+                +gridItem(mainProducts.germixil)
+                +gridItem(mainProducts.varyforte)
+                +gridItem(mainProducts.hairactiv)
+                +gridItem(mainProducts.cardio)
+                +gridItem(mainProducts.keto)
+                +gridItem(mainProducts.choco)
+    block contacts
+        include contacts.pug

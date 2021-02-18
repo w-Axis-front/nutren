@@ -1,12 +1,10 @@
-/***********MAIN BANNER*************/
-#js_banner-slider {
+/***********MAIN SLIDER************/
+#js_main-slider {
   transition: background-color .8s linear;
   background-color: $ostelife-bg;
 }
 
-.slick-slider {
-
-}
+.slick-slider {}
 
 .slick-slider div {
   // For fixing infinite slider jumping issue from last to firs:
@@ -14,13 +12,10 @@
 }
 
 // ограничивающая оболочка:
-.slick-list {
-}
+.slick-list {}
 
 // лента слайдов:
-.slick-track {
-
-}
+.slick-track {}
 
 .slick-arrow {
   position: absolute;
@@ -36,19 +31,15 @@
   }
 }
 
-.slick-slide {
+.slick-slide {}
 
-}
+.slick-slide.slick-current {}
 
-.slick-slide.slick-current {
-
-}
-
-.banner-slider {
+.main-slider {
     &__prev {
         left: 16.5%;
         transform: translate(-16.5%, -50%);
-        z-index: $mainBannerBtn;
+        z-index: $mainSliderBtn;
     }
 
     &__next {
@@ -63,7 +54,6 @@
 
     &__slide {
         min-height: 596px;
-        //background-color: green;
         position: relative;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -137,7 +127,7 @@
     }
 
     &__slide-ostelife {
-        .banner-slider {
+        .main-slider {
             &__slide-img1 {
                 position: absolute;
                 left: 15%;
@@ -174,7 +164,7 @@
     }
 
     &__slide-keto-light {
-        .banner-slider {
+        .main-slider {
             &__slide-img1 {
                 position: absolute;
                 left: 19%;
@@ -211,7 +201,7 @@
     }
 
     &__slide-cardio-nrj {
-        .banner-slider {
+        .main-slider {
             &__slide-img1 {
                 position: absolute;
                 left: 17%;
@@ -248,7 +238,7 @@
     }
 
     &__slide-varyforte {
-        .banner-slider {
+        .main-slider {
             &__slide-img1 {
                 position: absolute;
                 left: 15%;
@@ -285,7 +275,7 @@
     }
 
     &__slide-choco-lite {
-        .banner-slider {
+        .main-slider {
             &__slide-img1 {
                 position: absolute;
                 left: 13%;
@@ -339,7 +329,7 @@
       }
     }
   }
-  .banner-slider {
+  .main-slider {
     &__prev {
       left: calc(50% - 600px);
       transform: translate(50px, -50%);
@@ -356,7 +346,7 @@
     }
 
     &__slide {
-      .banner-slider {
+      .main-slider {
         &__slide-img1 {
           display: none;
         }
@@ -367,22 +357,19 @@
     }
 
     &__slide-ostelife {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -135px;
-          //left: 0;
-          //transform: translateX(-135px);
         }
 
         &__slide-img3 {
           right: 0;
-          //transform: translateX(-90px);
         }
       }
     }
 
     &__slide-keto-light {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: 1%;
         }
@@ -398,14 +385,13 @@
     }
 
     &__slide-cardio-nrj {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -120px;
         }
 
         &__slide-img3 {
           right: 0;
-          //transform: translateX(0);
         }
 
         &__slide-content {
@@ -415,7 +401,7 @@
     }
 
     &__slide-varyforte {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -12.5%;
         }
@@ -431,14 +417,13 @@
     }
 
     &__slide-choco-lite {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -185px;
         }
 
         &__slide-img3 {
           right: 0;
-          //transform: translateX(0);
         }
       }
     }
@@ -447,7 +432,7 @@
 
 // max 1199px
 @media screen and (max-width: $xl) {
-  .banner-slider {
+  .main-slider {
     &__prev {
       left: 1.5%;
       transform: translate(-1.5%, -50%);
@@ -459,7 +444,7 @@
     }
 
     &__slide {
-      .banner-slider {
+      .main-slider {
         &__slide-bg-text {
           font-size: 150px;
           top: 200px;
@@ -473,7 +458,7 @@
     }
 
     &__slide-ostelife {
-      .banner-slider {
+      .main-slider {
         &__slide-bg-text {
           top: 126px;
         }
@@ -482,39 +467,33 @@
         }
         &__slide-img2 {
           left: -215px;
-          //transform: translateX(-360px);
         }
         &__slide-img3 {
           right: -35px;
-          //transform: translateX(90px);
         }
       }
     }
 
     &__slide-keto-light {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -85px;
-          //transform: translateX(-85px);
         }
 
         &__slide-img3 {
           right: -300px;
-          //transform: translateX(300px);
         }
       }
     }
 
     &__slide-cardio-nrj {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -140px;
-          //transform: translateX(-225px);
         }
 
         &__slide-img3 {
           right: -200px;
-          //transform: translateX(160px);
         }
         &__slide-content {
           left: 50%;
@@ -523,7 +502,7 @@
     }
 
     &__slide-varyforte {
-      .banner-slider {
+      .main-slider {
         &__slide-bg-text {
           top: 126px;
         }
@@ -538,18 +517,16 @@
 
         &__slide-img2 {
           left: -260px;
-          //transform: translateX(-265px);
         }
 
         &__slide-img3 {
           right: -220px;
-          //transform: translateX(220px);
         }
       }
     }
 
     &__slide-choco-lite {
-      .banner-slider {
+      .main-slider {
         &__slide-bg-text {
           top: 126px;
         }
@@ -560,12 +537,10 @@
 
         &__slide-img2 {
           left: -255px;
-          //transform: translateX(-255px);
         }
 
         &__slide-img3 {
           right: -200px;
-          //transform: translateX(200px);
         }
 
         &__slide-content {
@@ -585,7 +560,7 @@
     width: 40px;
   }
 
-  .banner-slider {
+  .main-slider {
     &__arrow-img {
       height: 20px;
     }
@@ -602,7 +577,7 @@
 
     &__slide {
       min-height: 522px;
-      .banner-slider {
+      .main-slider {
         &__slide-img3 {
           display: none;
         }
@@ -610,7 +585,7 @@
     }
 
     &__slide-ostelife {
-      .banner-slider {
+      .main-slider {
         &__slide-img1 {
           display: block;
           height: 295px;
@@ -618,31 +593,24 @@
           top: 200px;
           right: -80px;
           left: initial;
-          //transform: translateX(86px);
         }
         &__slide-img2 {
-          //width: 397px;
           left: -363px;
-          //transform: translateX(-130px);
-          //height: auto;
-          //top: 165px;
         }
       }
     }
 
     &__slide-keto-light {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           width: 397px;
           left: -130px;
-          //transform: translateX(-130px);
           height: auto;
           top: 165px;
         }
 
         &__slide-img1 {
           height: 248px;
-          //transform: translateX(45px);
           display: block;
           width: auto;
           top: 200px;
@@ -657,10 +625,9 @@
     }
 
     &__slide-cardio-nrj {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           left: -375px;
-          //transform: translateX(-375px);
           top: -100px;
         }
 
@@ -671,7 +638,6 @@
           right: -90px;
           left: initial;
           height: 248px;
-          //transform: translateX(90px);
         }
         &__slide-content {
           left: 43%;
@@ -680,14 +646,13 @@
     }
 
     &__slide-varyforte {
-      .banner-slider {
+      .main-slider {
         &__slide-content {
           left: 35%;
         }
 
         &__slide-img1 {
           height: 248px;
-          //transform: translateX(45px);
           display: block;
           width: auto;
           top: 200px;
@@ -696,25 +661,19 @@
         }
 
         &__slide-img2 {
-          //left: 0;
           left: -480px;
-          //transform: translateX(-480px);
         }
       }
     }
 
     &__slide-choco-lite {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
-          //left: 0;
           left: -415px;
-          //transform: translateX(-415px);
         }
 
         &__slide-img1 {
           height: 248px;
-          //left: -45px;
-          //transform: translateX(45px);
           display: block;
           width: auto;
           top: 200px;
@@ -732,9 +691,9 @@
 
 // max 575px
 @media screen and (max-width: $xs) {
-  .banner-slider {
+  .main-slider {
     &__slide {
-      .banner-slider {
+      .main-slider {
         &__slide-bg-text {
           top: initial;
           bottom: 144px;
@@ -765,69 +724,52 @@
     }
 
     &__slide-ostelife {
-      .banner-slider__slide-img2 {
+      .main-slider__slide-img2 {
         width: 486px;
         height: auto;
         left: -200px;
-        //transform: translateX(-41%);
         top: 165px;
       }
     }
 
     &__slide-cardio-nrj {
-      .banner-slider {
+      .main-slider {
         &__slide-img2 {
           height: auto;
           width: 490px;
           left: -205px;
-          //transform: translateX(-205px);
           top: 92px;
         }
       }
     }
 
     &__slide-varyforte {
-      .banner-slider__slide-img2 {
+      .main-slider__slide-img2 {
         width: 486px;
         height: auto;
         left: -190px;
-        //transform: translateX(-41%);
         top: 165px;
       }
     }
 
     &__slide-choco-lite {
-      .banner-slider__slide-img1 {
+      .main-slider__slide-img1 {
         left: auto;
         right: -8%;
-        //transform: translateX(30px);
       }
 
-      .banner-slider__slide-img2 {
+      .main-slider__slide-img2 {
         width: 486px;
         height: auto;
         left: -150px;
-        //transform: translateX(-34%);
         top: 165px;
       }
     }
   }
-}
-.slick-slide {
-  // For fixing infinite slider jumping issue from last to firs:
-  /*opacity: 0.95;
-  transition: opacity 0.8s;*/
 }
 
 .slick-slide.slick-current {
   // For fixing infinite slider jumping issue from last to firs:
   opacity: 1;
 }
-
-// For fixing infinite slider jumping issue from last to firs:
-/*.slick-slide.slick-current-clone-animate {
-  opacity: 1;
-}*/
-
-// .slick-slider .slick-track, .slick-slider .slick-list { transform: none; }
-/***********MAIN BANNER END*************/
+/***********MAIN SLIDER END*************/

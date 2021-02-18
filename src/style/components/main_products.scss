@@ -1,0 +1,53 @@
+/*********** PRODUCTS *************/
+.main-products {
+  min-height: 3080px;
+  padding-top: 145px;
+
+  .container {
+    padding: 0;
+  }
+
+  .grid { /* Masonry container */
+  }
+
+  .grid-sizer, .grid-item {
+    width: calc(50% - 95px);
+  }
+
+  .grid-item { /* Masonry bricks or child elements */
+    margin-bottom: 130px;
+    box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    &.main-products__description {
+      box-shadow: none;
+      border-radius: 0;
+      padding-top: 35px;
+      bottom: 90px;
+    }
+  }
+
+  &__description-title {
+    font-size: 42px;
+    line-height: 50px;
+    color: $textColor;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+  }
+
+  &__description-text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: $textColor;
+    opacity: 0.8;
+  }
+
+  &__item-bg-img {
+    width: 100%;
+    //    display: block;
+    //    max-width: 100%;
+  }
+}
+/*********** PRODUCTS END *************/

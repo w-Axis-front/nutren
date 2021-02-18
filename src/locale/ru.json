@@ -21,7 +21,7 @@
     "lang1_path": "/",
     "lang1_pathlang": "en"
   },
-  "banner_slider": [
+  "main_slider": [
     {
       "slide_title": "Ostelife",
       "slide_class": "ostelife",
@@ -30,19 +30,19 @@
       "slide_bg_subtext_next": "Keto light +",
       "slide_text": "Натуральный крем для лечения суставов и связок.",
       "slide_img1": {
-        "data-lazy": "/img/banner/ostelife_1.png",
+        "src": "/img/main_slider/ostelife_1.png",
         "alt": "Ostelife product example",
-        "srcset": "/img/banner/ostelife_1@2x.png 2x"
+        "srcset": "/img/main_slider/ostelife_1@2x.png 2x"
       },
       "slide_img2": {
-        "data-lazy": "/img/banner/ostelife_2.png",
+        "src": "/img/main_slider/ostelife_2.png",
         "alt": "Ostelife",
-        "srcset": "/img/banner/ostelife_2@2x.png 2x"
+        "srcset": "/img/main_slider/ostelife_2@2x.png 2x"
       },
       "slide_img3": {
-        "data-lazy": "/img/banner/ostelife_3.png",
+        "src": "/img/main_slider/ostelife_3.png",
         "alt": "Ostelife product",
-        "srcset": "/img/banner/ostelife_3@2x.png 2x"
+        "srcset": "/img/main_slider/ostelife_3@2x.png 2x"
       }
     },
     {
@@ -53,19 +53,19 @@
       "slide_bg_subtext_next": "Cardio NRJ",
       "slide_text": "Коктейль-активатор кетоновых тел для похудения.",
       "slide_img1": {
-        "data-lazy": "/img/banner/keto_1.png",
+        "src": "/img/main_slider/keto_1.png",
         "alt": "Keto light + product example",
-        "srcset": "/img/banner/keto_1@2x.png 2x"
+        "srcset": "/img/main_slider/keto_1@2x.png 2x"
       },
       "slide_img2": {
-        "data-lazy": "/img/banner/keto_2.png",
+        "src": "/img/main_slider/keto_2.png",
         "alt": "Keto light +",
-        "srcset": "/img/banner/keto_2@2x.png 2x"
+        "srcset": "/img/main_slider/keto_2@2x.png 2x"
       },
       "slide_img3": {
-        "data-lazy": "/img/banner/keto_3.png",
+        "src": "/img/main_slider/keto_3.png",
         "alt": "Keto light + product",
-        "srcset": "/img/banner/keto_3@2x.png 2x"
+        "srcset": "/img/main_slider/keto_3@2x.png 2x"
       }
     },
     {
@@ -76,19 +76,19 @@
       "slide_bg_subtext_next": "Varyforte",
       "slide_text": "Таблетки для профилактики заболеваний сердца.",
       "slide_img1": {
-        "data-lazy": "/img/banner/CardioNRJ_1.png",
+        "src": "/img/main_slider/CardioNRJ_1.png",
         "alt": "Cardio NRJ product example",
-        "srcset": "/img/banner/CardioNRJ_1@2x.png 2x"
+        "srcset": "/img/main_slider/CardioNRJ_1@2x.png 2x"
       },
       "slide_img2": {
-        "data-lazy": "/img/banner/CardioNRJ_2.png",
+        "src": "/img/main_slider/CardioNRJ_2.png",
         "alt": "Cardio NRJ",
-        "srcset": "/img/banner/CardioNRJ_2@2x.png 2x"
+        "srcset": "/img/main_slider/CardioNRJ_2@2x.png 2x"
       },
       "slide_img3": {
-        "data-lazy": "/img/banner/CardioNRJ_3.png",
+        "src": "/img/main_slider/CardioNRJ_3.png",
         "alt": "Cardio NRJ product",
-        "srcset": "/img/banner/CardioNRJ_3@2x.png 2x"
+        "srcset": "/img/main_slider/CardioNRJ_3@2x.png 2x"
       }
     },
     {
@@ -99,19 +99,19 @@
       "slide_bg_subtext_next": "Choco Lite",
       "slide_text": "Крем для лечения варикоза без побочных эффектов.",
       "slide_img1": {
-        "data-lazy": "/img/banner/varyforte_1.png",
+        "src": "/img/main_slider/varyforte_1.png",
         "alt": "Varyforte product example",
-        "srcset": "/img/banner/varyforte_1@2x.png 2x"
+        "srcset": "/img/main_slider/varyforte_1@2x.png 2x"
       },
       "slide_img2": {
-        "data-lazy": "/img/banner/varyforte_2.png",
+        "src": "/img/main_slider/varyforte_2.png",
         "alt": "Varyforte",
-        "srcset": "/img/banner/varyforte_2@2x.png 2x"
+        "srcset": "/img/main_slider/varyforte_2@2x.png 2x"
       },
       "slide_img3": {
-        "data-lazy": "/img/banner/varyforte_3.png",
+        "src": "/img/main_slider/varyforte_3.png",
         "alt": "Varyforte product",
-        "srcset": "/img/banner/varyforte_3@2x.png 2x"
+        "srcset": "/img/main_slider/varyforte_3@2x.png 2x"
       }
     },
     {
@@ -122,19 +122,19 @@
       "slide_bg_subtext_next": "Ostelife",
       "slide_text": "Энергетический коктейль для похудения со вкусом шоколада.",
       "slide_img1": {
-        "data-lazy": "/img/banner/choco-lite_1.png",
+        "src": "/img/main_slider/choco-lite_1.png",
         "alt": "Choco Lite product example",
-        "srcset": "/img/banner/choco-lite_1@2x.png 2x"
+        "srcset": "/img/main_slider/choco-lite_1@2x.png 2x"
       },
       "slide_img2": {
-        "data-lazy": "/img/banner/choco-lite_2.png",
+        "src": "/img/main_slider/choco-lite_2.png",
         "alt": "Choco Lite",
-        "srcset": "/img/banner/choco-lite_2@2x.png 2x"
+        "srcset": "/img/main_slider/choco-lite_2@2x.png 2x"
       },
       "slide_img3": {
-        "data-lazy": "/img/banner/choco-lite_3.png",
+        "src": "/img/main_slider/choco-lite_3.png",
         "alt": "Choco Lite product",
-        "srcset": "/img/banner/choco-lite_3@2x.png 2x"
+        "srcset": "/img/main_slider/choco-lite_3@2x.png 2x"
       }
     }
   ],
@@ -154,6 +154,108 @@
     "order_text2": "Вы получите полностью готовый к продаже товар — интересный потребителям, с доказанной эффективностью, а также всеми необходимыми разрешениями и сертификатами.",
     "order_link": "Разработка продуктов Nutren",
     "order_path": "development.html"
+  },
+  "main_products": {
+    "title": "Наши продукты",
+    "text": "Формулы продуктов созданы в нашей собственной лаборатории и защищены патентами. Все средства прошли клинические испытания, имеют доказанную эффективность и сертифицированы для продажи в Китае и Европе.",
+    "ostelife": {
+      "bg": {
+        "src": "/img/products/ostelife-bg.jpg",
+        "alt": "Ostelife background",
+        "srcset": "/img/products/ostelife-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/ostelife.png",
+        "alt": "Ostelife",
+        "srcset": "/img/products/ostelife@2x.png 2x"
+      },
+      "title": "Ostelife",
+      "text": "Крем для лечения и профилактики болезней опорно-двигательного аппарата. Создан на основе натуральных компонентов."
+    },
+    "germixil": {
+      "bg": {
+        "src": "/img/products/germixil-bg.jpg",
+        "alt": "Germixil background",
+        "srcset": "/img/products/germixil-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/germixil.png",
+        "alt": "Germixil",
+        "srcset": "/img/products/germixil@2x.png 2x"
+      },
+      "title": "Germixil",
+      "text": "Противопаразитарные таблетки мягкого действия с растительными экстрактами. Подходят для лечения и профилактики."
+    },
+    "varyforte": {
+      "bg": {
+        "src": "/img/products/varyforte-bg.jpg",
+        "alt": "Varyforte background",
+        "srcset": "/img/products/varyforte-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/varyforte.png",
+        "alt": "Varyforte",
+        "srcset": "/img/products/varyforte@2x.png 2x"
+      },
+      "title": "Varyforte",
+      "text": "Крем из растительных ингредиентов для лечения варикоза. Не имеет противопоказаний и побочных эффектов."
+    },
+    "hairactiv": {
+      "bg": {
+        "src": "/img/products/hairactiv-bg.jpg",
+        "alt": "HairActiv background",
+        "srcset": "/img/products/hairactiv-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/hairactiv.png",
+        "alt": "HairActiv",
+        "srcset": "/img/products/hairactiv@2x.png 2x"
+      },
+      "title": "HairActiv",
+      "text": "Таблетки для роста волос, бровей и ресниц. Натуральный состав, сбалансированная формула."
+    },
+    "cardio": {
+      "bg": {
+        "src": "/img/products/cardio-bg.jpg",
+        "alt": "Cardio NRJ background",
+        "srcset": "/img/products/cardio-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/cardio.png",
+        "alt": "Cardio NRJ",
+        "srcset": "/img/products/cardio@2x.png 2x"
+      },
+      "title": "Cardio NRJ",
+      "text": "Таблетки для укрепления сердечно-сосудистой системы и профилактики заболеваний сердца."
+    },
+    "keto": {
+      "bg": {
+        "src": "/img/products/keto-bg.jpg",
+        "alt": "Keto Light+ background",
+        "srcset": "/img/products/keto-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/keto.png",
+        "alt": "Keto Light+",
+        "srcset": "/img/products/keto@2x.png 2x"
+      },
+      "title": "Keto Light+",
+      "text": "Коктейль, помогающий запустить естественный процесс похудения за счет активации кетоновых тел."
+    },
+    "choco": {
+      "bg": {
+        "src": "/img/products/choco-bg.jpg",
+        "alt": "Choco Lite background",
+        "srcset": "/img/products/choco-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/choco.png",
+        "alt": "Choco Lite",
+        "srcset": "/img/products/choco@2x.png 2x"
+      },
+      "title": "Choco Lite",
+      "text": "Энергетический коктейль для похудения со вкусом шоколада. Содержит комплекс витаминов и минералов."
+    }
   },
   "contacts": {
     "header": "Наши контакты",
