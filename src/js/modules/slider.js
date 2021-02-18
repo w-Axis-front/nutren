@@ -2,8 +2,6 @@ import slick from "slick-carousel";
 
 export default function slider() {
     const slider1 = $('#js_banner-slider');
-    // const slider1List = slider1.find(".slick-list");
-    const slides = $(".slick-slide");
 
     $(slider1).slick({
         prevArrow: '<button type="button" class="banner-slider__prev"><svg class="banner-slider__arrow-img" width="17" height="30" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
@@ -18,171 +16,61 @@ export default function slider() {
         easing: "ease-in",
         touchMove: false,
         swipe: false,
-
-        // responsive: [{
-        //     breakpoint: 1140,
-        //     settings: {
-        //         arrows: false
-        //     }
-        // }]
     });
-    
+
+    const slides = $(".slick-slide");
     const bgColors = ["rgba(252, 213, 196, 0.42)", "rgba(215, 240, 245, 0.54)", "rgba(178, 214, 248, 0.35)", "rgba(246, 208, 231, 0.4)", "rgba(208, 149, 106, 0.2)"];
 
-    function animateSlider(mediaQuery) {
-        if (mediaQuery.matches) {
+    $(slider1).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        slider1.css({"background-color": bgColors[nextSlide]});
 
-            $(slider1).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                slider1.css({"background-color": bgColors[nextSlide]});
-
-                let direction;
-                if (nextSlide == currentSlide) {
-                    direction = "same";
-                } else if (Math.abs(nextSlide - currentSlide) == 1) {
-                    direction = (nextSlide - currentSlide > 0) ? "right" : "left";
-                } else {
-                    direction = (nextSlide - currentSlide > 0) ? "left" : "right";
-                }
-
-                // FIX JUMPING ANIMATION:
-                 /*let slideCountZeroBased = slick.slideCount - 1;
-                 if (direction == 'right') {
-                     $('.slick-cloned[data-slick-index="' + (nextSlide + slideCountZeroBased + 1) + '"]', $(slider1)).addClass('slick-current-clone-animate');
-                 }
-                 if (direction == 'left') {
-                    $('.slick-cloned[data-slick-index="' + (nextSlide - slideCountZeroBased - 1) + '"]', $(slider1)).addClass('slick-current-clone-animate');
-                 }*/
-                // fix eng
-
-                slides.each(function () {
-                    // if ((currentSlide < nextSlide) || (nextSlide === 0 && currentSlide === (slick.slideCount - 1))) {
-                    const _this = $(this);
-                    const img1 = $(this).find(".banner-slider__slide-img1"), img2 = $(this).find(".banner-slider__slide-img2"),
-                        img3 = $(this).find(".banner-slider__slide-img3");
-                    // Animate images:
-                    if (direction == 'left') {
-                        if (!_this.hasClass("slick-current")) {
-                            img1.css({"transform": "translateX(-70%)"});
-                            img2.css({"transform": "translateX(-70%)"});
-                            img3.css({"transform": "translateX(-65%)"});
-                        }
-                        img1.css({"transition": "transform 0s ease 0s"});
-                        img2.css({"transition": "transform 0s ease 0s"});
-                        img3.css({"transition": "transform 0s ease 0s"});
-                        setTimeout(function () {
-                            img1.css({"transition": "transform .95s ease-in-out 0s", "transform": "translateX(0)"});
-                            img2.css({"transition": "transform .95s ease-out 0s", "transform": "translateX(0)"});
-                            img3.css({"transition": "transform .8s ease-in 0s", "transform": "translateX(0)"});
-                        }, 100);
-                    }
-                    if (direction == 'right') {
-                        if (!_this.hasClass("slick-current")) {
-                            img1.css({"transform": "translateX(70%)"});
-                            img2.css({"transform": "translateX(70%)"});
-                            img3.css({"transform": "translateX(65%)"});
-                        }
-                        img1.css({"transition": "transform 0s ease 0s"});
-                        img2.css({"transition": "transform 0s ease 0s"});
-                        img3.css({"transition": "transform 0s ease 0s"});
-                        setTimeout(function () {
-                            img1.css({"transition": "transform .95s ease-in-out 0s", "transform": "translateX(0)"});
-                            img2.css({ "transition": "transform .85s ease-in 0s", "transform": "translateX(0)"});
-                            img3.css({"transition": "transform .95s ease-out 0s", "transform": "translateX(0)"});
-                        }, 100);
-                    }
-                    // end animate images.
-                });
-            });
-
-            /*$(slider1).on('afterChange', function (event, slick, currentSlide, nextSlide) {
-                // FIX JUMPING ANIMATION:
-                 $('.slick-current-clone-animate', $(slider1)).removeClass('slick-current-clone-animate');
-                 $('.slick-current-clone-animate', $(slider1)).removeClass('slick-current-clone-animate');
-            });*/
+        let direction;
+        if (nextSlide == currentSlide) {
+            direction = "same";
+        } else if (Math.abs(nextSlide - currentSlide) == 1) {
+            direction = (nextSlide - currentSlide > 0) ? "right" : "left";
         } else {
-            $(slider1).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                slider1.css({"background-color": bgColors[nextSlide]});
-
-                let direction;
-                if (nextSlide == currentSlide) {
-                    direction = "same";
-                } else if (Math.abs(nextSlide - currentSlide) == 1) {
-                    direction = (nextSlide - currentSlide > 0) ? "right" : "left";
-                } else {
-                    direction = (nextSlide - currentSlide > 0) ? "left" : "right";
-                }
-
-                // FIX JUMPING ANIMATION:
-                 /*let slideCountZeroBased = slick.slideCount - 1;
-                 if (direction == 'right') {
-                     $('.slick-cloned[data-slick-index="' + (nextSlide + slideCountZeroBased + 1) + '"]', $(slider1)).addClass('slick-current-clone-animate');
-                 }
-                 if (direction == 'left') {
-                     $('.slick-cloned[data-slick-index="' + (nextSlide - slideCountZeroBased - 1) + '"]', $(slider1)).addClass('slick-current-clone-animate');
-                 }*/
-                // fix eng
-
-                //slider1List.css("overflow", "visible");
-
-                slides.each(function () {
-                    // if ((currentSlide < nextSlide) || (nextSlide === 0 && currentSlide === (slick.slideCount - 1))) {
-                    const _this = $(this);
-                    const img1 = _this.find(".banner-slider__slide-img1"), img2 = _this.find(".banner-slider__slide-img2"),
-                        img3 = _this.find(".banner-slider__slide-img3"), slideContent = _this.find(".banner-slider__slide");
-                    //slideContent.css("overflow-x", "visible");                    
-
-                    // Animate images:
-                    if (direction == 'left') {
-                        if (!_this.hasClass("slick-current")) {
-                            img1.css({"transform": "translateX(-70%)"});
-                            img2.css({"transform": "translateX(-70%)"});
-                            img3.css({"transform": "translateX(-65%)"});
-                        }
-                        img1.css({"transition": "transform 0s ease 0s"});
-                        img2.css({"transition": "transform 0s ease 0s"});
-                        img3.css({"transition": "transform 0s ease 0s"});
-                        setTimeout(function () {
-                            img1.css({ "transition": "transform .95s ease-out 0s", "transform": "translateX(0)" });
-                            img2.css({ "transition": "transform .7s ease-out .1s", "transform": "translateX(0)" });
-                            img3.css({ "transition": "transform .8s ease-out 0s", "transform": "translateX(0)" });
-                        }, 100);
-                    }
-                    if (direction == 'right') {
-                        if (!_this.hasClass("slick-current")) {
-                            img1.css({"transform": "translateX(70%)"});
-                            img2.css({"transform": "translateX(70%)"});
-                            img3.css({"transform": "translateX(65%)"});
-                        }
-                        img1.css({"transition": "transform 0s ease 0s"});
-                        img2.css({"transition": "transform 0s ease 0s"});
-                        img3.css({"transition": "transform 0s ease 0s"});
-                        setTimeout(function () {
-                            img1.css({ "transition": "transform .95s ease-in-out 0s", "transform": "translateX(0)" });
-                            img2.css({ "transition": "transform .7s ease-in 0s", "transform": "translateX(0)" });
-                            img3.css({ "transition": "transform .95s ease-out 0s", "transform": "translateX(0)" });
-                        }, 100);
-                    }
-                    // end animate images.
-                });
-            });
-
-            /*$(slider1).on('afterChange', function (event, slick, currentSlide, nextSlide) {
-                slider1List.css("overflow", "hidden");
-                slides.each(function () {
-                    // if ((currentSlide < nextSlide) || (nextSlide === 0 && currentSlide === (slick.slideCount - 1))) {
-                    const _this = $(this);
-                    const slideContent = _this.find(".banner-slider__slide");
-                    slideContent.css("overflow-x", "hidden");                    
-                });
-                // FIX JUMPING ANIMATION:
-                 $('.slick-current-clone-animate', $(slider1)).removeClass('slick-current-clone-animate');
-                 $('.slick-current-clone-animate', $(slider1)).removeClass('slick-current-clone-animate');
-            });*/
+            direction = (nextSlide - currentSlide > 0) ? "left" : "right";
         }
-    }
 
-    let mediaQuery = window.matchMedia("(min-width: 992px)");
-    animateSlider(mediaQuery);
-    mediaQuery.addListener(animateSlider);
+        slides.each(function () {
+            const _this = $(this);
+            const img1 = $(this).find(".banner-slider__slide-img1"),
+                img2 = $(this).find(".banner-slider__slide-img2"),
+                img3 = $(this).find(".banner-slider__slide-img3");
+            // Animate images:
+            if (direction == 'left') {
+                if (!_this.hasClass("slick-current")) {
+                    img1.css({"transform": "translateX(-70%)"});
+                    img2.css({"transform": "translateX(-70%)"});
+                    img3.css({"transform": "translateX(-65%)"});
+                }
+                img1.css({"transition": "transform 0s ease 0s"});
+                img2.css({"transition": "transform 0s ease 0s"});
+                img3.css({"transition": "transform 0s ease 0s"});
+                setTimeout(function () {
+                    img1.css({"transition": "transform .7s ease-in 0s", "transform": "translateX(0)"});
+                    img2.css({"transition": "transform .95s ease-out 0s", "transform": "translateX(0)"});
+                    img3.css({"transition": "transform .7s ease-in 0s", "transform": "translateX(0)"});
+                }, 100);
+            }
+            if (direction == 'right') {
+                if (!_this.hasClass("slick-current")) {
+                    img1.css({"transform": "translateX(70%)"});
+                    img2.css({"transform": "translateX(70%)"});
+                    img3.css({"transform": "translateX(65%)"});
+                }
+                img1.css({"transition": "transform 0s ease 0s"});
+                img2.css({"transition": "transform 0s ease 0s"});
+                img3.css({"transition": "transform 0s ease 0s"});
+                setTimeout(function () {
+                    img1.css({"transition": "transform .9s ease-out 0s", "transform": "translateX(0)"});
+                    img2.css({"transition": "transform .7s ease-in 0s", "transform": "translateX(0)"});
+                    img3.css({"transition": "transform .95s ease-out 0s", "transform": "translateX(0)"});
+                }, 100);
+            }
+            // end images animation.
+        });
+    });
 }
 

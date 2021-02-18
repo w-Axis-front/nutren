@@ -1,5 +1,7 @@
 # Nutren
 Макет: https://www.figma.com/file/L1kQ76XQYlryeFCnIAA8QI/Nutren-Front?node-id=0%3A1
+Копирайт: https://docs.google.com/document/d/105_H5KvyIGmpVDE_KZIUna6i_uG-dNfWxKF3I8mM6Rk/edit
+Копирайт копия: https://docs.google.com/document/d/1NkUAtony4NwZKkYhjM1QwR8gTxi-NaMjGhqC5xhEOGY/edit
 
 ## Структура проекта
 
