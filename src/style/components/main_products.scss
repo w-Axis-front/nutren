@@ -1,13 +1,13 @@
 /*********** PRODUCTS *************/
 .main-products {
-  min-height: 3080px;
+  min-height: 3071px;
   padding-top: 145px;
 
   .container {
     padding: 0;
   }
 
-  .grid { /* Masonry container */
+  .js_grid { /* Masonry container */
   }
 
   .grid-sizer, .grid-item {
@@ -18,12 +18,53 @@
     margin-bottom: 130px;
     box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    position: relative;
+    height: 634px;
+    transition: .3s;
+    z-index: $productsItem;
+    background-color: transparent;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: .3s;
+      z-index: $productsItemAfter;
+      border-radius: 5px;
+      background-color: transparent;
+      box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:hover:after {
+      left: -18.5px;
+      top: -18.5px;
+      right: -18.5px;
+      bottom: -18.5px;
+    }
 
     &.main-products__description {
       box-shadow: none;
       border-radius: 0;
       padding-top: 35px;
-      bottom: 90px;
+      margin-bottom: 90px;
+      height: auto;
+      min-height: 295px;
+
+      &:after {
+        display: none;
+      }
     }
   }
 
@@ -45,9 +86,269 @@
   }
 
   &__item-bg-img {
-    width: 100%;
-    //    display: block;
-    //    max-width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    transition: .3s;
+  }
+
+  &__item-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.positioned {
+      top: 70px;
+    }
+  }
+
+  .grid-item.cardio .main-products__item-img {
+    transform: translateX(-53%);
+  }
+
+  &__item-content {
+    position: absolute;
+    top: 392px;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    color: $textColor;
+    opacity: 0.8;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+
+  &__item-text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: $textColor;
+    opacity: 0.8;
+    transition: .3s;
+  }
+
+  .grid-item:hover {
+    .main-products {
+      &__item-bg-img {
+        border-radius: 5px;
+        height: 671px;
+        //width: 512px;
+        width: calc(100% + 37px);
+        top: -18.5px;
+      }
+
+      &__item-title {
+        color: $lightColor;
+        opacity: 1;
+      }
+
+      &__item-text {
+        color: $lightColor;
+        opacity: 1;
+      }
+    }
   }
 }
+
+//$xl: 1199.9px
+@media screen and (max-width: $xl) {
+  .main-products {
+    .container {
+      padding: 0 15px;
+    }
+
+    .grid-sizer, .grid-item {
+      width: calc(50% - 80px);
+    }
+  }
+}
+
+// $lg: 991.9px
+@media screen and (max-width: $xl) {
+  .main-products {
+    min-height: 2926px;
+    padding-top: 70px;
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .grid-sizer, .grid-item {
+      width: calc(50% - 65px);
+    }
+
+    &__description-title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    &__description-text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__item-content {
+      top: 380px;
+    }
+
+    &__item-title {
+      margin-bottom: 5px;
+    }
+
+    &__item-text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+// $md: 767.9px
+@media screen and (max-width: $md) {
+  .main-products {
+    min-height: 4551px;
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .grid-sizer, .grid-item {
+      width: 100%;
+    }
+
+    .grid-item {
+      margin-bottom: 40px;
+      border: 1px solid rgba(245, 245, 245, 0.5);
+      height: 583px;
+      background-color: $lightColor;
+
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+
+      &:after {
+        content: "";
+        display: none;
+        box-shadow: none;
+      }
+
+      &:hover {
+        box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+
+      //&:hover:after {
+      //  left: 0;
+      //  top: 0;
+      //  right: 0;
+      //  bottom: 0;
+      //}
+
+      &.main-products__description {
+        padding-top: 0;
+        margin-bottom: 70px;
+        min-height: 0;
+        border: none;
+      }
+    }
+
+    &__description-title {
+      margin-bottom: 40px;
+    }
+
+    &__description-text {
+      opacity: 1;
+    }
+
+    &__item-bg-img {
+      height: 200px;
+      width: 200px;
+      top: 77px;
+    }
+
+    &__item-img {
+      height: 302px;
+      width: auto;
+
+      &.positioned {
+        height: 194px;
+        top: 50px;
+      }
+    }
+
+    .grid-item.choco .main-products__item-img {
+      height: 190px;
+    }
+
+    &__item-content {
+      top: 319px;
+      padding: 0 15px;
+    }
+
+    &__item-title {
+      margin-bottom: 20px;
+    }
+
+    .grid-item:hover {
+      .main-products {
+        &__item-bg-img {
+          //height: 100%;
+          //width: 100%;
+          //top: 0;
+          height: 200px; //
+          width: 200px; //
+          top: 77px; //
+        }
+      }
+    }
+
+    //.grid-item.ostelife .main-products__item-bg-img {
+    //  animation: bg-ostelife 100ms linear infinite;
+    //  animation-play-state: paused;
+    //  animation-delay: calc(var(--scroll) * -100ms);
+    //  animation-iteration-count: 1;
+    //  animation-fill-mode: both;
+    //}
+
+    //@keyframes bg-ostelife {
+    //  0% {
+    //    height: 200px;
+    //    width: 200px;
+    //    top: 77px;
+    //  }
+    //  50% {
+    //    height: 100%;
+    //    width: 100%;
+    //    top: 0;
+    //  }
+    //  100% {
+    //    height: 200px;
+    //    width: 200px;
+    //    top: 77px;
+    //  }
+    //}
+  }
+}
+
+// $xs: 575.9px
+@media screen and (max-width: $xs) {
+  .main-products {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
 /*********** PRODUCTS END *************/

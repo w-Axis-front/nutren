@@ -159,6 +159,7 @@
     "title": "Наши продукты",
     "text": "Формулы продуктов созданы в нашей собственной лаборатории и защищены патентами. Все средства прошли клинические испытания, имеют доказанную эффективность и сертифицированы для продажи в Китае и Европе.",
     "ostelife": {
+      "class_additional": "ostelife",
       "bg": {
         "src": "/img/products/ostelife-bg.jpg",
         "alt": "Ostelife background",
@@ -173,6 +174,7 @@
       "text": "Крем для лечения и профилактики болезней опорно-двигательного аппарата. Создан на основе натуральных компонентов."
     },
     "germixil": {
+      "class_additional": "germixil",
       "bg": {
         "src": "/img/products/germixil-bg.jpg",
         "alt": "Germixil background",
@@ -183,10 +185,12 @@
         "alt": "Germixil",
         "srcset": "/img/products/germixil@2x.png 2x"
       },
+      "img_additional_class": "positioned",
       "title": "Germixil",
       "text": "Противопаразитарные таблетки мягкого действия с растительными экстрактами. Подходят для лечения и профилактики."
     },
     "varyforte": {
+      "class_additional": "varyforte",
       "bg": {
         "src": "/img/products/varyforte-bg.jpg",
         "alt": "Varyforte background",
@@ -201,6 +205,7 @@
       "text": "Крем из растительных ингредиентов для лечения варикоза. Не имеет противопоказаний и побочных эффектов."
     },
     "hairactiv": {
+      "class_additional": "hairactiv",
       "bg": {
         "src": "/img/products/hairactiv-bg.jpg",
         "alt": "HairActiv background",
@@ -211,10 +216,12 @@
         "alt": "HairActiv",
         "srcset": "/img/products/hairactiv@2x.png 2x"
       },
+      "img_additional_class": "positioned",
       "title": "HairActiv",
       "text": "Таблетки для роста волос, бровей и ресниц. Натуральный состав, сбалансированная формула."
     },
     "cardio": {
+      "class_additional": "cardio",
       "bg": {
         "src": "/img/products/cardio-bg.jpg",
         "alt": "Cardio NRJ background",
@@ -229,6 +236,7 @@
       "text": "Таблетки для укрепления сердечно-сосудистой системы и профилактики заболеваний сердца."
     },
     "keto": {
+      "class_additional": "keto",
       "bg": {
         "src": "/img/products/keto-bg.jpg",
         "alt": "Keto Light+ background",
@@ -239,10 +247,12 @@
         "alt": "Keto Light+",
         "srcset": "/img/products/keto@2x.png 2x"
       },
+      "img_additional_class": "positioned",
       "title": "Keto Light+",
       "text": "Коктейль, помогающий запустить естественный процесс похудения за счет активации кетоновых тел."
     },
     "choco": {
+      "class_additional": "choco",
       "bg": {
         "src": "/img/products/choco-bg.jpg",
         "alt": "Choco Lite background",
@@ -253,8 +263,34 @@
         "alt": "Choco Lite",
         "srcset": "/img/products/choco@2x.png 2x"
       },
+      "img_additional_class": "positioned",
       "title": "Choco Lite",
       "text": "Энергетический коктейль для похудения со вкусом шоколада. Содержит комплекс витаминов и минералов."
+    }
+  },
+  "main_produce": {
+    "title": "Разработка продуктов",
+    "text": "Предоставляем комплекс услуг по контрактному производству косметики и биодобавок:",
+    "idea": {
+      "text": "Ищем идеи продуктов, которые интересны потребителям."
+    },
+    "formula": {
+      "text": "Разрабатываем сбалансированные формулы."
+    },
+    "testing": {
+      "text": "Сопровождаем при прохождении клинических испытаний."
+    },
+    "document": {
+      "text": "Помогаем оформить все документы и сертификаты."
+    },
+    "award": {
+      "text": "Производим по современным технологиям и стандартам качества."
+    },
+    "brand": {
+      "text": "Создаем бренды и регистрируем торговые марки."
+    },
+    "shipment": {
+      "text": "Упаковываем и доставляем на ваши склады."
     }
   },
   "contacts": {

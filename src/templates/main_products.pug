@@ -1,9 +1,9 @@
 - const mainProducts = LANG.main_products;
 mixin gridItem(data)
-    .grid-item
+    div(class=`grid-item ${data.class_additional}`)
         img&attributes(data.bg).main-products__item-bg-img
+        img(class=`main-products__item-img ${data.img_additional_class}`)&attributes(data.img)
         .main-products__item-content
-            img&attributes(data.img).main-products__item-img
             p.main-products__item-title= data.title
             p.main-products__item-text= data.text
 
@@ -12,7 +12,7 @@ main#top
         include main_slider.pug
     section.main-products
         .container
-            .grid
+            .js_grid
                 .grid-sizer
                 .grid-item.main-products__description
                     p.main-products__description-title= mainProducts.title

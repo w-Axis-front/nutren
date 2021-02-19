@@ -1,0 +1,115 @@
+/*********** PRODUCE *************/
+.main-produce {
+  padding-top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__description {
+    padding-top: 31px;
+    padding-left: 95px;
+    margin-bottom: 50px;
+    min-height: 350px;
+  }
+
+  &__description-title {
+    font-size: 42px;
+    line-height: 50px;
+    color: $textColor;
+    margin-bottom: 40px;
+  }
+
+  &__description-text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: $textColor;
+    opacity: 0.8;
+    max-width: 472px;
+  }
+
+  &__item {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    background-color: $lightColor;
+    box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+
+    &:last-of-type {
+      padding-top: 50px;
+    }
+  }
+
+  &__item-img {
+    height: 130px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 35px auto;
+
+    .svg {
+      fill: $mainHover;
+      transition: .3s;
+    }
+
+    .stroke {
+      stroke: $mainHover;
+      transition: .3s;
+    }
+  }
+
+  .main-produce__item:last-of-type {
+    .main-produce__item-img {
+      height: 110px;
+    }
+  }
+
+  .main-produce__item:nth-of-type(7) {
+    .main-produce__item-img {
+      margin: 0 auto 25px auto;
+    }
+  }
+
+  .main-produce__item:nth-of-type(6) {
+    .main-produce__item-img {
+      margin: 0 auto 25px auto;
+    }
+  }
+
+  &__item-text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: $textColor;
+    opacity: 0.8;
+    padding: 0 35px;
+    transition: .3s;
+  }
+
+  &__item {
+    &:hover {
+      background-color: $mainHover;
+      .main-produce {
+        &__item-text {
+          opacity: 1;
+          color: $lightColor;
+        }
+        &__item-img {
+          .svg {
+            fill: $lightColor;
+          }
+
+          .stroke {
+            stroke: $lightColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*********** PRODUCE END *************/

@@ -2,7 +2,7 @@ import Masonry from 'masonry-layout'
 import imagesLoaded from 'imagesloaded'
 
 export default function masonryGrid() {
-    const grid = document.querySelector('.grid');
+    const grid = document.querySelector('.js_grid');
 
     imagesLoaded( grid, function() {
         // init Masonry after all images have loaded
@@ -10,7 +10,6 @@ export default function masonryGrid() {
             itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',
             gutter: 95,
-            // transitionDuration: 300,
             percentPosition: true
         })
     });

@@ -6,10 +6,12 @@ import $ from "jquery";
 import slider from './modules/slider';
 import nav from './modules/nav';
 import masonryGrid from "./modules/masonryGrid";
+import scrollContent from "./modules/scrollContent";
 
 $(function() {
   objectFitImages();
   slider();
   nav();
   masonryGrid();
+  scrollContent();
 });
