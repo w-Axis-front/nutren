@@ -1,6 +1,6 @@
 - const mainProducts = LANG.main_products;
 mixin gridItem(data)
-    div(class=`grid-item ${data.class_additional}`)
+    div(class=`grid-item js_scroll-animate ${data.class_additional}`)
         img&attributes(data.bg).main-products__item-bg-img
         img(class=`main-products__item-img ${data.img_additional_class}`)&attributes(data.img)
         .main-products__item-content
