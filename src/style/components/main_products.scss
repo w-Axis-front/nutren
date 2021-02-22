@@ -118,14 +118,14 @@
     left: 0;
     right: 0;
     padding: 0 30px;
+    color: $textColor;
+    opacity: 0.8;
   }
 
   &__item-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 45px;
-    color: $textColor;
-    opacity: 0.8;
     margin-bottom: 22px;
     transition: .3s;
   }
@@ -135,13 +135,15 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 35px;
-    color: $textColor;
-    opacity: 0.8;
     transition: .3s;
   }
 
   .grid-item:hover {
     .main-products {
+      &__description {
+        background-color: transparent;
+      }
+
       &__item-bg-img {
         border-radius: 5px;
         height: 671px;
@@ -150,12 +152,7 @@
         top: -18.5px;
       }
 
-      &__item-title {
-        color: $lightColor;
-        opacity: 1;
-      }
-
-      &__item-text {
+      &__item-content {
         color: $lightColor;
         opacity: 1;
       }
@@ -201,7 +198,7 @@
     }
 
     &__item-content {
-      top: 380px;
+      top: 365px;
     }
 
     &__item-title {
@@ -218,21 +215,21 @@
 // $md: 767.9px
 @media screen and (max-width: $md) {
   .main-products {
-    min-height: 4551px;
+    min-height: 0;
 
     .container {
       padding: 0 30px;
     }
 
-    .grid-sizer, .grid-item {
-      width: 100%;
+    .grid-sizer {
+      display: none;
     }
 
     .grid-item {
-      margin-bottom: 40px;
-      border: 1px solid rgba(245, 245, 245, 0.5);
       height: 583px;
       background-color: $lightColor;
+      width: 290px;
+      margin: 0 auto 40px auto;
 
       &:last-of-type {
         margin-bottom: 10px;
@@ -244,23 +241,11 @@
         box-shadow: none;
       }
 
-      &:hover {
-        box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
-        border: none;
-      }
-
-      //&:hover:after {
-      //  left: 0;
-      //  top: 0;
-      //  right: 0;
-      //  bottom: 0;
-      //}
-
       &.main-products__description {
         padding-top: 0;
         margin-bottom: 70px;
         min-height: 0;
-        border: none;
+        width: 100%;
       }
     }
 
@@ -304,64 +289,222 @@
     }
 
     .grid-item:hover {
+      box-shadow: 0 15px 123px -40px rgba(0, 0, 0, 0.2);
+
+      &.main-products__description {
+        background-color: transparent;
+        box-shadow: none;
+      }
+
       .main-products {
         &__item-bg-img {
-          //height: 100%;
-          //width: 100%;
-          //top: 0;
-          height: 200px; //
-          width: 200px; //
-          top: 77px; //
+          height: 200px;
+          width: 200px;
+          top: 77px;
+        }
+
+        &__item-content {
+          color: $textColor;
+          opacity: .8;
         }
       }
     }
 
-    .grid-item.ostelife .main-products__item-bg-img {
-      animation: bg-ostelife 1s linear infinite;
-      animation-play-state: paused;
-      animation-delay: calc(var(--scrollFirstCard) * -1s);
-      animation-iteration-count: 1;
-      animation-fill-mode: both;
+    .grid-item.ostelife {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollFirstCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollFirstCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+      }
     }
 
-    .grid-item.germixil .main-products__item-bg-img {
-      animation: bg-ostelife 1s linear infinite;
-      animation-play-state: paused;
-      animation-delay: calc(var(--scrollSecondCard) * -1s);
-      animation-iteration-count: 1;
-      animation-fill-mode: both;
+    .grid-item.germixil {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSecondCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSecondCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+      }
     }
 
-    @keyframes bg-ostelife {
-      0% {
-        height: 200px;
-        width: 200px;
-        top: 77px;
-        border-radius: 50%;
+    .grid-item.varyforte {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollThirdCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollThirdCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
       }
-      50% {
-        height: 100%;
-        width: 100%;
-        top: 0;
-        border-radius: 5px;
+    }
+
+    .grid-item.hairactiv {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollForthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollForthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
       }
-      100% {
-        height: 200px;
-        width: 200px;
-        top: 77px;
-        border-radius: 50%;
+    }
+
+    .grid-item.cardio {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollFifthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollFifthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+      }
+    }
+
+    .grid-item.keto {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSixthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSixthCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+      }
+    }
+
+    .grid-item.choco {
+      .main-products {
+        &__item-bg-img {
+          animation: bg 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSeventhCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
+
+        &__item-content {
+          animation: text-anim 1s linear infinite;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scrollSeventhCard) * -1s);
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+        }
       }
     }
   }
 }
 
-// $xs: 575.9px
-@media screen and (max-width: $xs) {
-  .main-products {
-    .container {
-      padding: 0 15px;
+  // $xs: 575.9px
+  @media screen and (max-width: $xs) {
+    .main-products {
+      .container {
+        padding: 0 15px;
+      }
     }
   }
-}
+
+  @keyframes bg {
+    0% {
+      height: 200px;
+      width: 200px;
+      top: 77px;
+      border-radius: 50%;
+    }
+    48% {
+      height: 200px;
+      width: 200px;
+      top: 77px;
+      border-radius: 50%;
+    }
+    50% {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      border-radius: 5px;
+    }
+    100% {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      border-radius: 5px;
+    }
+  }
+
+  @keyframes text-anim {
+    0% {
+      color: $textColor;
+      opacity: .8;
+    }
+    48% {
+      color: $textColor;
+      opacity: .8;
+    }
+    50% {
+      color: $lightColor;
+      opacity: 1;
+    }
+    100% {
+      color: $lightColor;
+      opacity: 1;
+    }
+  }
 
 /*********** PRODUCTS END *************/
