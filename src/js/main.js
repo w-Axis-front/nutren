@@ -7,6 +7,7 @@ import slider from './modules/slider';
 import nav from './modules/nav';
 import masonryGrid from "./modules/masonryGrid";
 import scrollContent from "./modules/scrollContent";
+import popupContent from "./modules/popupContent";
 
 $(function() {
   objectFitImages();
@@ -14,4 +15,5 @@ $(function() {
   nav();
   masonryGrid();
   scrollContent();
+  popupContent();
 });

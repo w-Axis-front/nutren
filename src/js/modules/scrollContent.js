@@ -7,9 +7,7 @@ export default function scrollContent() {
             () => {
                 document.body.style.setProperty(
                     styleProperties[idx],
-                    // window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
                     (window.pageYOffset - mainSlider.offsetHeight - animatedItem.offsetHeight * idx) / (animatedItem.offsetHeight)
-                    // (window.pageYOffset - mainSlider.offsetHeight - animatedItem.offsetHeight) / (animatedItem.offsetHeight)
                 );
             },
             false
@@ -18,8 +16,8 @@ export default function scrollContent() {
 
     function scrollContentHandler(media_check_max) {
         if (media_check_max.matches) {
-            // const productsMain = document.querySelector(".main-products");
             const mainSlider = document.querySelector(".main-slider");
+            // const descriptionBlock = document.querySelector(".main-products__description");
             const animatedItems = document.querySelectorAll(".js_scroll-animate");
 
             for (let idx = 0; idx < animatedItems.length; idx++) {

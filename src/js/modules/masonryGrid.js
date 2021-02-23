@@ -5,7 +5,7 @@ export default function masonryGrid() {
     const grid = document.querySelector('.js_grid');
 
     function buildMasonry(media_check_min) {
-        if (media_check_min.matches) {
+        if (media_check_min.matches && grid !== undefined && grid !== null) {
             imagesLoaded( grid, function() {
                 // init Masonry after all images have loaded
                 const msnry = new Masonry(grid, {

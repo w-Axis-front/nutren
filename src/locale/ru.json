@@ -337,5 +337,27 @@
     "link": "Public offer agreement",
     "link_path": "/ru/",
     "back_btn_img": {"src": "/img/svg/arrow-up.svg", "alt": "Up"}
+  },
+  "no_page": {
+    "title": "Ошибка 404",
+    "text": "Извините, такой страницы не существует. Вы можете вернуться на главную страницу или сообщить нам об ошибке.",
+    "button1": "На главную страницу",
+    "button1_path": "/ru/",
+    "button2": "Сообщить об ошибке",
+    "img": {
+      "src": "/img/no_page/no_page.png",
+      "alt": "404 ошибка. Страница не найдена",
+      "srcset": "/img/no_page/no_page@2x.png 2x"
+    },
+    "popup": {
+      "title": "Информация отправлена в техподдержку",
+      "text": "Спасибо, что помогаете сделать наш сайт лучше!",
+      "link_text": "На главную страницу",
+      "link_path": "/ru/",
+      "img": {
+        "src": "/img/svg/done.svg",
+        "alt": "Отправлено"
+      }
+    }
   }
 }
