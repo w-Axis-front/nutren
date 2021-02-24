@@ -1,8 +1,8 @@
 {
   "locale": "ru",
   "nav": {
-    "nav_logo": {"src": "/img/svg/nav_logo.svg", "alt": "Nutren logo"},
-    "nav_logo_collapsed": {"src": "/img/svg/logo-small.svg", "alt": "Logo"},
+    "nav_logo": {"src": "img/svg/nav_logo.svg", "alt": "Nutren logo"},
+    "nav_logo_collapsed": {"src": "img/svg/logo-small.svg", "alt": "Logo"},
     "nav_logo_path": "index.html",
     "nav_link1": "Главная",
     "nav_path1": "index.html",
@@ -30,19 +30,19 @@
       "slide_bg_subtext_next": "Keto light +",
       "slide_text": "Натуральный крем для лечения суставов и связок.",
       "slide_img1": {
-        "src": "/img/main_slider/ostelife_1.png",
+        "src": "img/main_slider/ostelife_1.png",
         "alt": "Ostelife product example",
-        "srcset": "/img/main_slider/ostelife_1@2x.png 2x"
+        "srcset": "img/main_slider/ostelife_1@2x.png 2x"
       },
       "slide_img2": {
-        "src": "/img/main_slider/ostelife_2.png",
+        "src": "img/main_slider/ostelife_2.png",
         "alt": "Ostelife",
-        "srcset": "/img/main_slider/ostelife_2@2x.png 2x"
+        "srcset": "img/main_slider/ostelife_2@2x.png 2x"
       },
       "slide_img3": {
-        "src": "/img/main_slider/ostelife_3.png",
+        "src": "img/main_slider/ostelife_3.png",
         "alt": "Ostelife product",
-        "srcset": "/img/main_slider/ostelife_3@2x.png 2x"
+        "srcset": "img/main_slider/ostelife_3@2x.png 2x"
       }
     },
     {
@@ -53,19 +53,19 @@
       "slide_bg_subtext_next": "Cardio NRJ",
       "slide_text": "Коктейль-активатор кетоновых тел для похудения.",
       "slide_img1": {
-        "src": "/img/main_slider/keto_1.png",
+        "src": "img/main_slider/keto_1.png",
         "alt": "Keto light + product example",
-        "srcset": "/img/main_slider/keto_1@2x.png 2x"
+        "srcset": "img/main_slider/keto_1@2x.png 2x"
       },
       "slide_img2": {
-        "src": "/img/main_slider/keto_2.png",
+        "src": "img/main_slider/keto_2.png",
         "alt": "Keto light +",
-        "srcset": "/img/main_slider/keto_2@2x.png 2x"
+        "srcset": "img/main_slider/keto_2@2x.png 2x"
       },
       "slide_img3": {
-        "src": "/img/main_slider/keto_3.png",
+        "src": "img/main_slider/keto_3.png",
         "alt": "Keto light + product",
-        "srcset": "/img/main_slider/keto_3@2x.png 2x"
+        "srcset": "img/main_slider/keto_3@2x.png 2x"
       }
     },
     {
@@ -76,19 +76,19 @@
       "slide_bg_subtext_next": "Varyforte",
       "slide_text": "Таблетки для профилактики заболеваний сердца.",
       "slide_img1": {
-        "src": "/img/main_slider/CardioNRJ_1.png",
+        "src": "img/main_slider/CardioNRJ_1.png",
         "alt": "Cardio NRJ product example",
-        "srcset": "/img/main_slider/CardioNRJ_1@2x.png 2x"
+        "srcset": "img/main_slider/CardioNRJ_1@2x.png 2x"
       },
       "slide_img2": {
-        "src": "/img/main_slider/CardioNRJ_2.png",
+        "src": "img/main_slider/CardioNRJ_2.png",
         "alt": "Cardio NRJ",
-        "srcset": "/img/main_slider/CardioNRJ_2@2x.png 2x"
+        "srcset": "img/main_slider/CardioNRJ_2@2x.png 2x"
       },
       "slide_img3": {
-        "src": "/img/main_slider/CardioNRJ_3.png",
+        "src": "img/main_slider/CardioNRJ_3.png",
         "alt": "Cardio NRJ product",
-        "srcset": "/img/main_slider/CardioNRJ_3@2x.png 2x"
+        "srcset": "img/main_slider/CardioNRJ_3@2x.png 2x"
       }
     },
     {
@@ -99,19 +99,19 @@
       "slide_bg_subtext_next": "Choco Lite",
       "slide_text": "Крем для лечения варикоза без побочных эффектов.",
       "slide_img1": {
-        "src": "/img/main_slider/varyforte_1.png",
+        "src": "img/main_slider/varyforte_1.png",
         "alt": "Varyforte product example",
-        "srcset": "/img/main_slider/varyforte_1@2x.png 2x"
+        "srcset": "img/main_slider/varyforte_1@2x.png 2x"
       },
       "slide_img2": {
-        "src": "/img/main_slider/varyforte_2.png",
+        "src": "img/main_slider/varyforte_2.png",
         "alt": "Varyforte",
-        "srcset": "/img/main_slider/varyforte_2@2x.png 2x"
+        "srcset": "img/main_slider/varyforte_2@2x.png 2x"
       },
       "slide_img3": {
-        "src": "/img/main_slider/varyforte_3.png",
+        "src": "img/main_slider/varyforte_3.png",
         "alt": "Varyforte product",
-        "srcset": "/img/main_slider/varyforte_3@2x.png 2x"
+        "srcset": "img/main_slider/varyforte_3@2x.png 2x"
       }
     },
     {
@@ -122,19 +122,19 @@
       "slide_bg_subtext_next": "Ostelife",
       "slide_text": "Энергетический коктейль для похудения со вкусом шоколада.",
       "slide_img1": {
-        "src": "/img/main_slider/choco-lite_1.png",
+        "src": "img/main_slider/choco-lite_1.png",
         "alt": "Choco Lite product example",
-        "srcset": "/img/main_slider/choco-lite_1@2x.png 2x"
+        "srcset": "img/main_slider/choco-lite_1@2x.png 2x"
       },
       "slide_img2": {
-        "src": "/img/main_slider/choco-lite_2.png",
+        "src": "img/main_slider/choco-lite_2.png",
         "alt": "Choco Lite",
-        "srcset": "/img/main_slider/choco-lite_2@2x.png 2x"
+        "srcset": "img/main_slider/choco-lite_2@2x.png 2x"
       },
       "slide_img3": {
-        "src": "/img/main_slider/choco-lite_3.png",
+        "src": "img/main_slider/choco-lite_3.png",
         "alt": "Choco Lite product",
-        "srcset": "/img/main_slider/choco-lite_3@2x.png 2x"
+        "srcset": "img/main_slider/choco-lite_3@2x.png 2x"
       }
     }
   ],
@@ -142,13 +142,13 @@
     "main_header": "Nutren — производитель косметики и биодобавок",
     "main_text1": "Разрабатываем формулу. Производим продукт. Упаковываем. Исследуем рынок. Создаем бренд. Оформляем документы.",
     "main_text2": "Все продукты сертифицированы в Китае.",
-    "main_img": {"src": "/img/main/main.png", "alt": "Nutren manufacturer", "srcset": "/img/main/main@2x.png 2x"},
+    "main_img": {"src": "img/main/main.png", "alt": "Nutren manufacturer", "srcset": "img/main/main@2x.png 2x"},
     "produce_header": "Производим свои продукты",
     "produce_text1": "Разрабатываем и производим крема и БАДы под своими марками. Успешно продаем их в Китае и по всему миру, завоевывая доверие покупателей.",
     "produce_text2": "Среди наших продуктов — такие популярные средства, как коктейль для похудения Keto Light+, крем для суставов Ostelife, средство от паразитов Germixil и другие.",
     "produce_link": "Все продукты Nutren",
     "produce_path": "products.html",
-    "produce_img": {"src": "/img/main/produce.png", "alt": "Nutren products", "srcset": "/img/main/produce@2x.png 2x"},
+    "produce_img": {"src": "img/main/produce.png", "alt": "Nutren products", "srcset": "img/main/produce@2x.png 2x"},
     "order_header": "Создадим продукт для вас",
     "order_text1": "Неважно, есть у вас продукт, формула или только идея. Мы поможем на любом этапе: от подбора компонентов — до проведения клинических испытаний, от производства — до разработки дизайна упаковки. ",
     "order_text2": "Вы получите полностью готовый к продаже товар — интересный потребителям, с доказанной эффективностью, а также всеми необходимыми разрешениями и сертификатами.",
@@ -161,14 +161,14 @@
     "ostelife": {
       "class_additional": "ostelife",
       "bg": {
-        "src": "/img/products/ostelife-bg.jpg",
+        "src": "img/products/ostelife-bg.jpg",
         "alt": "Ostelife background",
-        "srcset": "/img/products/ostelife-bg@2x.jpg 2x"
+        "srcset": "img/products/ostelife-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/ostelife.png",
+        "src": "img/products/ostelife.png",
         "alt": "Ostelife",
-        "srcset": "/img/products/ostelife@2x.png 2x"
+        "srcset": "img/products/ostelife@2x.png 2x"
       },
       "title": "Ostelife",
       "text": "Крем для лечения и профилактики болезней опорно-двигательного аппарата. Создан на основе натуральных компонентов."
@@ -176,14 +176,14 @@
     "germixil": {
       "class_additional": "germixil",
       "bg": {
-        "src": "/img/products/germixil-bg.jpg",
+        "src": "img/products/germixil-bg.jpg",
         "alt": "Germixil background",
-        "srcset": "/img/products/germixil-bg@2x.jpg 2x"
+        "srcset": "img/products/germixil-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/germixil.png",
+        "src": "img/products/germixil.png",
         "alt": "Germixil",
-        "srcset": "/img/products/germixil@2x.png 2x"
+        "srcset": "img/products/germixil@2x.png 2x"
       },
       "img_additional_class": "positioned",
       "title": "Germixil",
@@ -192,14 +192,14 @@
     "varyforte": {
       "class_additional": "varyforte",
       "bg": {
-        "src": "/img/products/varyforte-bg.jpg",
+        "src": "img/products/varyforte-bg.jpg",
         "alt": "Varyforte background",
-        "srcset": "/img/products/varyforte-bg@2x.jpg 2x"
+        "srcset": "img/products/varyforte-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/varyforte.png",
+        "src": "img/products/varyforte.png",
         "alt": "Varyforte",
-        "srcset": "/img/products/varyforte@2x.png 2x"
+        "srcset": "img/products/varyforte@2x.png 2x"
       },
       "title": "Varyforte",
       "text": "Крем из растительных ингредиентов для лечения варикоза. Не имеет противопоказаний и побочных эффектов."
@@ -207,14 +207,14 @@
     "hairactiv": {
       "class_additional": "hairactiv",
       "bg": {
-        "src": "/img/products/hairactiv-bg.jpg",
+        "src": "img/products/hairactiv-bg.jpg",
         "alt": "HairActiv background",
-        "srcset": "/img/products/hairactiv-bg@2x.jpg 2x"
+        "srcset": "img/products/hairactiv-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/hairactiv.png",
+        "src": "img/products/hairactiv.png",
         "alt": "HairActiv",
-        "srcset": "/img/products/hairactiv@2x.png 2x"
+        "srcset": "img/products/hairactiv@2x.png 2x"
       },
       "img_additional_class": "positioned",
       "title": "HairActiv",
@@ -223,14 +223,14 @@
     "cardio": {
       "class_additional": "cardio",
       "bg": {
-        "src": "/img/products/cardio-bg.jpg",
+        "src": "img/products/cardio-bg.jpg",
         "alt": "Cardio NRJ background",
-        "srcset": "/img/products/cardio-bg@2x.jpg 2x"
+        "srcset": "img/products/cardio-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/cardio.png",
+        "src": "img/products/cardio.png",
         "alt": "Cardio NRJ",
-        "srcset": "/img/products/cardio@2x.png 2x"
+        "srcset": "img/products/cardio@2x.png 2x"
       },
       "title": "Cardio NRJ",
       "text": "Таблетки для укрепления сердечно-сосудистой системы и профилактики заболеваний сердца."
@@ -238,14 +238,14 @@
     "keto": {
       "class_additional": "keto",
       "bg": {
-        "src": "/img/products/keto-bg.jpg",
+        "src": "img/products/keto-bg.jpg",
         "alt": "Keto Light+ background",
-        "srcset": "/img/products/keto-bg@2x.jpg 2x"
+        "srcset": "img/products/keto-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/keto.png",
+        "src": "img/products/keto.png",
         "alt": "Keto Light+",
-        "srcset": "/img/products/keto@2x.png 2x"
+        "srcset": "img/products/keto@2x.png 2x"
       },
       "img_additional_class": "positioned",
       "title": "Keto Light+",
@@ -254,14 +254,14 @@
     "choco": {
       "class_additional": "choco",
       "bg": {
-        "src": "/img/products/choco-bg.jpg",
+        "src": "img/products/choco-bg.jpg",
         "alt": "Choco Lite background",
-        "srcset": "/img/products/choco-bg@2x.jpg 2x"
+        "srcset": "img/products/choco-bg@2x.jpg 2x"
       },
       "img": {
-        "src": "/img/products/choco.png",
+        "src": "img/products/choco.png",
         "alt": "Choco Lite",
-        "srcset": "/img/products/choco@2x.png 2x"
+        "srcset": "img/products/choco@2x.png 2x"
       },
       "img_additional_class": "positioned",
       "title": "Choco Lite",
@@ -272,24 +272,31 @@
     "title": "Разработка продуктов",
     "text": "Предоставляем комплекс услуг по контрактному производству косметики и биодобавок:",
     "idea": {
+      "additional_class": "idea",
       "text": "Ищем идеи продуктов, которые интересны потребителям."
     },
     "formula": {
+      "additional_class": "formula",
       "text": "Разрабатываем сбалансированные формулы."
     },
     "testing": {
+      "additional_class": "testing",
       "text": "Сопровождаем при прохождении клинических испытаний."
     },
     "document": {
+      "additional_class": "document",
       "text": "Помогаем оформить все документы и сертификаты."
     },
     "award": {
+      "additional_class": "award",
       "text": "Производим по современным технологиям и стандартам качества."
     },
     "brand": {
+      "additional_class": "brand",
       "text": "Создаем бренды и регистрируем торговые марки."
     },
     "shipment": {
+      "additional_class": "shipment",
       "text": "Упаковываем и доставляем на ваши склады."
     }
   },
@@ -298,14 +305,20 @@
     "text1": "Миссия Nutren: создавать косметику и биодобавки, соответствующие всем требованиям современного рынка.",
     "text2": "Мы хотим, чтобы в Китае стало больше продуктов, которые по-настоящему интересны потребителям и приносят стабильную прибыль.",
     "text3": "Собственный опыт разработки и производства помогает нам подбирать лучшие схемы работы для наших клиентов.",
-    "img": {"src": "/img/about/about.png", "alt": "Nutren company", "srcset": "/img/about/about@2x.png 2x"},
+    "img": {"src": "img/about/about.png", "alt": "Nutren company", "srcset": "img/about/about@2x.png 2x"},
     "opportunities_title": "С нами вы сможете:",
     "speed_text": "Быстро вывести на рынок новый продукт.",
+    "speed_additional_class": "speed",
     "brand_text": "Создать бренд, который полюбят покупатели.",
+    "brand_additional_class": "brand",
     "assembly_text": "Избавиться от производственной рутины.",
+    "assembly_additional_class": "assembly",
     "document_text": "Быстро и легко получить разрешения и сертификаты.",
+    "document_additional_class": "document",
     "premium_text": "Выбрать условия, которые подходят именно вам.",
-    "service_text": "Получить поддержку и консультацию на каждом этапе работы."
+    "premium_additional_class": "premium",
+    "service_text": "Получить поддержку и консультацию на каждом этапе работы.",
+    "service_additional_class": "service"
   },
   "contacts": {
     "header": "Наши контакты",
@@ -319,8 +332,8 @@
     "WhatsApp_path": "https://api.whatsapp.com/send?phone=<380999999999>",
     "WeChat_path": "#",
     "Viber_path": "viber://chat?number=%2B380999999999",
-    "img": {"src": "/img/contacts/mobile-screen.gif", "alt": "Products"},
-    "img_bg": {"src": "/img/contacts/contacts-bg.png", "alt": "Background for products", "srcset": "/img/contacts/contacts-bg@2x.png 2x"},
+    "img": {"src": "img/contacts/mobile-screen.gif", "alt": "Products"},
+    "img_bg": {"src": "img/contacts/contacts-bg.png", "alt": "Background for products", "srcset": "img/contacts/contacts-bg@2x.png 2x"},
     "text": "Хотите, чтобы мы сами с вами связались? Напишите нам.",
     "phone_placeholder": "Телефон / e-mail",
     "phone_label": "Телефон / e-mail",
@@ -329,14 +342,14 @@
     "button": "Отправить"
   },
   "footer": {
-    "logo": {"src": "/img/svg/nav_logo.svg", "alt": "Logo"},
+    "logo": {"src": "img/svg/nav_logo.svg", "alt": "Logo"},
     "logo_path": "index.html",
-    "text": "© 2016 Great Simple. All rights reserved",
+    "text": "© 2021 Nutren. All rights reserved",
     "back_btn": "Back to the top",
     "back_path": "#top",
     "link": "Public offer agreement",
     "link_path": "/ru/",
-    "back_btn_img": {"src": "/img/svg/arrow-up.svg", "alt": "Up"}
+    "back_btn_img": {"src": "img/svg/arrow-up.svg", "alt": "Up"}
   },
   "no_page": {
     "title": "Ошибка 404",
@@ -345,9 +358,9 @@
     "button1_path": "/ru/",
     "button2": "Сообщить об ошибке",
     "img": {
-      "src": "/img/no_page/no_page.png",
+      "src": "img/no_page/no_page.png",
       "alt": "404 ошибка. Страница не найдена",
-      "srcset": "/img/no_page/no_page@2x.png 2x"
+      "srcset": "img/no_page/no_page@2x.png 2x"
     },
     "popup": {
       "title": "Информация отправлена в техподдержку",
@@ -355,7 +368,7 @@
       "link_text": "На главную страницу",
       "link_path": "/ru/",
       "img": {
-        "src": "/img/svg/done.svg",
+        "src": "img/svg/done.svg",
         "alt": "Отправлено"
       }
     }

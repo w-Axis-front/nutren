@@ -93,11 +93,13 @@
   &__item {
     &:hover {
       background-color: $mainHover;
+
       .main-produce {
         &__item-text {
           opacity: 1;
           color: $lightColor;
         }
+
         &__item-img {
           .svg {
             fill: $lightColor;
@@ -139,7 +141,280 @@
         margin-bottom: 20px;
       }
     }
-  }  
+  }
+}
+
+//$md: 767.9px
+@media screen and (max-width: $md) {
+  .main-produce {
+    &__item {
+      &:hover {
+        background-color: $lightColor;
+
+        .main-produce {
+          &__item-text {
+            opacity: .8;
+            color: $textColor;
+          }
+
+          &__item-img {
+            .svg {
+              fill: $mainHover;
+            }
+
+            .stroke {
+              stroke: $mainHover;
+            }
+          }
+        }
+      }
+
+      &.idea {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollFirstCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollFirstCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollFirstCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollFirstCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.formula {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollSecondCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollSecondCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSecondCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSecondCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.testing {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollThirdCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollThirdCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollThirdCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollThirdCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.document {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollForthCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollForthCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollForthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollForthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.award {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollFifthCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollFifthCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollFifthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollFifthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.brand {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollSixthCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollSixthCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSixthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSixthCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      &.shipment {
+        animation: item-anim 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scrollSeventhCard) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        .main-produce {
+          &__item-text {
+            animation: text-animation 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollSeventhCard) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+          }
+
+          &__item-img {
+            .svg {
+              animation: fill-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSeventhCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+
+            .stroke {
+              animation: stroke-anim 1s linear infinite;
+              animation-play-state: paused;
+              animation-delay: calc(var(--scrollSeventhCard) * -1s);
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // $xs: 575.9px
@@ -154,12 +429,12 @@
 
     &__description-title {
       font-size: 35px;
-line-height: 40px;
+      line-height: 40px;
     }
 
     &__description-text {
       font-size: 18px;
-line-height: 30px;
+      line-height: 30px;
     }
 
     &__item {
@@ -169,8 +444,73 @@ line-height: 30px;
 
     &__item-text {
       font-size: 18px;
-line-height: 30px;
+      line-height: 30px;
     }
   }
 }
+
+@keyframes item-anim {
+  0% {
+    background-color: $lightColor;
+  }
+  48% {
+    background-color: $lightColor;
+  }
+  50% {
+    background-color: $mainHover;
+  }
+  100% {
+    background-color: $mainHover;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: .8;
+    color: $textColor;
+  }
+  48% {
+    opacity: .8;
+    color: $textColor;
+  }
+  50% {
+    color: $lightColor;
+    opacity: 1;
+  }
+  100% {
+    color: $lightColor;
+    opacity: 1;
+  }
+}
+
+@keyframes fill-anim {
+  0% {
+    fill: $mainHover;
+  }
+  48% {
+    fill: $mainHover;
+  }
+  50% {
+    fill: $lightColor;
+  }
+  100% {
+    fill: $lightColor;
+  }
+}
+
+@keyframes stroke-anim {
+  0% {
+    stroke: $mainHover;
+  }
+  48% {
+    stroke: $mainHover;
+  }
+  50% {
+    stroke: $lightColor;
+  }
+  100% {
+    stroke: $lightColor;
+  }
+}
+
 /*********** PRODUCE END *************/

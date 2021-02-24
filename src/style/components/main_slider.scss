@@ -1,10 +1,11 @@
 /***********MAIN SLIDER************/
 #js_main-slider {
   transition: background-color .8s linear;
-  background-color: $ostelife-bg;
+  // background-color: $ostelife-bg;
 }
 
-.slick-slider {}
+.slick-slider {
+}
 
 .slick-slider div {
   // For fixing infinite slider jumping issue from last to firs:
@@ -12,10 +13,12 @@
 }
 
 // ограничивающая оболочка:
-.slick-list {}
+.slick-list {
+}
 
 // лента слайдов:
-.slick-track {}
+.slick-track {
+}
 
 .slick-arrow {
   position: absolute;
@@ -31,285 +34,300 @@
   }
 }
 
-.slick-slide {}
+.slick-slide {
+}
 
-.slick-slide.slick-current {}
+.slick-slide.slick-current {
+}
 
 .main-slider {
-    &__prev {
-        left: 16.5%;
-        transform: translate(-16.5%, -50%);
-        z-index: $mainSliderBtn;
-    }
+  &__prev {
+    left: 16.5%;
+    transform: translate(-16.5%, -50%);
+    z-index: $mainSliderBtn;
 
-    &__next {
-        right: 16.5%;
-        transform: translate(-16.5%, -50%);
+    .main-slider__arrow-img {
+      transform: translateX(-2px);
     }
+  }
 
-    &__arrow-img {
-        height: 100%;
-        width: auto;
+  &__next {
+    right: 16.5%;
+    transform: translate(-16.5%, -50%);
+
+    .main-slider__arrow-img {
+      transform: translateX(2px);
     }
+  }
 
-    &__slide {
-        min-height: 596px;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
+  &__arrow-img {
+    height: 100%;
+    width: auto;
+  }
 
-    &__slide-bg-text {
+  &__slide {
+    min-height: 596px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: $ostelife-bg;
+  }
+
+  &__slide-bg-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    color: $lightColor;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &__slide-bg-sub {
+    position: absolute;
+    top: 183px;
+    font-size: 120px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $lightColor;
+    opacity: 0.35;
+  }
+
+  &__slide-bg-subtext {
+    transform: translateX(-50%);
+  }
+
+  &__slide-bg-subtext-next {
+    transform: translateX(50%);
+    right: 0;
+  }
+
+  &__slide-img1 {
+    z-index: $slideImg1;
+  }
+
+  &__slide-img2 {
+    z-index: $slideImg2;
+  }
+
+  &__slide-img3 {
+    z-index: $slideImg3;
+  }
+
+  &__slide-content {
+    max-width: 240px;
+    position: absolute;
+    top: 252px;
+    z-index: $slideContent;
+  }
+
+  &__slide-title {
+    padding-bottom: 15px;
+    font-family: $main-font-family;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+
+  &__slide-text {
+    color: $textColorTransparent;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__slide-ostelife {
+    .main-slider {
+      &__slide-img1 {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0.5;
-        color: $lightColor;
-        text-align: center;
-        text-transform: uppercase;
-        white-space: nowrap;
-    }
+        left: 15%;
+        top: 111px;
+      }
 
-    &__slide-bg-sub {
+      &__slide-img2 {
         position: absolute;
-        top: 183px;
-        font-size: 120px;
+        left: 17%;
+        top: -23px;
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        right: 13%;
+        top: 79px;
+      }
+
+      &__slide-bg-text {
+        font-size: 273.6px;
+        line-height: 228px;
+        letter-spacing: 11.4px;
+        top: 126px;
+      }
+
+      &__slide-bg-sub.main-slider__slide-bg-subtext-next {
+        font-size: 107px;
+      }
+
+      &__slide-content {
+        left: 51%;
+      }
+
+      &__slide-title {
+        color: $ostelife;
+      }
+    }
+  }
+
+  &__slide-keto-light {
+    .main-slider {
+      &__slide-img1 {
+        position: absolute;
+        left: 19%;
+        top: 155px;
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        left: 27%;
+        top: 50px;
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        right: 1%;
+        top: 21px;
+      }
+
+      &__slide-bg-text {
+        font-size: 180px;
         line-height: 100px;
-        text-align: center;
         letter-spacing: 5px;
-        text-transform: uppercase;
-        color: $lightColor;
-        opacity: 0.35;
-    }
+        top: 142px;
+      }
 
-    &__slide-bg-subtext {
-        transform: translateX(-50%);
-    }
+      &__slide-content {
+        left: 54%;
+      }
 
-    &__slide-bg-subtext-next {
-        transform: translateX(50%);
-        right: 0;
+      &__slide-title {
+        color: $keto-light;
+      }
     }
+  }
 
-    &__slide-img1 {
-        z-index: $slideImg1;
-    }
-
-    &__slide-img2 {
-        z-index: $slideImg2;
-    }
-
-    &__slide-img3 {
-        z-index: $slideImg3;
-    }
-
-    &__slide-content {
-        max-width: 240px;
+  &__slide-cardio-nrj {
+    .main-slider {
+      &__slide-img1 {
         position: absolute;
-        top: 252px;
-        z-index: $slideContent;
+        left: 17%;
+        top: 90px;
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        left: 19%;
+        top: -63px;
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        right: 8%;
+        top: 46px;
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 100px;
+        letter-spacing: 5px;
+        top: 122px;
+      }
+
+      &__slide-content {
+        left: 54%;
+      }
+
+      &__slide-title {
+        color: $cardio-nrj;
+      }
     }
+  }
 
-    &__slide-title {
-        padding-bottom: 15px;
-        font-family: $main-font-family;
-        font-size: 42px;
-        line-height: 50px;
-        letter-spacing: 1px;
+  &__slide-varyforte {
+    .main-slider {
+      &__slide-img1 {
+        position: absolute;
+        left: 15%;
+        top: 104px;
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        left: 13%;
+        top: -35px;
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        right: 14%;
+        top: 45px;
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 200px;
+        top: 128px;
+      }
+
+      &__slide-content {
+        left: 50%;
+        transform: translateX(0);
+      }
+
+      &__slide-title {
+        color: $varyforte;
+      }
     }
+  }
 
-    &__slide-text {
-        color: $textColorTransparent;
-        font-family: $font-family;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 28px;
+  &__slide-choco-lite {
+    .main-slider {
+      &__slide-img1 {
+        position: absolute;
+        left: 13%;
+        top: -44px;
+      }
+
+      &__slide-img2 {
+        position: absolute;
+        left: 13%;
+        top: 19px;
+      }
+
+      &__slide-img3 {
+        position: absolute;
+        right: 13%;
+        top: 39px;
+      }
+
+      &__slide-bg-text {
+        font-size: 200px;
+        line-height: 200px;
+        top: 128px;
+      }
+
+      &__slide-content {
+        left: 50%;
+        transform: translateX(0);
+      }
+
+      &__slide-title {
+        color: $choco-lite;
+      }
     }
-
-    &__slide-ostelife {
-        .main-slider {
-            &__slide-img1 {
-                position: absolute;
-                left: 15%;
-                top: 111px;
-            }
-
-            &__slide-img2 {
-                position: absolute;
-                left: 17%;
-                top: -23px;
-            }
-
-            &__slide-img3 {
-                position: absolute;
-                right: 13%;
-                top: 79px;
-            }
-
-            &__slide-bg-text {
-                font-size: 273.6px;
-                line-height: 228px;
-                letter-spacing: 11.4px;
-                top: 126px;
-            }
-
-            &__slide-content {
-                left: 51%;
-            }
-
-            &__slide-title {
-                color: $ostelife;
-            }
-        }
-    }
-
-    &__slide-keto-light {
-        .main-slider {
-            &__slide-img1 {
-                position: absolute;
-                left: 19%;
-                top: 155px;
-            }
-
-            &__slide-img2 {
-                position: absolute;
-                left: 27%;
-                top: 50px;
-            }
-
-            &__slide-img3 {
-                position: absolute;
-                right: 1%;
-                top: 21px;
-            }
-
-            &__slide-bg-text {
-                font-size: 180px;
-                line-height: 100px;
-                letter-spacing: 5px;
-                top: 142px;
-            }
-
-            &__slide-content {
-                left: 54%;
-            }
-
-            &__slide-title {
-                color: $keto-light;
-            }
-        }
-    }
-
-    &__slide-cardio-nrj {
-        .main-slider {
-            &__slide-img1 {
-                position: absolute;
-                left: 17%;
-                top: 90px;
-            }
-
-            &__slide-img2 {
-                position: absolute;
-                left: 19%;
-                top: -63px;
-            }
-
-            &__slide-img3 {
-                position: absolute;
-                right: 8%;
-                top: 46px;
-            }
-
-            &__slide-bg-text {
-                font-size: 200px;
-                line-height: 100px;
-                letter-spacing: 5px;
-                top: 122px;
-            }
-
-            &__slide-content {
-                left: 54%;
-            }
-
-            &__slide-title {
-                color: $cardio-nrj;
-            }
-        }
-    }
-
-    &__slide-varyforte {
-        .main-slider {
-            &__slide-img1 {
-                position: absolute;
-                left: 15%;
-                top: 104px;
-            }
-
-            &__slide-img2 {
-                position: absolute;
-                left: 13%;
-                top: -35px;
-            }
-
-            &__slide-img3 {
-                position: absolute;
-                right: 14%;
-                top: 45px;
-            }
-
-            &__slide-bg-text {
-                font-size: 200px;
-                line-height: 200px;
-                top: 128px;
-            }
-
-            &__slide-content {
-                left: 50%;
-                transform: translateX(0);
-            }
-
-            &__slide-title {
-                color: $varyforte;
-            }
-        }
-    }
-
-    &__slide-choco-lite {
-        .main-slider {
-            &__slide-img1 {
-                position: absolute;
-                left: 13%;
-                top: -44px;
-            }
-
-            &__slide-img2 {
-                position: absolute;
-                left: 13%;
-                top: 19px;
-            }
-
-            &__slide-img3 {
-                position: absolute;
-                right: 13%;
-                top: 39px;
-            }
-
-            &__slide-bg-text {
-                font-size: 200px;
-                line-height: 200px;
-                top: 128px;
-            }
-
-            &__slide-content {
-                left: 50%;
-                transform: translateX(0);
-            }
-
-            &__slide-title {
-                color: $choco-lite;
-            }
-        }
-    }
+  }
 }
 
 // max 1899px
@@ -339,6 +357,7 @@
       right: calc(50% - 600px);
       transform: translate(-50px, -50%);
     }
+
     &__arrow-img {
       height: 25px;
       width: auto;
@@ -350,6 +369,7 @@
         &__slide-img1 {
           display: none;
         }
+
         &__slide-content {
           left: 40%;
         }
@@ -462,12 +482,15 @@
         &__slide-bg-text {
           top: 126px;
         }
+
         &__slide-bg-sub {
           top: 183px;
         }
+
         &__slide-img2 {
           left: -215px;
         }
+
         &__slide-img3 {
           right: -35px;
         }
@@ -495,6 +518,7 @@
         &__slide-img3 {
           right: -200px;
         }
+
         &__slide-content {
           left: 50%;
         }
@@ -577,6 +601,7 @@
 
     &__slide {
       min-height: 522px;
+
       .main-slider {
         &__slide-img3 {
           display: none;
@@ -594,6 +619,7 @@
           right: -80px;
           left: initial;
         }
+
         &__slide-img2 {
           left: -363px;
         }
@@ -639,6 +665,7 @@
           left: initial;
           height: 248px;
         }
+
         &__slide-content {
           left: 43%;
         }
@@ -772,4 +799,5 @@
   // For fixing infinite slider jumping issue from last to firs:
   opacity: 1;
 }
+
 /***********MAIN SLIDER END*************/

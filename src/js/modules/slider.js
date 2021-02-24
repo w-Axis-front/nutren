@@ -2,6 +2,7 @@ import slick from "slick-carousel";
 
 export default function slider() {
     const slider1 = $('#js_main-slider');
+    const slider1Track = slider1.find('.slick-track');
 
     $(slider1).slick({
         prevArrow: '<button type="button" class="main-slider__prev"><svg class="main-slider__arrow-img" width="17" height="30" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
@@ -15,14 +16,14 @@ export default function slider() {
         speed: 1000,
         easing: "ease-in",
         touchMove: false,
-        swipe: false,
+        swipe: true
     });
 
     const slides = $(".slick-slide");
     const bgColors = ["rgba(252, 213, 196, 0.42)", "rgba(215, 240, 245, 0.54)", "rgba(178, 214, 248, 0.35)", "rgba(246, 208, 231, 0.4)", "rgba(208, 149, 106, 0.2)"];
 
     $(slider1).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        slider1.css({"background-color": bgColors[nextSlide]});
+        // slider1Track.css({"background-color": bgColors[nextSlide]});
 
         let direction;
         if (nextSlide == currentSlide) {
@@ -37,13 +38,21 @@ export default function slider() {
             const _this = $(this);
             const img1 = $(this).find(".main-slider__slide-img1"),
                 img2 = $(this).find(".main-slider__slide-img2"),
-                img3 = $(this).find(".main-slider__slide-img3");
+                img3 = $(this).find(".main-slider__slide-img3"),
+                slideNext = $(this).find(".main-slider__slide");
+            slideNext.css({"background-color": bgColors[nextSlide]});
+
             // Animate images:
             if (direction == 'left') {
                 if (!_this.hasClass("slick-current")) {
                     img1.css({"transform": "translateX(-70%)"});
                     img2.css({"transform": "translateX(-70%)"});
                     img3.css({"transform": "translateX(-65%)"});
+                } else {
+                    slideNext.css({"overflow-x": "visible", "overflow-y": "visible"});
+                    setTimeout(function () {
+                        slideNext.css({"overflow-x": "hidden", "overflow-y": "hidden"});
+                    }, 900);
                 }
                 img1.css({"transition": "transform 0s ease 0s"});
                 img2.css({"transition": "transform 0s ease 0s"});
@@ -72,5 +81,14 @@ export default function slider() {
             // end images animation.
         });
     });
+
+    // $(slider1).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    //     slides.each(function () {
+    //         const _this = $(this);
+    //         const slideThis = _this.find(".main-slider__slide");
+    //
+    //         slideThis.css({"overflow-x": "hidden", "overflow-y": "hidden"});
+    //     });
+    // });
 }
 

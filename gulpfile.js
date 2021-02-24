@@ -454,12 +454,12 @@ function revAll(done, rootPath = path.build.root) {
         transformFilename: function(file, hash) {
           return nodePath.basename(file.path);
         },
-        transformPath: function(rev, source, path) {
-          if (rev.startsWith("/") || rev.startsWith("http")) {
-            return rev;
-          }
-          return "/" + rev;
-        }
+        // transformPath: function(rev, source, path) {
+        //   if (rev.startsWith("/") || rev.startsWith("http")) {
+        //     return rev;
+        //   }
+        //   return "/" + rev;
+        // }
       })
     )
     .pipe(dest(rootPath));
