@@ -2,7 +2,6 @@ import slick from "slick-carousel";
 
 export default function slider() {
     const slider1 = $('#js_main-slider');
-    const slider1Track = slider1.find('.slick-track');
 
     $(slider1).slick({
         prevArrow: '<button type="button" class="main-slider__prev"><svg class="main-slider__arrow-img" width="17" height="30" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
@@ -81,14 +80,5 @@ export default function slider() {
             // end images animation.
         });
     });
-
-    // $(slider1).on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    //     slides.each(function () {
-    //         const _this = $(this);
-    //         const slideThis = _this.find(".main-slider__slide");
-    //
-    //         slideThis.css({"overflow-x": "hidden", "overflow-y": "hidden"});
-    //     });
-    // });
 }
 

@@ -2,6 +2,8 @@ export default function nav() {
     const burger_button = document.querySelector('.nav__burger');
     const nav = document.querySelector('.nav');
     const burgerNav = $('.burger-menu');
+    const dropdownTrigger = $('.dropdown-toggle');
+    const dropdownContent = $('.dropdown-menu');
     const fullNav = $('.nav__wrap');
     const logoImg = $(".nav__logo-img");
     const logoImgCollapsed = $(".nav__logo-img-collapsed");
@@ -22,6 +24,7 @@ export default function nav() {
             burger_button.classList.add('nav__burger--active');
             burgerNav.show();
             // document.querySelector('.burger-menu').style.display = 'block';
+            dropdownContent.stop().slideUp(10);
             nav.classList.add('nav_active');
         }
     }
@@ -42,6 +45,7 @@ export default function nav() {
         let previousScroll = 0;
         if (media_check_min.matches) {
             burgerNav.hide();
+            dropdownContent.stop().slideUp(10);
             // wrapNav.stop().css("display", "flex");
             if (burger_button) {
                 burger_button.classList.remove('nav__burger--active');
@@ -95,4 +99,13 @@ export default function nav() {
     const media_check_min = window.matchMedia("(min-width: 992px)");
     scrollHandler(media_check_min);
     media_check_min.addListener(scrollHandler);
+
+    dropdownTrigger.on("click", function () {
+        dropdownContent.stop().slideToggle(100);
+    });
+    dropdownContent.children("li").each(function () {
+        $(this).on("click", function () {
+            dropdownContent.stop().slideUp(100);
+        });
+    })
 }

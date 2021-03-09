@@ -1,0 +1,414 @@
+{
+  "locale": "th",
+  "nav": {
+    "nav_logo": {
+      "src": "/img/svg/nav_logo.svg",
+      "alt": "Nutren logo"
+    },
+    "nav_logo_collapsed": {
+      "src": "/img/svg/logo-small.svg",
+      "alt": "Logo"
+    },
+    "nav_logo_path": "/th/",
+    "nav_link1": "หน้าหลัก",
+    "nav_path1": "index.html",
+    "nav_link2": "เกี่ยวกับเรา",
+    "nav_path2": "about.html",
+    "nav_link3": "ผลิตภัณฑ์",
+    "nav_path3": "products.html",
+    "nav_link4": "การพัฒนาของ",
+    "nav_path4": "development.html",
+    "nav_link_anchor": "ติดต่อเรา",
+    "nav_link_anchor_path": "#contacts",
+    "main_lang": "Th",
+    "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
+    "lang3": "Ru",
+    "lang3_path": "/ru/",
+    "lang3_pathlang": "ru",
+    "lang1": "En",
+    "lang1_path": "/",
+    "lang1_pathlang": "en",
+    "lang2": "Es",
+    "lang2_path": "/es/",
+    "lang2_pathlang": "es",
+    "lang4": "Pt",
+    "lang4_path": "/pt/",
+    "lang4_pathlang": "pt",
+    "lang5": "Fr",
+    "lang5_path": "/fr/",
+    "lang5_pathlang": "fr"
+  },
+  "main_slider": [
+    {
+      "slide_title": "Ostelife",
+      "slide_class": "ostelife",
+      "slide_bg_text": "Ostelife",
+      "slide_bg_subtext": "Choco Lite",
+      "slide_bg_subtext_next": "Keto light +",
+      "slide_text": "ครีมธรรมชาติสำหรับการรักษาข้อต่อและเอ็น",
+      "slide_img1": {
+        "src": "/img/main_slider/ostelife_1.png",
+        "alt": "Ostelife product example",
+        "srcset": "/img/main_slider/ostelife_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "src": "/img/main_slider/ostelife_2.png",
+        "alt": "Ostelife",
+        "srcset": "/img/main_slider/ostelife_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "src": "/img/main_slider/ostelife_3.png",
+        "alt": "Ostelife product",
+        "srcset": "/img/main_slider/ostelife_3@2x.png 2x"
+      }
+    },
+    {
+      "slide_title": "Keto light +",
+      "slide_class": "keto-light",
+      "slide_bg_text": "Keto light +",
+      "slide_bg_subtext": "Ostelife",
+      "slide_bg_subtext_next": "Cardio NRJ",
+      "slide_text": "ตัวกระตุ้นค๊อกเทลของร่างกายคีโตนสำหรับการลดน้ำหนัก",
+      "slide_img1": {
+        "src": "/img/main_slider/keto_1.png",
+        "alt": "Keto light + product example",
+        "srcset": "/img/main_slider/keto_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "src": "/img/main_slider/keto_2.png",
+        "alt": "Keto light +",
+        "srcset": "/img/main_slider/keto_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "src": "/img/main_slider/keto_3.png",
+        "alt": "Keto light + product",
+        "srcset": "/img/main_slider/keto_3@2x.png 2x"
+      }
+    },
+    {
+      "slide_title": "Cardio NRJ",
+      "slide_class": "cardio-nrj",
+      "slide_bg_text": "Cardio NRJ",
+      "slide_bg_subtext": "Keto light +",
+      "slide_bg_subtext_next": "Varyforte",
+      "slide_text": "แคปซูลสำหรับป้องกันโรคหัวใจ",
+      "slide_img1": {
+        "src": "/img/main_slider/CardioNRJ_1.png",
+        "alt": "Cardio NRJ product example",
+        "srcset": "/img/main_slider/CardioNRJ_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "src": "/img/main_slider/CardioNRJ_2.png",
+        "alt": "Cardio NRJ",
+        "srcset": "/img/main_slider/CardioNRJ_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "src": "/img/main_slider/CardioNRJ_3.png",
+        "alt": "Cardio NRJ product",
+        "srcset": "/img/main_slider/CardioNRJ_3@2x.png 2x"
+      }
+    },
+    {
+      "slide_title": "Varyforte",
+      "slide_class": "varyforte",
+      "slide_bg_text": "Varyforte",
+      "slide_bg_subtext": "Cardio NRJ",
+      "slide_bg_subtext_next": "Choco Lite",
+      "slide_text": "ครีมรักษาเส้นเลือดขอดไม่มีผลข้างเคียง.",
+      "slide_img1": {
+        "src": "/img/main_slider/varyforte_1.png",
+        "alt": "Varyforte product example",
+        "srcset": "/img/main_slider/varyforte_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "src": "/img/main_slider/varyforte_2.png",
+        "alt": "Varyforte",
+        "srcset": "/img/main_slider/varyforte_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "src": "/img/main_slider/varyforte_3.png",
+        "alt": "Varyforte product",
+        "srcset": "/img/main_slider/varyforte_3@2x.png 2x"
+      }
+    },
+    {
+      "slide_title": "Choco Lite",
+      "slide_class": "choco-lite",
+      "slide_bg_text": "Choco Lite",
+      "slide_bg_subtext": "Varyforte",
+      "slide_bg_subtext_next": "Ostelife",
+      "slide_text": "ค็อกเทลลดความอ้วนพร้อมรสช็อคโกแลต",
+      "slide_img1": {
+        "src": "/img/main_slider/choco-lite_1.png",
+        "alt": "Choco Lite product example",
+        "srcset": "/img/main_slider/choco-lite_1@2x.png 2x"
+      },
+      "slide_img2": {
+        "src": "/img/main_slider/choco-lite_2.png",
+        "alt": "Choco Lite",
+        "srcset": "/img/main_slider/choco-lite_2@2x.png 2x"
+      },
+      "slide_img3": {
+        "src": "/img/main_slider/choco-lite_3.png",
+        "alt": "Choco Lite product",
+        "srcset": "/img/main_slider/choco-lite_3@2x.png 2x"
+      }
+    }
+  ],
+  "main": {
+    "main_header": "Nutren - ผู้ผลิตเครื่องสำอางและผลิตภัณฑ์เสริมอาหาร",
+    "main_text1": "การพัฒนาสูตร เราผลิตสินค้า แพ็ค ทำการวิจัยตลาด สร้างแบรนด์ จัดทำเอกสาร",
+    "main_text2": "ผลิตภัณฑ์ทั้งหมดได้รับการรับรองในประเทศจีน",
+    "main_img": {
+      "src": "/img/main/main.png",
+      "alt": "Nutren manufacturer",
+      "srcset": "/img/main/main@2x.png 2x"
+    },
+    "produce_header": "เราผลิตผลิตภัณฑ์ของเรา",
+    "produce_text1": "เราพัฒนาและผลิตครีมและผลิตภัณฑ์เสริมอาหารภายใต้แบรนด์ของเราเอง เราขายได้สำเร็จในประเทศจีนและทั่วโลกได้รับความไว้วางใจจากผู้ซื้อ",
+    "produce_text2": "ในบรรดาผลิตภัณฑ์ของเรามีผลิตภัณฑ์ยอดนิยมเช่น Keto Light + ค็อกเทลลดน้ำหนัก ครีมข้อต่อ Ostelife  Germixil ผลิตภัณฑ์ต้านพยาธิและอื่น ๆ",
+    "produce_link": "ผลิตภัณฑ์ ของ Nutren ทั้งหมด",
+    "produce_path": "products.html",
+    "produce_img": {
+      "src": "/img/main/produce.png",
+      "alt": "Nutren products",
+      "srcset": "/img/main/produce@2x.png 2x"
+    },
+    "order_header": "เราจะสร้างผลิตภัณฑ์สำหรับคุณ",
+    "order_text1": "ไม่สำคัญว่าคุณจะมีผลิตภัณฑ์สูตรหรือแค่ไอเดีย เราจะช่วยในทุกขั้นตอนตั้งแต่การเลือกส่วนประกอบไปจนถึงการทดลองทางคลินิกตั้งแต่การผลิตจนถึงการพัฒนาการออกแบบบรรจุภัณฑ์ ",
+    "order_text2": "คุณจะได้รับผลิตภัณฑ์ที่พร้อมขายอย่างสมบูรณ์ซึ่งเป็นที่สนใจของผู้บริโภคด้วยประสิทธิภาพที่พิสูจน์แล้วรวมถึงใบอนุญาตและใบรับรองที่จำเป็นทั้งหมด",
+    "order_link": "การพัฒนาผลิตภัณฑ์ ของ Nutren",
+    "order_path": "development.html"
+  },
+  "main_products": {
+    "title": "ผลิตภัณฑ์ของเรา",
+    "text": "สูตรผลิตภัณฑ์ถูกสร้างขึ้นในห้องปฏิบัติการของเราเองและได้รับการคุ้มครองตามสิทธิบัตร ผลิตภัณฑ์ทั้งหมดผ่านการทดสอบทางการแพทย์พิสูจน์แล้วว่ามีประสิทธิภาพและได้รับการรับรองเพื่อจำหน่ายในประเทศจีนและยุโรป",
+    "ostelife": {
+      "class_additional": "ostelife",
+      "bg": {
+        "src": "/img/products/ostelife-bg.jpg",
+        "alt": "Ostelife background",
+        "srcset": "/img/products/ostelife-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/ostelife.png",
+        "alt": "Ostelife",
+        "srcset": "/img/products/ostelife@2x.png 2x"
+      },
+      "title": "Ostelife",
+      "text": "ครีมสำหรับการรักษาและป้องกันโรคของระบบกล้ามเนื้อและกระดูก สร้างขึ้นจากส่วนผสมจากธรรมชาติ"
+    },
+    "germixil": {
+      "class_additional": "germixil",
+      "bg": {
+        "src": "/img/products/germixil-bg.jpg",
+        "alt": "Germixil background",
+        "srcset": "/img/products/germixil-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/germixil.png",
+        "alt": "Germixil",
+        "srcset": "/img/products/germixil@2x.png 2x"
+      },
+      "img_additional_class": "positioned",
+      "title": "Germixil",
+      "text": "ผลิตภัณฑ์ต้านพยาธิ อ่อนโยนกับร่างกายเพราะสกัดจากสมุนไพร เหมาะสำหรับใช้ในการรักษาหรือเพื่อป้องกัน"
+    },
+    "varyforte": {
+      "class_additional": "varyforte",
+      "bg": {
+        "src": "/img/products/varyforte-bg.jpg",
+        "alt": "Varyforte background",
+        "srcset": "/img/products/varyforte-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/varyforte.png",
+        "alt": "Varyforte",
+        "srcset": "/img/products/varyforte@2x.png 2x"
+      },
+      "title": "Varyforte",
+      "text": "ครีมสมุนไพรรักษาเส้นเลือดขอด. ไม่มีข้อห้ามและผลข้างเคียง"
+    },
+    "hairactiv": {
+      "class_additional": "hairactiv",
+      "bg": {
+        "src": "/img/products/hairactiv-bg.jpg",
+        "alt": "HairActiv background",
+        "srcset": "/img/products/hairactiv-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/hairactiv.png",
+        "alt": "HairActiv",
+        "srcset": "/img/products/hairactiv@2x.png 2x"
+      },
+      "img_additional_class": "positioned",
+      "title": "HairActiv",
+      "text": "แคปซูลสำหรับปลูกผมคิ้วและขนตา องค์ประกอบจากธรรมชาติสูตรสมดุล"
+    },
+    "cardio": {
+      "class_additional": "cardio",
+      "bg": {
+        "src": "/img/products/cardio-bg.jpg",
+        "alt": "Cardio NRJ background",
+        "srcset": "/img/products/cardio-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/cardio.png",
+        "alt": "Cardio NRJ",
+        "srcset": "/img/products/cardio@2x.png 2x"
+      },
+      "title": "Cardio NRJ",
+      "text": "เม็ดสำหรับเสริมสร้างระบบหัวใจและหลอดเลือดและป้องกันโรคหัวใจ"
+    },
+    "keto": {
+      "class_additional": "keto",
+      "bg": {
+        "src": "/img/products/keto-bg.jpg",
+        "alt": "Keto Light+ background",
+        "srcset": "/img/products/keto-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/keto.png",
+        "alt": "Keto Light+",
+        "srcset": "/img/products/keto@2x.png 2x"
+      },
+      "img_additional_class": "positioned",
+      "title": "Keto Light+",
+      "text": "ค็อกเทลที่ช่วยเริ่มกระบวนการลดน้ำหนักตามธรรมชาติด้วยการกระตุ้นร่างกายของคีโตน"
+    },
+    "choco": {
+      "class_additional": "choco",
+      "bg": {
+        "src": "/img/products/choco-bg.jpg",
+        "alt": "Choco Lite background",
+        "srcset": "/img/products/choco-bg@2x.jpg 2x"
+      },
+      "img": {
+        "src": "/img/products/choco.png",
+        "alt": "Choco Lite",
+        "srcset": "/img/products/choco@2x.png 2x"
+      },
+      "img_additional_class": "positioned",
+      "title": "Choco Lite",
+      "text": "ค็อกเทลลดความอ้วนพร้อมรสช็อคโกแลต ประกอบด้วยวิตามินและแร่ธาตุที่ซับซ้อน"
+    }
+  },
+  "main_produce": {
+    "title": "การพัฒนาผลิตภัณฑ์",
+    "text": "เราให้บริการด้านการรับจ้างผลิตเครื่องสำอางและผลิตภัณฑ์เสริมอาหาร:",
+    "idea": {
+      "additional_class": "idea",
+      "text": "เรากำลังมองหาไอเดียผลิตภัณฑ์ที่น่าสนใจสำหรับผู้บริโภค"
+    },
+    "formula": {
+      "additional_class": "formula",
+      "text": "เราพัฒนาสูตรที่สมดุล"
+    },
+    "testing": {
+      "additional_class": "testing",
+      "text": "เราให้การสนับสนุนในระหว่างการทดลองทางคลินิก"
+    },
+    "document": {
+      "additional_class": "document",
+      "text": "เราช่วยจัดเตรียมเอกสารและใบรับรองทั้งหมด"
+    },
+    "award": {
+      "additional_class": "award",
+      "text": "เราผลิตตามเทคโนโลยีที่ทันสมัยและคุณภาพมาตรฐาน"
+    },
+    "brand": {
+      "additional_class": "brand",
+      "text": "เราสร้างแบรนด์และจดทะเบียนเครื่องหมายการค้า"
+    },
+    "shipment": {
+      "additional_class": "shipment",
+      "text": "เราแพ็คและจัดส่งไปยังคลังสินค้าของคุณ"
+    }
+  },
+  "about": {
+    "title": "เกี่ยวกับ บริษัท",
+    "text1": "พันธกิจของ Nutren: สร้างสรรค์เครื่องสำอางและอาหารเสริมที่ตรงตามความต้องการของตลาดยุคใหม่",
+    "text2": "เราต้องการเห็นผลิตภัณฑ์อื่น ๆ ในประเทศจีนที่น่าสนใจสำหรับผู้บริโภคอย่างแท้จริงและนำมาซึ่งผลกำไรที่มั่นคง",
+    "text3": "ประสบการณ์ของเราเองในการพัฒนาและการผลิตช่วยให้เราสามารถเลือกรูปแบบการทำงานที่ดีที่สุดสำหรับลูกค้าของเรา",
+    "img": {"src": "/img/about/about.png", "alt": "Nutren company", "srcset": "/img/about/about@2x.png 2x"},
+    "opportunities_title": "กับเราคุณจะสามารถ:",
+    "speed_text": "นำผลิตภัณฑ์ใหม่ออกสู่ตลาดอย่างรวดเร็ว",
+    "speed_additional_class": "speed",
+    "brand_text": "สร้างแบรนด์ที่ลูกค้าชื่นชอบ",
+    "brand_additional_class": "brand",
+    "assembly_text": "กำจัดความกังวลในการผลิต",
+    "assembly_additional_class": "assembly",
+    "document_text": "ได้รับใบอนุญาตและใบรับรองอย่างรวดเร็วและง่ายดาย",
+    "document_additional_class": "document",
+    "premium_text": "เลือกเงื่อนไขที่เหมาะกับคุณ",
+    "premium_additional_class": "premium",
+    "service_text": "รับการสนับสนุนและคำแนะนำในทุกขั้นตอนของการทำงาน",
+    "service_additional_class": "service"
+  },
+  "contacts": {
+    "header": "ติดต่อเรา",
+    "company_name": "Nutren",
+    "address": "(address)",
+    "company_number": "(payment details)",
+    "email": "(อีเมล)",
+    "email_path": "mailto:(@e-mail)",
+    "phone": "(โทรศัพท์)",
+    "phone_path": "tel:+380999999999",
+    "WhatsApp_path": "https://api.whatsapp.com/send?phone=<380999999999>",
+    "WeChat_path": "#",
+    "Viber_path": "viber://chat?number=%2B380999999999",
+    "img": {
+      "src": "/img/contacts/mobile-screen.gif",
+      "alt": "Products"
+    },
+    "img_bg": {
+      "src": "/img/contacts/contacts-bg.png",
+      "alt": "Background for products",
+      "srcset": "/img/contacts/contacts-bg@2x.png 2x"
+    },
+    "text": "เขียนถึงเรา - เรายินดีที่จะตอบคำถามของคุณ",
+    "phone_placeholder": "โทรศัพท์ / อีเมล",
+    "phone_label": "โทรศัพท์ / อีเมล",
+    "massage_placeholder": "ข้อความของคุณ",
+    "massage_label": "ข้อความของคุณ",
+    "button": "ส่งข้อความ"
+  },
+  "footer": {
+    "logo": {
+      "src": "/img/svg/nav_logo.svg",
+      "alt": "Logo"
+    },
+    "logo_path": "/th/",
+    "text": "© 2021 Nutren. All rights reserved",
+    "back_btn": "Back to the top",
+    "back_path": "#top",
+    "link": "Public offer agreement",
+    "link_path": "/th/",
+    "back_btn_img": {
+      "src": "/img/svg/arrow-up.svg",
+      "alt": "Up"
+    }
+  },
+  "no_page": {
+    "title": "Error 404",
+    "text": "ขออภัยไม่มีหน้าดังกล่าว คุณสามารถกลับไปที่หน้าหลักหรือรายงานข้อบกพร่องให้เราทราบ",
+    "button1": "ไปที่โฮมเพจ",
+    "button1_path": "/th/",
+    "button2": "รายงานข้อผิดพลาด",
+    "img": {
+      "src": "/img/no_page/no_page.png",
+      "alt": "404 error. No page found",
+      "srcset": "/img/no_page/no_page@2x.png 2x"
+    },
+    "popup": {
+      "title": "ข้อมูลถูกส่งไปยังฝ่ายสนับสนุนด้านเทคนิคแล้ว",
+      "text": "ขอขอบคุณที่ช่วยเราปรับปรุงเว็บไซต์ของเราให้ดีขึ้น!",
+      "link_text": "ไปที่โฮมเพจ",
+      "link_path": "/th/",
+      "img": {
+        "src": "/img/svg/done.svg",
+        "alt": "Sent"
+      }
+    }
+  }
+}

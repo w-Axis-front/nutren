@@ -2,6 +2,11 @@
 Макет: https://www.figma.com/file/L1kQ76XQYlryeFCnIAA8QI/Nutren-Front?node-id=0%3A1
 Копирайт: https://docs.google.com/document/d/105_H5KvyIGmpVDE_KZIUna6i_uG-dNfWxKF3I8mM6Rk/edit
 Копирайт копия: https://docs.google.com/document/d/1NkUAtony4NwZKkYhjM1QwR8gTxi-NaMjGhqC5xhEOGY/edit
+EN: https://docs.google.com/document/d/1rc6fm62ozBKHho3qOUHZXFgUXDlPP7f1Xxd9MvoUVPw/edit
+FR: https://docs.google.com/document/d/1GxM9ukKxYZ2EFcKYN6KxWW2OUSk72rLJtIlbqYMyKHw/edit
+TH: https://docs.google.com/document/d/16Gu0jPNMy9RNC5TNtD3oQyJKD06DLbmoR6n44Ncmyz0/edit
+PT: https://docs.google.com/document/d/1r2VownwSng7mRcifxH1xKDAFT2vEvCpUparmRNw0nAo/edit
+ES: https://docs.google.com/document/d/1DNOQNWz1Uui0rzRZ3fJ7Y0WGirkv-8zQ4hacV9mxwBc/edit
 
 ## Структура проекта
 

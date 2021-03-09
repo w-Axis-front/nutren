@@ -1,5 +1,5 @@
 {
-  "locale": "en",
+  "locale": "es",
   "nav": {
     "nav_logo": {
       "src": "/img/svg/nav_logo.svg",
@@ -9,25 +9,25 @@
       "src": "/img/svg/logo-small.svg",
       "alt": "Logo"
     },
-    "nav_logo_path": "/",
-    "nav_link1": "Home",
+    "nav_logo_path": "/es/",
+    "nav_link1": "Inicio",
     "nav_path1": "index.html",
-    "nav_link2": "About us",
+    "nav_link2": "Sobre nosotros",
     "nav_path2": "about.html",
-    "nav_link3": "Products",
+    "nav_link3": "Productos",
     "nav_path3": "products.html",
-    "nav_link4": "Development",
+    "nav_link4": "Desarrollo",
     "nav_path4": "development.html",
-    "nav_link_anchor": "Contacts",
+    "nav_link_anchor": "Contactos",
     "nav_link_anchor_path": "#contacts",
-    "main_lang": "En",
+    "main_lang": "Es",
     "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
     "lang2": "Ru",
     "lang2_path": "/ru/",
     "lang2_pathlang": "ru",
-    "lang1": "Es",
-    "lang1_path": "/es/",
-    "lang1_pathlang": "es",
+    "lang1": "En",
+    "lang1_path": "/",
+    "lang1_pathlang": "en",
     "lang3": "Pt",
     "lang3_path": "/pt/",
     "lang3_pathlang": "pt",
@@ -45,7 +45,7 @@
       "slide_bg_text": "Ostelife",
       "slide_bg_subtext": "Choco Lite",
       "slide_bg_subtext_next": "Keto light +",
-      "slide_text": "Natural cream for joint and ligament treatment.",
+      "slide_text": "Crema natural para el tratamiento de articulaciones y ligamentos.",
       "slide_img1": {
         "src": "/img/main_slider/ostelife_1.png",
         "alt": "Ostelife product example",
@@ -68,7 +68,7 @@
       "slide_bg_text": "Keto light +",
       "slide_bg_subtext": "Ostelife",
       "slide_bg_subtext_next": "Cardio NRJ",
-      "slide_text": "Cocktail activator of ketone bodies for weight loss.",
+      "slide_text": "Cóctel-activador de cuerpos cetónicos para adelgazar.",
       "slide_img1": {
         "src": "/img/main_slider/keto_1.png",
         "alt": "Keto light + product example",
@@ -91,7 +91,7 @@
       "slide_bg_text": "Cardio NRJ",
       "slide_bg_subtext": "Keto light +",
       "slide_bg_subtext_next": "Varyforte",
-      "slide_text": "Pills for heart disease prevention.",
+      "slide_text": "Tabletas para la prevención de enfermedades cardíacas.",
       "slide_img1": {
         "src": "/img/main_slider/CardioNRJ_1.png",
         "alt": "Cardio NRJ product example",
@@ -114,7 +114,7 @@
       "slide_bg_text": "Varyforte",
       "slide_bg_subtext": "Cardio NRJ",
       "slide_bg_subtext_next": "Choco Lite",
-      "slide_text": "Cream for varicose veins treatment with no side effects.",
+      "slide_text": "Crema para el tratamiento de varices sin efectos secundarios.",
       "slide_img1": {
         "src": "/img/main_slider/varyforte_1.png",
         "alt": "Varyforte product example",
@@ -137,7 +137,7 @@
       "slide_bg_text": "Choco Lite",
       "slide_bg_subtext": "Varyforte",
       "slide_bg_subtext_next": "Ostelife",
-      "slide_text": "Energy weight loss cocktail with chocolate flavor.",
+      "slide_text": "Cóctel adelgazante energético con sabor a chocolate.",
       "slide_img1": {
         "src": "/img/main_slider/choco-lite_1.png",
         "alt": "Choco Lite product example",
@@ -156,33 +156,33 @@
     }
   ],
   "main": {
-    "main_header": "Nutren is a manufacturer of cosmetics and dietary supplements",
-    "main_text1": "We develop formulations, manufacture products, pack them, do market research, create brands and draw up documents.",
-    "main_text2": "All products are certified in China.",
+    "main_header": "Nutren - fabricante de cosméticos y suplementos dietéticos",
+    "main_text1": "Desarrollando una fórmula. Fabricamos un producto. Empacamos. Investigamos el mercado. Creamos una marca. Redactamos documentos.",
+    "main_text2": "Todos los productos están certificados en China.",
     "main_img": {
       "src": "/img/main/main.png",
       "alt": "Nutren manufacturer",
       "srcset": "/img/main/main@2x.png 2x"
     },
-    "produce_header": "We manufacture our own products",
-    "produce_text1": "We develop and manufacture creams and dietary supplements under our own brands. We sell them successfully in China and all over the world, gaining customers’ trust and loyalty.",
-    "produce_text2": "Among our products, there are such popular products as Keto Light+ (weight loss cocktail), Ostelife (cream for joints), Germixil (anti-parasitic remedy) and others.",
-    "produce_link": "All Nutren products",
+    "produce_header": "Fabricamos nuestros productos",
+    "produce_text1": "Desarrollamos y fabricamos cremas y complementos dietéticos bajo nuestras propias marcas. Los vendemos con éxito en China y en todo el mundo, ganándonos la confianza de los compradores.",
+    "produce_text2": "Entre nuestros productos se encuentran productos populares como el cóctel adelgazante Keto Light +, la crema para articulaciones Ostelife, el remedio para el parásito Germixil y otros.",
+    "produce_link": "Todos los productos Nutren",
     "produce_path": "products.html",
     "produce_img": {
       "src": "/img/main/produce.png",
       "alt": "Nutren products",
       "srcset": "/img/main/produce@2x.png 2x"
     },
-    "order_header": "We will develop a product for you",
-    "order_text1": "It does not matter if you have a product, a formulation, or just an idea. We will help you at any stage: from the selection of components to clinical trials, from production to the development of packaging design. ",
-    "order_text2": "You will get a product completely ready for sale – interesting to consumers, with proven efficiency as well as with all the necessary permits and certificates.",
-    "order_link": "Nutren product developent",
+    "order_header": "Crearemos un producto para ti",
+    "order_text1": "No importa si tiene un producto, una fórmula o simplemente una idea. Ayudaremos en cualquier etapa: desde la selección de componentes hasta los ensayos clínicos, desde la producción hasta el desarrollo del diseño de envases. ",
+    "order_text2": "Recibirás un producto completamente listo para la venta, interesante para los consumidores, con probada eficacia, así como todos los permisos y certificados necesarios.",
+    "order_link": "Desarrollo de productos Nutren",
     "order_path": "development.html"
   },
   "main_products": {
-    "title": "Our products",
-    "text": "Product formulations are created in our own laboratory and are protected by patents. All products are clinically tested, proven effective and certified for sale in China and Europe.",
+    "title": "Nuestros productos",
+    "text": "Las fórmulas de los productos se crean en nuestro propio laboratorio y están protegidas por patentes. Todos los productos están clínicamente probados, se ha demostrado su eficacia y están certificados para su venta en China y Europa.",
     "ostelife": {
       "class_additional": "ostelife",
       "bg": {
@@ -196,7 +196,7 @@
         "srcset": "/img/products/ostelife@2x.png 2x"
       },
       "title": "Ostelife",
-      "text": "Cream for the prevention and treatment of musculoskeletal system diseases. Created on the basis of natural ingredients."
+      "text": "Crema para el tratamiento y prevención de enfermedades del sistema musculoesquelético. Creado a base de ingredientes naturales."
     },
     "germixil": {
       "class_additional": "germixil",
@@ -212,7 +212,7 @@
       },
       "img_additional_class": "positioned",
       "title": "Germixil",
-      "text": "Antiparasitic pills of mild action with herbal extracts. Can be used for both treatment and prevention."
+      "text": "Comprimidos antiparasitarios de acción suave con extractos de hierbas. Apto para tratamiento y prevención."
     },
     "varyforte": {
       "class_additional": "varyforte",
@@ -227,7 +227,7 @@
         "srcset": "/img/products/varyforte@2x.png 2x"
       },
       "title": "Varyforte",
-      "text": "Herbal cream for varicose veins treatment. It has no contraindications and side effects."
+      "text": "Crema de hierbas para el tratamiento de las varices. No tiene contraindicaciones ni efectos secundarios."
     },
     "hairactiv": {
       "class_additional": "hairactiv",
@@ -243,7 +243,7 @@
       },
       "img_additional_class": "positioned",
       "title": "HairActiv",
-      "text": "Pills for hair, eyebrows and eyelashes growth. Natural composition, balanced formulation."
+      "text": "Comprimidos para el crecimiento del cabello, cejas y pestañas. Composición natural, fórmula equilibrada."
     },
     "cardio": {
       "class_additional": "cardio",
@@ -258,7 +258,7 @@
         "srcset": "/img/products/cardio@2x.png 2x"
       },
       "title": "Cardio NRJ",
-      "text": "Pills for strengthening the cardiovascular system and preventing heart disease."
+      "text": "Tabletas para fortalecer el sistema cardiovascular y prevenir enfermedades cardíacas."
     },
     "keto": {
       "class_additional": "keto",
@@ -274,7 +274,7 @@
       },
       "img_additional_class": "positioned",
       "title": "Keto Light+",
-      "text": "Cocktail that helps start the natural process of weight loss by activating ketone bodies."
+      "text": "Un cóctel que ayuda a iniciar el proceso natural de adelgazamiento activando los cuerpos cetónicos."
     },
     "choco": {
       "class_additional": "choco",
@@ -290,69 +290,69 @@
       },
       "img_additional_class": "positioned",
       "title": "Choco Lite",
-      "text": "Energy weight loss cocktail with chocolate flavor. Contains a complex of vitamins and minerals."
+      "text": "Cóctel adelgazante energético con sabor a chocolate. Contiene un complejo de vitaminas y minerales."
     }
   },
   "main_produce": {
-    "title": "Product development",
-    "text": "We provide a range of services for the contract production of cosmetics and dietary supplements:",
+    "title": "Desarrollo de productos",
+    "text": "Ofrecemos una gama de servicios para la producción por contrato de cosméticos y suplementos dietéticos:",
     "idea": {
       "additional_class": "idea",
-      "text": "Find product ideas that are interesting to consumers."
+      "text": "Buscamos ideas de productos que sean interesantes para los consumidores."
     },
     "formula": {
       "additional_class": "formula",
-      "text": "Develop balanced formulations."
+      "text": "Desarrollamos fórmulas equilibradas."
     },
     "testing": {
       "additional_class": "testing",
-      "text": "Provide guidance during clinical trials."
+      "text": "Te acompañamos durante los ensayos clínicos."
     },
     "document": {
       "additional_class": "document",
-      "text": "Help you draw up all documents and certificates."
+      "text": "Ayudamos a organizar todos los documentos y certificados."
     },
     "award": {
       "additional_class": "award",
-      "text": "Manufacture products according to modern technologies and quality standards."
+      "text": "Producimos de acuerdo con tecnologías modernas y estándares de calidad."
     },
     "brand": {
       "additional_class": "brand",
-      "text": "Create brands and register trademarks."
+      "text": "Creamos marcas y registramos marcas comerciales."
     },
     "shipment": {
       "additional_class": "shipment",
-      "text": "Pack products and deliver them to your warehouses."
+      "text": "Empacamos y entregamos a sus almacenes."
     }
   },
   "about": {
-    "title": "About company",
-    "text1": "Nutren's mission is to create cosmetics and dietary supplements that meet all the requirements of the modern market.",
-    "text2": "We want to see more products in China that are truly interesting to consumers and bring stable profits.",
-    "text3": "Our own experience in development and production helps us select the best work schemes for our clients.",
+    "title": "Sobre la compañía",
+    "text1": "La misión de Nutren: crear cosméticos y complementos que cumplan con todos los requisitos del mercado moderno.",
+    "text2": "Queremos ver más productos en China que sean realmente interesantes para los consumidores y generen beneficios estables.",
+    "text3": "Nuestra propia experiencia en desarrollo y producción nos ayuda a seleccionar los mejores esquemas de trabajo para nuestros clientes.",
     "img": {"src": "/img/about/about.png", "alt": "Nutren company", "srcset": "/img/about/about@2x.png 2x"},
-    "opportunities_title": "With us, you will be able to:",
-    "speed_text": "Quickly bring a new product to market.",
+    "opportunities_title": "Con nosotros puedes:",
+    "speed_text": "Lleve un nuevo producto al mercado rápidamente.",
     "speed_additional_class": "speed",
-    "brand_text": "Create a brand that customers will love.",
+    "brand_text": "Crea una marca que a los clientes les encante.",
     "brand_additional_class": "brand",
-    "assembly_text": "Get rid of the production routine.",
+    "assembly_text": "Deshazte de la rutina de producción.",
     "assembly_additional_class": "assembly",
-    "document_text": "Receive permits and certificates quickly and easily.",
+    "document_text": "Obtenga permisos y certificados de forma rápida y sencilla.",
     "document_additional_class": "document",
-    "premium_text": "Choose conditions that are right for you.",
+    "premium_text": "Elija las condiciones adecuadas para usted.",
     "premium_additional_class": "premium",
-    "service_text": "Get support and advice at every stage of work.",
+    "service_text": "Obtenga apoyo y asesoramiento en cada etapa del trabajo.",
     "service_additional_class": "service"
   },
   "contacts": {
-    "header": "Our contacts",
+    "header": "Nuestros contactos",
     "company_name": "Nutren",
     "address": "(address)",
-    "company_number": "(payment details)",
-    "email": "(email)",
-    "email_path": "mailto:(@email)",
-    "phone": "(phone number)",
+    "company_number": "(requisitos)",
+    "email": "(e-mail)",
+    "email_path": "mailto:(@e-mail)",
+    "phone": "(teléfono)",
     "phone_path": "tel:+380999999999",
     "WhatsApp_path": "https://api.whatsapp.com/send?phone=<380999999999>",
     "WeChat_path": "#",
@@ -366,24 +366,24 @@
       "alt": "Background for products",
       "srcset": "/img/contacts/contacts-bg@2x.png 2x"
     },
-    "text": "Contact us and we will be happy to answer your questions",
-    "phone_placeholder": "Phone number / email",
-    "phone_label": "Phone number / email",
-    "massage_placeholder": "Your message",
-    "massage_label": "Your message",
-    "button": "Send"
+    "text": "Escríbanos, estaremos encantados de responder a sus preguntas",
+    "phone_placeholder": "Teléfono / e-mail",
+    "phone_label": "Teléfono / e-mail",
+    "massage_placeholder": "Su mensaje",
+    "massage_label": "Su mensaje",
+    "button": "Enviar"
   },
   "footer": {
     "logo": {
       "src": "/img/svg/nav_logo.svg",
       "alt": "Logo"
     },
-    "logo_path": "/",
+    "logo_path": "/es/",
     "text": "© 2021 Nutren. All rights reserved",
     "back_btn": "Back to the top",
     "back_path": "#top",
     "link": "Public offer agreement",
-    "link_path": "/",
+    "link_path": "/es/",
     "back_btn_img": {
       "src": "/img/svg/arrow-up.svg",
       "alt": "Up"
@@ -391,20 +391,20 @@
   },
   "no_page": {
     "title": "Error 404",
-    "text": "Sorry, this page does not exist. You can return to the home page or report the error.",
-    "button1": "Back to home page",
-    "button1_path": "/",
-    "button2": "Report the error",
+    "text": "Lo siento, no existe tal página. Puede volver a la página principal o informarnos de un error.",
+    "button1": "Ir a la página principal",
+    "button1_path": "/es/",
+    "button2": "Informar sobre un error",
     "img": {
       "src": "/img/no_page/no_page.png",
       "alt": "404 error. No page found",
       "srcset": "/img/no_page/no_page@2x.png 2x"
     },
     "popup": {
-      "title": "Information has been sent to the technical support team.",
-      "text": "Thank you for helping us improve our website!",
-      "link_text": "Back to home page",
-      "link_path": "/",
+      "title": "Se ha ¡Gracias por ayudarnos a mejorar nuestro sitio!",
+      "text": "Enviado información al soporte técnico.",
+      "link_text": "Ir a la página principal",
+      "link_path": "/es/",
       "img": {
         "src": "/img/svg/done.svg",
         "alt": "Sent"
