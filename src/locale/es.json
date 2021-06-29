@@ -348,15 +348,13 @@
   "contacts": {
     "header": "Nuestros contactos",
     "company_name": "Nutren",
-    "address": "(address)",
-    "company_number": "(requisitos)",
-    "email": "(e-mail)",
-    "email_path": "mailto:(@e-mail)",
-    "phone": "(teléfono)",
-    "phone_path": "tel:+380999999999",
-    "WhatsApp_path": "https://api.whatsapp.com/send?phone=<380999999999>",
-    "WeChat_path": "#",
-    "Viber_path": "viber://chat?number=%2B380999999999",
+    "address": "SEPORA TRADING LTD GRIVA DIGENI 3, Patsalos House, 5TH FLOOR,501,6030 Larnaka Cyprus",
+    "email": "seporatrading@gmail.com",
+    "email_path": "mailto:seporatrading@gmail.com",
+    "phone": "+357 96 552 522",
+    "phone_path": "tel:+35796552522",
+    "WhatsApp_path": "https://api.whatsapp.com/send?phone=<35796552522>",
+    "Viber_path": "viber://chat?number=%2B35796552522",
     "img": {
       "src": "/img/contacts/mobile-screen.gif",
       "alt": "Products"

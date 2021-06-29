@@ -21,7 +21,10 @@
     "nav_link_anchor": "Contacts",
     "nav_link_anchor_path": "#contacts",
     "main_lang": "En",
-    "lang_link_img": {"src": "/img/svg/arrow-down.svg", "alt": "Drop down"},
+    "lang_link_img": {
+      "src": "/img/svg/arrow-down.svg",
+      "alt": "Drop down"
+    },
     "lang2": "Ru",
     "lang2_path": "/ru/",
     "lang2_pathlang": "ru",
@@ -330,7 +333,11 @@
     "text1": "Nutren's mission is to create cosmetics and dietary supplements that meet all the requirements of the modern market.",
     "text2": "We want to see more products in China that are truly interesting to consumers and bring stable profits.",
     "text3": "Our own experience in development and production helps us select the best work schemes for our clients.",
-    "img": {"src": "/img/about/about.png", "alt": "Nutren company", "srcset": "/img/about/about@2x.png 2x"},
+    "img": {
+      "src": "/img/about/about.png",
+      "alt": "Nutren company",
+      "srcset": "/img/about/about@2x.png 2x"
+    },
     "opportunities_title": "With us, you will be able to:",
     "speed_text": "Quickly bring a new product to market.",
     "speed_additional_class": "speed",
@@ -348,15 +355,13 @@
   "contacts": {
     "header": "Our contacts",
     "company_name": "Nutren",
-    "address": "(address)",
-    "company_number": "(payment details)",
-    "email": "(email)",
-    "email_path": "mailto:(@email)",
-    "phone": "(phone number)",
-    "phone_path": "tel:+380999999999",
-    "WhatsApp_path": "https://api.whatsapp.com/send?phone=<380999999999>",
-    "WeChat_path": "#",
-    "Viber_path": "viber://chat?number=%2B380999999999",
+    "address": "SEPORA TRADING LTD GRIVA DIGENI 3, Patsalos House, 5TH FLOOR, 501, 6030 Larnaka Cyprus",
+    "email": "seporatrading@gmail.com",
+    "email_path": "mailto:seporatrading@gmail.com",
+    "phone": "+357 96 552 522",
+    "phone_path": "tel:+35796552522",
+    "WhatsApp_path": "https://api.whatsapp.com/send?phone=<+35796552522>",
+    "Viber_path": "viber://chat?number=%2B35796552522",
     "img": {
       "src": "/img/contacts/mobile-screen.gif",
       "alt": "Products"
